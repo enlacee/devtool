@@ -27,13 +27,15 @@ uname -m
 -----------------------------------
 :::::: imagemagick
 -----------------------------------
-# basic
+# URL
+@http://www.imagemagick.org/Usage/thumbnails/ 
+# BASIC
 convert example.png -resize 500×500 example.png
-# basic deforma imagen tamanio exacto
+# BASIC DEFORMA IMAGEN TAMANIO EXACTO
 convert example.png -resize 500×500! example.png
-#
+# QUALITY
 convert sansung.png -resize 500x500 -quality 70 out.quality.70.jpg
-# thubnail
+# THUMBNAIL
 convert sansung.png -thumbnail 500x500 -background  black -gravity center -extent 500x500 end.jpg
-# thumbnail perfect!
+# THUMBNAIL PERFECT! (FIT)
 convert -define jpeg:size=337x290 sansung.png  -thumbnail 500x500^ -gravity center -extent 500x500  cut_to_fit.gif
