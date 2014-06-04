@@ -1,0 +1,10 @@
+-----------------------------------
+:::::: install php plugin
+-----------------------------------
+sudo apt-get install php5-sqlite
+# APC : instalar PARA no compilar el codigo php a bytecode (almacena en cache)
+sudo apt-get install php-apc
+# MCRYPT
+apt-get install php5-mcrypt
+sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/apache2/conf.d/   # for Apache
+sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/cli/conf.d/ # for CLI

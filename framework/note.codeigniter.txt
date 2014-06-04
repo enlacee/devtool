@@ -1,0 +1,22 @@
+-----------------------------------
+:::::: apuntes codeigniter
+-----------------------------------
+$rs = $query->num_fields();
+# ERROR LOG
+log_message('error', print_r($this->db->last_query(),true)); 
+# PREFIJO TABLE
+$this->db->dbprefix($ac_tabla_lista_id);
+# ATRAS
+$_SERVER['HTTP_REFERER']
+-------------------------------------------------
+    //$patrom = '#http://#';
+    //$patrom = '#^{\w+#i';
+    //$patrom = '#^{\w+.*}$#i';
+    $patrom = '#^{(\w+.*)(,)*}$#'; 
+
+# Expresiones regularres en Javascript
+var patron = /^(\w+)(:)(\d+)$/;  
+
+-----------------------------------
+:::::: apuntes OTRO
+-----------------------------------

@@ -1,0 +1,29 @@
+-----------------------------------
+:::::: Install basic
+-----------------------------------
+sudo apt-get install ubuntu-restricted-extras
+-----------------------------------
+:::::: Install tool
+-----------------------------------
+# YOUTUBE
+sudo apt-get install youtube-dl
+sudo apt-get install python-setuptools
+sudo easy_install pip
+sudo pip install --upgrade youtube-dl
+# APPLICATION UTIL
+youtube-dl => descarga video
+wkhtmltopdf => de html a pdf :  wkhtmltopdf http file.pdf
+imagemagick => iamgen manage in linux
+
+-----------------------------------
+:::::: Tool SO tool
+-----------------------------------
+# VERSION DE UBUNTU
+lsb_release -a
+uname -a
+# ARQUITECTURA SO
+uname -m
+
+
+
+

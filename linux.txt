@@ -1,0 +1,14 @@
+-----------------------------------
+:::::: crear usuarios
+-----------------------------------
+# usuarios
+useradd [opciones] nuevoUsuario
+useradd pedro
+sudo passwd pedro
+sudo userdel -r pedro
+# agregar grupo usuario a existente a grupo existente
+groupadd contabilidad
+# agregar usuario existente a grupo existente
+ usermod -a -G contabilidad pedro
+# cambiar usuario de grupo
+usermod -g retirados pedro

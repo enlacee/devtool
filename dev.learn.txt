@@ -1,0 +1,23 @@
+-----------------------------------
+:::::: Boostrap
+-----------------------------------
+# url
+www.mediaquerie.es
+www.layoutit.com
+# aditional
+table-responsive <div></div> video : 3.3.1
+# label form
+<p class="fotm-control-static">
+
+-----------------------------------
+:::::: Start
+-----------------------------------
+- google calendar API
+- postgress
+- laravel
+- TILDE
+-----------------------------------
+:::::: other
+-----------------------------------
+- # INSTALAR TILDE : para ejecutar app Workana
+sudo apt-get install libjpeg62-dev
