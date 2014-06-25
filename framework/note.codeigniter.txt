@@ -18,5 +18,13 @@ $_SERVER['HTTP_REFERER']
 var patron = /^(\w+)(:)(\d+)$/;  
 
 -----------------------------------
-:::::: apuntes OTRO
+:::::: session
 -----------------------------------
+$this->session->set_userdata('user','');
+$user = $this->session->userdata('user');
+-----------------------------------
+:::::: url
+-----------------------------------
+uri_string(); //current_url()()
+# obtienes nombre del controller
+$controller = $ci->router->fetch_class(); 

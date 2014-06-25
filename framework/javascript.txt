@@ -1,0 +1,110 @@
+-----------------------------------
+:::::: children
+-----------------------------------
+var elem = document.getElementById('container');
+var child = elem.children[0];
+var child = elem.firstElementChild;//== children[0]
+var child = elem.childNodes[0];//or childNodes[1], see below
+var child = elem.childNodes;//treat as Nodelist
+var child = elem.firstChild;
+# VARIANTES
+console.log(elem.childNodes[0]);
+console.log(elem.firstChild);
+# BOTH LOG <TextNode textContent="\n ">
+console.log(elem.childNodes[1]);
+console.log(elem.children[0]);
+console.log(elem.firstElementChild);
+
+
+-----------------------------------
+:::::: POO
+-----------------------------------
+// unsafe
+var MYAPP = {};
+// better
+if (typeof MYAPP === "undefined") {
+var MYAPP = {};
+}
+// or shorter
+var MYAPP = MYAPP || {};
+
+MYAPP.namespace('MYAPP.modules.module2');
+
+
+Gadget.prototype = (function () {
+// private member
+var browser = "Mobile Webkit";
+// public prototype members
+return {
+getBrowser: function () {
+return browser;
+}
+};
+}());
+
+
+
+// make sure the function is called
+// as a constructor
+if (!(this instanceof Sandbox)) {
+return new Sandbox(modules, callback);
+}
+
+
+// any prototype properties as needed
+Sandbox.prototype = {
+name: "My Application",
+version: "1.0",
+getName: function () {
+return this.name;
+}
+};
+
+
+// constructor
+var Widget = function () {
+// implementation...
+};
+// constants
+Widget.MAX_HEIGHT = 320;
+Widget.MAX_WIDTH = 480;
+
+---------------
+# LE PASAMOS UN PARAMETRO DE TIPO FUNCION PARA EJECUTAR LUEGO 
+# DE HACER UNA OPERACION ASINCRONA
+function esperarUnSegundo(callback) {
+  setTimeout(function() {
+    callback();
+  }, 1000);
+}
+
+-----------------------------------
+:::::: call apply
+-----------------------------------
+http://blog.amatiasq.com/2012/01/javascript-conceptos-basicos-this-call-y-apply/
+
+-----------------------------------
+:::::: create table
+-----------------------------------
+//create the table
+var table = document.createElement(“table”);
+table.border = 1;
+table.width = “100%”;
+//create the tbody
+var tbody = document.createElement(“tbody”);
+
+table.appendChild(tbody);
+//create the fi rst row
+tbody.insertRow(0);
+tbody.rows[0].insertCell(0);
+tbody.rows[0].cells[0].appendChild(document.createTextNode(“Cell 1,1”));
+tbody.rows[0].insertCell(1);
+tbody.rows[0].cells[1].appendChild(document.createTextNode(“Cell 2,1”));
+//create the second row
+tbody.insertRow(1);
+tbody.rows[1].insertCell(0);
+tbody.rows[1].cells[0].appendChild(document.createTextNode(“Cell 1,2”));
+tbody.rows[1].insertCell(1);
+tbody.rows[1].cells[1].appendChild(document.createTextNode(“Cell 2,2”));
+//add the table to the document body
+document.body.appendChild(table);

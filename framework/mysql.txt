@@ -1,0 +1,10 @@
+-----------------------------------
+:::::: MYSQL /etc/mysql
+-----------------------------------
+# PATH FILES DB
+/etc/mysql/my.cnf
+
+
+SET FOREIGN_KEY_CHECKS=0; 
+TRUNCATE table1; 
+SET FOREIGN_KEY_CHECKS=1;

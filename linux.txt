@@ -12,3 +12,5 @@ groupadd contabilidad
  usermod -a -G contabilidad pedro
 # cambiar usuario de grupo
 usermod -g retirados pedro
+# VER RESOLUCION DE PC
+xrandr -q | grep -w Screen

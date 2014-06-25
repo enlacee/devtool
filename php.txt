@@ -8,3 +8,5 @@ sudo apt-get install php-apc
 apt-get install php5-mcrypt
 sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/apache2/conf.d/   # for Apache
 sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/cli/conf.d/ # for CLI
+
+# LDPA estructura 

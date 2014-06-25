@@ -1,0 +1,18 @@
+-----------------------------------
+:::::: AJAX
+-----------------------------------
+$.ajax({
+    type: 'POST',
+    url: url,
+    data: data,
+    dataType: 'json'
+    beforeSend: function() {
+    },
+    success: function(data) {
+
+    },
+    error: function(xhr) { // if error occured
+    },
+    complete: function() {
+    },    
+});

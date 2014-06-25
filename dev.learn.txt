@@ -21,3 +21,7 @@ table-responsive <div></div> video : 3.3.1
 -----------------------------------
 - # INSTALAR TILDE : para ejecutar app Workana
 sudo apt-get install libjpeg62-dev
+-https://github.com/sorich87/bootstrap-tour
+
+bower
+sudo npm install -g bower
