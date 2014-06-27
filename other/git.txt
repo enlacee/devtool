@@ -22,4 +22,10 @@ git push --all
 git push --tags
 
 git reset --hard HEAD~3
-git reset --hard ORIG_HEAD 
+git reset --hard f414f31
+git reset --hard ORIG_HEAD
+-----------------------------------
+:::::: diferents in 
+-----------------------------------
+git diff branch1 branch2
+

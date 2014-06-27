@@ -1,0 +1,60 @@
+install
+- descargar o instalar by composer
+
+- dar permisos a carpetas (logs  cache)		
+- iniciar web/app_dev.php	
+
+
+
+-----------------------------------
+:::::: Twig
+-----------------------------------	
+# echo
+{{ message }}
+
+# functions
+{% for array in arreglo %} {% endfor %}
+
+# filters
+{{ name|striptags|title }}
+
+{{ list|join(', ') }}
+
+{% filter upper %}
+    This text becomes uppercase
+{% endfilter %}
+
+-----------------------------------
+:::::: CONSOLE
+-----------------------------------	
+php app/console cache:clear --env=prod --no-debug
+
+# depurardor de RUTAS
+php app/console router:debug
+php app/console router:debug acme_index
+
+-----------------------------------
+:::::: CONTROLLER
+-----------------------------------	
+# redirect
+return $this->redirect($this->generateUrl('homepage'));
+
+# forward()
+-----------------------------------
+:::::: RESPONSE
+-----------------------------------	
+// crea una respuesta JSON con código de estado 200
+$response = new Response(json_encode(array('name' => $name)));
+$response->headers->set('Content-Type', 'application/json');
+
+-----------------------------------
+:::::: DOCTRINE
+-----------------------------------	
+# Establecer congiguracion en : symfony/app/config/parameters.yml
+php app/console doctrine:database:create
+
+# Creando una clase Entity
+php app/console doctrine:generate:entity
+
+# genernado base de datos
+php app/console doctrine:schema:update --force
