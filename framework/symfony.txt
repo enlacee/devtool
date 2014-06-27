@@ -4,8 +4,6 @@ install
 - dar permisos a carpetas (logs  cache)		
 - iniciar web/app_dev.php	
 
-
-
 -----------------------------------
 :::::: Twig
 -----------------------------------	
@@ -58,3 +56,30 @@ php app/console doctrine:generate:entity
 
 # genernado base de datos
 php app/console doctrine:schema:update --force
+
+---------------------------- HOME -------------------------
+
+# console : app/console
+-----------------------------------
+:::::: bundle
+-----------------------------------
+# 01 crear 
+app/console generate:bundle
+php app/console generate:bundle --namespace=Acme/Bundle/BlogBundle
+
+-----------------------------------
+:::::: Doctrine
+-----------------------------------
+# Doctrine 01
+php app/console doctrine:database:create
+
+# 02
+php app/console doctrine:database:drop --force
+php app/console doctrine:database:create
+
+# 03
+php app/console doctrine:generate:entity
+
+# 04 (create tables model schema)
+php app/console doctrine:schema:update --force
+
