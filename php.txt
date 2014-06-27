@@ -10,3 +10,14 @@ sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/apache2/conf.d/   # for Apache
 sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/cli/conf.d/ # for CLI
 
 # LDPA estructura 
+
+# xhprof
+sudo pecl config-set preferred_state beta
+sudo pecl install xhprof
+
+
+-----------------------------------
+:::::: VER
+-----------------------------------
+php -m
+

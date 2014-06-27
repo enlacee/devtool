@@ -1,0 +1,7 @@
+# ides (phpstorm, netbenas, etc)
+.idea
+.idea/*
+
+
+# temp files
+*.~
