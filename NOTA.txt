@@ -1,0 +1,30 @@
+NOTA.txt
+
+
+- tarea  RECUPERAR O COSTRUIR
+
+app (require) by chamilo v10 (install+bundle+translation.i18n.)
+
+
+ipça
+- seguridad
+-captcha
+
+
+
+https://github.com/beeznest/chamilo-lms-utp/blob/1.9.x/main/install/configuration.dist.php
+
+
+
+- curso_type  = clasificar tipo plantilla o curso simple
+
+
+
+https://github.com/chamilo/chamilo-lms/blob/1.9.x/main/install/configuration.dist.php
+
+
+
+
+
+
+https://github.com/beeznest/chamilo-lms-utp

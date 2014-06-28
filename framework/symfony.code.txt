@@ -1,0 +1,12 @@
+-----------------------------------
+:::::: INSTALL XHPROF
+-----------------------------------
+use Symfony\Component\HttpFoundation\Request;
+
+public function updateAction(Request $request)
+{
+    // $_GET parameters
+    $request->query->get('name');
+
+    // $_POST parameters
+    $request->request->get('name');
