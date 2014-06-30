@@ -1,5 +1,6 @@
 # ides (phpstorm, netbenas, etc)
-.idea
+ide/*
+.ide
 .idea/*
 
 
