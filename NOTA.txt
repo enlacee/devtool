@@ -1,6 +1,4 @@
 NOTA.txt
-
-
 - tarea  RECUPERAR O COSTRUIR
 
 app (require) by chamilo v10 (install+bundle+translation.i18n.)
