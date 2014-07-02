@@ -7,3 +7,11 @@ SET FOREIGN_KEY_CHECKS=1;
 
 # utf8
 ALTER DATABASE <database_name> CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+
+
+# mysql import
+-- 01
+mysql -u root -p
+source file.sql
+-- 02
+mysql -u username -p database_name < file.sql

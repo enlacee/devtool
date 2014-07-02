@@ -1,11 +1,10 @@
 NOTA.txt
 - tarea  RECUPERAR O COSTRUIR
-
 app (require) by chamilo v10 (install+bundle+translation.i18n.)
 
 
-ipça
-- seguridad
+IPNA
+-seguridad
 -captcha
 
 
@@ -33,3 +32,7 @@ ________________________________________________________________________________
 ___________________________________________________________________________________
 // gym ADD repositorio
 http://www.eyecon.ro/bootstrap-datepicker/?utm_source=twitterfeed&utm_medium=twitter
+
+linux
+
+whereis php.ini 
