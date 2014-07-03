@@ -28,6 +28,19 @@ https://github.com/chamilo/chamilo-lms/blob/1.9.x/main/install/configuration.dis
 https://github.com/beeznest/chamilo-lms-utp
 
 
+
+
+
+
+
+
+- SEGUIMIENTO DE IMPORTAR Y EXPORTAR EJERCICIOS::
+Table: c_quiz_question
+01 = main/exercice/question.class.php:135
+02 = main/exercice/exercise.class.php:708
+03 = main/exercice/question.class.php:121 :: Exercice -> read
+
+
 ___________________________________________________________________________________
 ___________________________________________________________________________________
 ___________________________________________________________________________________
