@@ -20,6 +20,8 @@ git stash
 # subir todas las ramas
 git push --all
 git push --tags
+# UTIL (regresa tus cambios al ultimo commit)
+git reset --hard
 
 git reset --hard HEAD~3
 git reset --hard f414f31
@@ -28,4 +30,7 @@ git reset --hard ORIG_HEAD
 :::::: diferents in 
 -----------------------------------
 git diff branch1 branch2
-
+-----------------------------------
+:::::: traer todas las ramas
+-----------------------------------
+git pull upstream

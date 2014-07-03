@@ -21,3 +21,11 @@ sudo pecl install xhprof
 -----------------------------------
 php -m
 
+-----------------------------------
+:::::: eco string long
+-----------------------------------
+$js = <<<EOD
+<script type="text/javascript"><!--
+console.log("loging")
+--></script>
+EOD;

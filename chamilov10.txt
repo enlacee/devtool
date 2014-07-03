@@ -38,9 +38,13 @@ http://imagine.readthedocs.org/en/latest/
 
 # FILTER html (atack XSS)
 https://github.com/ezyang/htmlpurifier
-
+-----------------------------------
+:::::: CONSUME via HTTP : 
+-----------------------------------
 # guzzle/guzzle  REST  (CONSUME REST)
 https://github.com/guzzle/guzzle
+
+
 # manager pdf with multiple files(pdf, foto)
 https://github.com/alchemy-fr/Ghostscript-PHP
 

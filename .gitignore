@@ -2,7 +2,8 @@
 ide/*
 .ide
 .idea/*
+~.*
+*.~
 
-
-# temp files
+*# temp files
 *.~
