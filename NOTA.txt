@@ -36,3 +36,9 @@ http://www.eyecon.ro/bootstrap-datepicker/?utm_source=twitterfeed&utm_medium=twi
 linux
 
 whereis php.ini 
+
+
+
+
+
+
