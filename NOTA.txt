@@ -27,6 +27,30 @@ https://github.com/chamilo/chamilo-lms/blob/1.9.x/main/install/configuration.dis
 https://github.com/beeznest/chamilo-lms-utp
 
 
+
+
+
+
+
+
+- SEGUIMIENTO DE IMPORTAR Y EXPORTAR EJERCICIOS::
+Table: c_quiz_question
+
+
+
+
+AUDIO:FRECUENCIA
+http://www.schillmania.com/projects/soundmanager2/demo/api/
+http://jplayer.org/
+
+
+
+http://www.schillmania.com/projects/soundmanager2/demo/api/
+01 = main/exercice/question.class.php:135
+02 = main/exercice/exercise.class.php:708
+03 = main/exercice/question.class.php:121 :: Exercice -> read
+
+
 ___________________________________________________________________________________
 ___________________________________________________________________________________
 ___________________________________________________________________________________
@@ -36,9 +60,4 @@ http://www.eyecon.ro/bootstrap-datepicker/?utm_source=twitterfeed&utm_medium=twi
 linux
 
 whereis php.ini 
-
-
-
-
-
 
