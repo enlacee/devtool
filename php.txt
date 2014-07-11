@@ -29,3 +29,12 @@ $js = <<<EOD
 console.log("loging")
 --></script>
 EOD;
+
+
+-----------------------------------
+:::::: configuracion  para enviar files pesados PHP OKKKD
+-----------------------------------
+php.ini
+
+upload_max_filesize = 1000M ;1GB
+post_max_size = 1000M
