@@ -50,3 +50,9 @@ https://github.com/alchemy-fr/Ghostscript-PHP
 
 # asset files static, file.js, file.css
 https://github.com/kriswallsmith/assetic
+
+
+
+
+sonido grabar
+https://github.com/mattdiamond/Recorderjs

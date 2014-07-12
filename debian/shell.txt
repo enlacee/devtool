@@ -14,6 +14,15 @@ groupadd contabilidad
 usermod -g retirados pedro
 # VER RESOLUCION DE PC
 xrandr -q | grep -w Screen
+
+
+
+-----------------------------------
+:::::: cambiar de usuario
+-----------------------------------
+sudo chown -Rv username directory 
+
+
 -----------------------------------
 :::::: copiar archivos en red local
 -----------------------------------
