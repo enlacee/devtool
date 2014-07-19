@@ -38,3 +38,10 @@ git diff branch1 branch2
 :::::: traer todas las ramas
 -----------------------------------
 git pull upstream
+
+
+-----------------------------------
+:::::: omitir cambios de permisos git
+-----------------------------------
+git config core.fileMode false
+git -c core.fileMode=false diff
