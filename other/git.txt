@@ -38,7 +38,11 @@ git diff branch1 branch2
 :::::: traer todas las ramas
 -----------------------------------
 git pull upstream
-
 git config --global user.name "anibal copitan"
 git config --global user.mail "acopitan@gmail.com"
 git config --global color.ui true
+-----------------------------------
+:::::: omitir cambios de permisos git
+-----------------------------------
+git config core.fileMode false
+git -c core.fileMode=false diff
