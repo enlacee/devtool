@@ -12,7 +12,13 @@ sense = sentido
 middle = medio
 awesome = impresionante
 careful = cuidado
+course = por supuesto
+
+
 
 FRASE
-awesome(2) enough(1)  = bastante impresionante
+awesome enough = bastante impresionante
 the student might have been.
+is easily confused = es facil confundirse
+never lose our branches = nunca perderemos nuestras ramas
+

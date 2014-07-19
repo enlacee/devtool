@@ -1,4 +1,0 @@
-CTRL+SHIF+I = get function line code modal
-
-ctrl+e = files
-crl+r = reemplazar
