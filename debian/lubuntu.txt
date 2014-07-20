@@ -30,3 +30,13 @@ Categories=Application;Development;
 .config/pcmanfm/lubuntu
 # REINICIAR LXDE
 lxpanelctl restart
+-----------------------------------
+:::::: LXDE SOUND
+-----------------------------------
+sudo apt-get install xfce4-mixer gstreamer0.10-alsa
+alsamixer
+#record voice
+sudo  apt-get install  sox
+sox -t alsa default test.wav
+mplayer test.wav
+
