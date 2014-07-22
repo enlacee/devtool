@@ -1,0 +1,9 @@
+#8315
+-- refactor code TYPE
+main/exercice/export/exercise_import.inc.php:165
+
+-- SWF
+/home/acopitan/www/icpna/main/plugin/hotspot/hotspot_solution.fla.as : 144
+SWF: SOLUTION
+http://stackoverflow.com/questions/4655771/create-image-from-data-in-uri-base64-encoded-png-in-actionscript
+http://www.9lessons.info/2010/11/base64-encoding-for-images.html
