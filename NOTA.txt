@@ -69,3 +69,7 @@ https://task.beeznest.com/issues/8404
 
 dentro de chamilo/chamilo-lms/ rama 1.9.x
 COMMIT = 0ac33303594b3a7a2729a0fa67d81dc198bf1775
+
+
+
+http://www.gym-control.com/gym_control/index.php?ife=dietas
