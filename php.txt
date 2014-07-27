@@ -28,4 +28,7 @@ $js = <<<EOD
 <script type="text/javascript"><!--
 console.log("loging")
 --></script>
-EOD;
+EOD
+
+
+;
