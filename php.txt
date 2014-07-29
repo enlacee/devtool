@@ -11,6 +11,11 @@ sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/cli/conf.d/ # for CLI
 # xhprof
 sudo pecl config-set preferred_state beta
 sudo pecl install xhprof
+#+++
+sudo apt-get install php5-gd
+sudo apt-get install php5-gd
+
+intl
 -----------------------------------
 :::::: See Shell
 -----------------------------------
