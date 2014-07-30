@@ -73,3 +73,47 @@ COMMIT = 0ac33303594b3a7a2729a0fa67d81dc198bf1775
 
 
 http://www.gym-control.com/gym_control/index.php?ife=dietas
+
+
+
+
+
+================================================================
+https://task.beeznest.com/issues/7105 : Backup de curso incluyendo vídeos
+
+- BUG
+- 01
+Al subir un archivo (video.flv) (musica.mp3) al subir por documentos de curso no se puede subir correctamente. hay un error ya que_:
+
+PHP $FILES : aparece como vacio, a diferencia cuando son otros archivos.
+
+- 01.1
+el reproductor de videos es flash y solo admite reproduccion en formato flv.
+
+
+- 02 
+al subirse por FCKEDITOR 
+	.en la opcion de subir archivo no hay problema.
+	.al importar el (zip.curso con el video flv)
+ 	no se importa bien sale del proceso sin ejecutar importacion.
+- 02.1 
+solo puedes subir por (1)upload document o (2)fckeditor upload
+para registrar el video o archivo en DB.
+despues se podra exportar este archivo. 
+- OTRO MEDIO O MANUALMENTE NO SE PODRA IXPORTAR ESTOS ARCHIVOS, no apareceran
+en el zip. 	
+
+
+----------------------------
+NOTA AH VER:
+Al hacer la importacion del curso el el mismo hosting de chamilo
+no hay problema lo hace bien.
+
+PERO SI PRUEBAS en otro chamilo : error con videos.
+
+--- 
+NOTA OLD
+cuando envias un zip con video.flv
+$_POST
+$_FILES
+vacio.

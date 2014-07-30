@@ -39,4 +39,5 @@ alsamixer
 sudo  apt-get install  sox
 sox -t alsa default test.wav
 mplayer test.wav
+sudo alsa force-reload
 
