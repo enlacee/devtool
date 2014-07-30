@@ -110,3 +110,10 @@ Al hacer la importacion del curso el el mismo hosting de chamilo
 no hay problema lo hace bien.
 
 PERO SI PRUEBAS en otro chamilo : error con videos.
+
+--- 
+NOTA OLD
+cuando envias un zip con video.flv
+$_POST
+$_FILES
+vacio.
