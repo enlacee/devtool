@@ -27,8 +27,18 @@ xrandr -q | grep -w Screen
 -----------------------------------
 sudo chown -Rv username directory
 -----------------------------------
-:::::: copiar archivos en red local
+:::::: copiar archivos en red local erick
 -----------------------------------
 # copiar y pegar
 scp -rv chamilo acopitan@192.168.1.167:/home/acopitan/
+scp acopitan@toc:/home/acopitan/caledu*.gz .
+
+mysqldump -u root -p --all-database > dump.sql
+ls -sh
+-----------------------------------
+# ver tamaño de directorios.
+-----------------------------------
+sudo du -h --max-depth=1 /home/cperales/ | sort -k1 -h
+df -h
+watch -n 1 "df -h"
 
