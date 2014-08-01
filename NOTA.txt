@@ -117,3 +117,12 @@ cuando envias un zip con video.flv
 $_POST
 $_FILES
 vacio.
+
+
+MIERCOLES	
+ICPNA.VIRTUAL
+-- exportar backup curso
+-- zip corrupto
+
+error document
+main/coursecopy/classes/CourseBuilder.class.php:237
