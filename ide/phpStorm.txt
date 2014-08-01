@@ -1,0 +1,22 @@
+-----------------------------------
+:::::: PHP STORM
+-----------------------------------
+CTRL+N = search by class
+CTRL+SHIF+N = search by file
+CTRL+SHIF+ALT+N = search by simbol
+
+
+CTRL+B = search code function and page and page
+
+CTRL+SHIF+I = get function line code modal
+
+ctrl+e = files
+crl+r = reemplazar
+-----------------------------------
+:::::: key
+-----------------------------------
+441310-04012014
+00002j73f6GYJYFOyl97zGqSOlzKEy 
+2mgYS0"N8IjuAJi4FENtdyfpEK4MmN
+slZcpjSzOIH"wwFn5mTUieifqI5tsO10:37 AM
+Chamilo LMS
