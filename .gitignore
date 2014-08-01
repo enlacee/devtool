@@ -1,9 +1,4 @@
 # ides (phpstorm, netbenas, etc)
 ide/*
-.ide
-.idea/*
 ~.*
-*.~
-
-*# temp files
 *.~
