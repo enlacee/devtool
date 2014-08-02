@@ -5,8 +5,8 @@ l = adelante de la linea
 h = atras de la linea
 # NAVIGATOR IN TEXT
 w = mueve inicio de cada palabra
-e = mueve final de cada palabra
 b = mueve hacia atras inicio de la palabra
+e = mueve final de cada palabra
 # MOVIMIENTO POR OBJETOS DE TEXTO
 ( = principio de la frase.
 ) = final de la frase.
@@ -22,7 +22,7 @@ L = ultima linea de la pantalla. (low view terminal)
 # REPETIR
 30i- ESC = inserta 30 veces '-'
 # BUSCAR DE CARACTERESEN LINEA (f)
-fa = busca la letra (a) en la linea.
+fa = busca la letra (a) en la linea.j
 3fa = busca la letra (a) 3 veces.
 Fa = busca hacia atras la letra (a).
 #
@@ -37,3 +37,13 @@ CTRL+D = mueve hacia abajo.
 ## MODE: INSERT
 # MOVERSE ENTRE () {} []
 % = busca inicio y fin
+#
+CTRL+G = muestra en que linea estas.
+#inicio y fin de archivo
+ALT+GR+ [ ]
+# congiguracion basica de > vim ~/.vimrc
+syntax on
+set number
+set expandtab
+set ts=4
+set autoident
