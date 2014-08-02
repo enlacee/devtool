@@ -29,8 +29,10 @@ sudo chown -Rv username directory
 -----------------------------------
 :::::: copiar archivos en red local erick
 -----------------------------------
-# copiar y pegar
+# copiar y pegar ::
 scp -rv chamilo acopitan@192.168.1.167:/home/acopitan/
+# ingresar x ssh 
+ssh acopitan : password = acopitan
 scp acopitan@toc:/home/acopitan/caledu*.gz .
 
 mysqldump -u root -p --all-database > dump.sql
