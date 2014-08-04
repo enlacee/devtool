@@ -33,14 +33,16 @@ CTRL+D = mueve hacia abajo.
 # BUSQUEDA POR palabras
 / palabraAbuscar = busca la palabra hacia adelante. 
 ? palabraAbuscar = busca la palabra hacdcia atras. 
+#inicio y fin de archivo
+ALT+GR+ [ ]
+# retroceder cambios de edicion 
+u = retrocede a estado anterior
 
 ## MODE: INSERT
 # MOVERSE ENTRE () {} []
 % = busca inicio y fin
 #
 CTRL+G = muestra en que linea estas.
-#inicio y fin de archivo
-ALT+GR+ [ ]
 # congiguracion basica de > vim ~/.vimrc
 syntax on
 set number
