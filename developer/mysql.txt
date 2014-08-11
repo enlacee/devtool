@@ -18,3 +18,5 @@ mysql -u username -p database_name < file.sql
 mysqldump -u root -p ac_gym > sql.sql
 |#options
 -d, --no-data
+# mysql 
+show columns from table

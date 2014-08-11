@@ -44,3 +44,7 @@ sudo du -h --max-depth=1 /home/cperales/ | sort -k1 -h
 df -h
 watch -n 1 "df -h"
 
+
+ver dispositivos
+ dmesg | grep Blu
+
