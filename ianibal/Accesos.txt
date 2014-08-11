@@ -1,0 +1,12 @@
+www.acopitan.com
+=======================
+ftp = ftp.acopitan.com
+user = acopitancom
+pass = Google#123456
+
+
+http://cpanel.nixiweb.com/  ::: PEN123.TK
+==========================
+ftp = 31.170.167.229
+user = u129683324
+clave = google#123
