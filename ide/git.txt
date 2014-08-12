@@ -48,3 +48,6 @@ git config core.fileMode false
 git -c core.fileMode=false diff
 
 #comment
+
+#eliminar rama remota de github
+git push origin --delete 7160

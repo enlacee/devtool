@@ -35,5 +35,9 @@ console.log("loging")
 --></script>
 EOD
 
-
-;
+::::::
+#PEAR
+apt-get install php-pear #instalamos pear
+$ sudo pear channel-update pear.php.net #actualizamos los canales
+$ sudo pear list #nos muestra los paquetes instalados
+$ pear remote-list #muestra la lista de paquetes disponibles para instalar

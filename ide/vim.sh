@@ -47,3 +47,38 @@ set number
 set expandtab
 set ts=4
 set autoident
+
+# insert text
+a = append text after the cursor (despues del cursor)
+A = append text end of the line (al final de la lineak)
+i =
+I = inicio de la linea
+o = desoues 
+O = antes
+
+
+
+#number line
+ESC :#
+
+#copy
+yy = copy line
+yy = yank
+yw = yank word
+y$ = yank to end of line
+p = put (paste)
+P = paste before cursor
+dd  = delete cut a line
+dw = delete  thw current word
+x = delete character
+
+#search and replace
+/pattern  = search for pattern
+?pattern = search backward of pattern
+n = repeat search in same direction
+N = repeat search in opposite direction
+%s/php/NET/g   = replace all antiguo con nuevo en file
+%s/VAR/VARIABLE/gs = replace all antiguo con nuevo  en file eith confirmations.
+
+# working multiples files
+:e filename = edit a file multiples
