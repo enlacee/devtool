@@ -1,0 +1,8 @@
+ --- AL CREAR USUARUARIO POR CHAMILO vlearning
+
+main/inc/lib/usermanager.lib.php:359
+ERROR:
+@api_mail_html($recipient_name, $email, $emailsubject, $emailbody, $sender_name, $email_admin);
+
+
+--- commentar para evitar message de error.

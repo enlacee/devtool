@@ -57,6 +57,10 @@ php app/console doctrine:generate:entity
 # genernado base de datos
 php app/console doctrine:schema:update --force
 
+
+#diferencia en base de datos campos que no existen en la entidad
+php app/console doctrine:schema:update --dump-sql
+
 ---------------------------- HOME -------------------------
 
 # console : app/console
