@@ -51,3 +51,7 @@ git -c core.fileMode=false diff
 
 #eliminar rama remota de github
 git push origin --delete 7160
+
+# 
+git add -u -- ok
+git add -a

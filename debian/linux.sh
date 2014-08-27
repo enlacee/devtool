@@ -49,8 +49,8 @@ ls -sh
 sudo du -h --max-depth=1 /home/cperales/ | sort -k1 -h
 df -h
 watch -n 1 "df -h"
-
-
-ver dispositivos
+#ver dispositivos
  dmesg | grep Blu
+ #ver tamanio de spacio en disco
+ sudo df -h
 
