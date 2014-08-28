@@ -33,6 +33,12 @@ sudo chown -Rv username directory
 scp -rv chamilo acopitan@192.168.1.167:/home/acopitan/
 # ingresar x ssh 
 ssh acopitan : password = acopitan
+ssh acopitan@toc
+# Copiar archivo de local a toc
+scp /home/acopitan/Downloads/transmission/one.txt acopitan@toc:/home/acopitan/back
+scp -r
+scp -r /home/acopitan/www/dbChamilo/ acopitan@toc:/home/acopitan/back
+
 scp acopitan@toc:/home/acopitan/caledu*.gz .
 
 mysqldump -u root -p --all-database > dump.sql
@@ -43,4 +49,8 @@ ls -sh
 sudo du -h --max-depth=1 /home/cperales/ | sort -k1 -h
 df -h
 watch -n 1 "df -h"
+#ver dispositivos
+ dmesg | grep Blu
+ #ver tamanio de spacio en disco
+ sudo df -h
 

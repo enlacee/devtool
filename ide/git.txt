@@ -42,9 +42,16 @@ git config --global user.name "anibal copitan"
 git config --global user.mail "acopitan@gmail.com"
 git config --global color.ui true
 -----------------------------------
-:::::: omitir cambios de permisos git
+:::::: omitir de permisos git : How do I make Git ignore file mode (chmod) changes?
 -----------------------------------
 git config core.fileMode false
 git -c core.fileMode=false diff
 
 #comment
+
+#eliminar rama remota de github
+git push origin --delete 7160
+
+# 
+git add -u -- ok
+git add -a

@@ -1,0 +1,21 @@
+--- CREATE MIGRATION IN SYMPHONY
+php app/console doctrine:migrations:status
+php app/console doctrine:migrations:generate // create class migration up() and down()
+
+php app/console doctrine:migrations:status --show-versions
+#EXECUTE MIGRATION ORDER BY ASC
+php app/console doctrine:migrations:migrate 20100621140655
+#reverto all migrations
+php app/console doctrine:migrations:migrate 0
+
+
+
+
+
+------------------------
+php app/console doctrine:schema:update --force
+------------------------
+
+
+
+@url = http://symfony.com/doc/current/bundles/DoctrineMigrationsBundle/index.html

@@ -1,0 +1,15 @@
+módulo
+suscripción
+ortográficos
+se muestra si se aceptó (pasado)
+
+-- fix
+no existe "eh" ni "ah" (solo existe por el hecho de tener )
+
+
+==== LISTO
++juegos mentales
++sumas mentales matematicas
++inventa historia poes, REC
+
+--

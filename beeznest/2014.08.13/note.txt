@@ -1,0 +1,5 @@
+- Duplicidad de iconos en Pagina Principal de cursos nuevos - ACO y ACN
+https://task.beeznest.com/issues/8073
+
+- Adaptaciones Chamilo: Single Sign On + asistencias IN/OUT
+https://task.beeznest.com/issues/8139
