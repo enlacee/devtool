@@ -49,3 +49,17 @@ set number
 set expandtab
 set ts=4
 set autoident
+
+
+#HOTKEY
+^ = SHIFT+` (costado de la tecla enter +)
+$ = SHIFT+4 (numeral)
+
+#eliminar segun patron
+ci+' = elimina parrafo que inicie y termine con ''
+ct+' = elimina parrafo que inicie y termine con '_'
+ci+{ = elimina parrafo o lines de '{' a '}'
+d+$ = elimina hasta el final
+
+# vim tutor
+vimtutor es
