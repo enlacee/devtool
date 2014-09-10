@@ -33,21 +33,34 @@ CTRL+D = mueve hacia abajo.
 # BUSQUEDA POR palabras
 / palabraAbuscar = busca la palabra hacia adelante. 
 ? palabraAbuscar = busca la palabra hacdcia atras. 
+#inicio y fin de archivo
+ALT+GR+ [ ]
+# retroceder cambios de edicion 
+u = retrocede a estado anterior
 
 ## MODE: INSERT
 # MOVERSE ENTRE () {} []
 % = busca inicio y fin
 #
 CTRL+G = muestra en que linea estas.
-#inicio y fin de archivo
-ALT+GR+ [ ]
 # congiguracion basica de > vim ~/.vimrc
 syntax on
 set number
 set expandtab
 set ts=4
 set autoident
+#HOTKEY
+^ = SHIFT+` (costado de la tecla enter +)
+$ = SHIFT+4 (numeral)
+#eliminar segun patron
+ci+' = elimina parrafo que inicie y termine con ''
+ct+' = elimina parrafo que inicie y termine con '_'
+ci+{ = elimina parrafo o lines de '{' a '}'
+d+$ = elimina hasta el final
 
+# vim tutor
+vimtutor es
+=======
 # insert text
 a = append text after the cursor (despues del cursor)
 A = append text end of the line (al final de la lineak)
@@ -55,12 +68,8 @@ i =
 I = inicio de la linea
 o = desoues 
 O = antes
-
-
-
 #number line
 ESC :#
-
 #copy
 yy = copy line
 yy = yank
@@ -71,7 +80,6 @@ P = paste before cursor
 dd  = delete cut a line
 dw = delete  thw current word
 x = delete character
-
 #search and replace
 /pattern  = search for pattern
 ?pattern = search backward of pattern
@@ -79,6 +87,5 @@ n = repeat search in same direction
 N = repeat search in opposite direction
 %s/php/NET/g   = replace all antiguo con nuevo en file
 %s/VAR/VARIABLE/gs = replace all antiguo con nuevo  en file eith confirmations.
-
 # working multiples files
 :e filename = edit a file multiples

@@ -2,6 +2,14 @@ módulo
 suscripción
 ortográficos
 se muestra si se aceptó (pasado)
+distinción
+raíz
+ningún
+llegó
+latín
+ahí
+
+
 
 -- fix
 no existe "eh" ni "ah" (solo existe por el hecho de tener )

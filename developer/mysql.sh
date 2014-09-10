@@ -23,3 +23,10 @@ show columns from table
  IDENTIFIED BY 'p4s5wOrd';
  > FLUSH PRIVILEGES;
  > exit;
+
+
+
+ #querys buscar en base de datos campos o field
+SELECT table_name,table_schema
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE column_name = 'columna_x'

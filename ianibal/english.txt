@@ -13,6 +13,9 @@ middle = medio
 awesome = impresionante
 careful = cuidado
 course = por supuesto
+becoming = convertirse en
+becasuse = porque
+cover = cubierta
 
 
 
