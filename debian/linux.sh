@@ -53,4 +53,7 @@ watch -n 1 "df -h"
  dmesg | grep Blu
  #ver tamanio de spacio en disco
  sudo df -h
+# ver peso de la carpeta o archivo
+du -sh
+du -sh *
 
