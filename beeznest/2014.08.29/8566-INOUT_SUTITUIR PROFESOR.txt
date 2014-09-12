@@ -1,0 +1,16 @@
+
+--- QUERY DE AYUDA
+
+SELECT *
+FROM `session_rel_course_rel_user`
+where course_code='B11'
+LIMIT 10;
+
+SELECT *
+FROM `session_rel_user`
+LIMIT 10;
+
+SELECT *FROM user limit 10;
+
+
+SELECT * FROM session_rel_course_rel_user WHERE id_session 501 limit 10  -- AND id_user = 256

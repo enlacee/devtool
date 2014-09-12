@@ -16,3 +16,10 @@ php app/console doctrine:schema:update --force
 http://symfony.com/doc/current/book/doctrine.html
 
 # new comment
+
+
+
+#CREAR TABLA EN DOCTRINE symphony (ingresa doctrine te guia)
+php app/console generate:doctrine:entity
+#luego genera script
+php app/console doctrine:schema:update --dump-sql
