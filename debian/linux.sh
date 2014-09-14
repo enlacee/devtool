@@ -43,6 +43,9 @@ scp acopitan@toc:/home/acopitan/caledu*.gz .
 
 mysqldump -u root -p --all-database > dump.sql
 ls -sh
+# order time and reverse
+ls -lt
+ls -ltr
 -----------------------------------
 # ver tamaño de directorios.
 -----------------------------------
