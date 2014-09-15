@@ -44,6 +44,9 @@ scp -rv acopitan@toc:/home/acopitan/www/chamiloutp .
 
 mysqldump -u root -p --all-database > dump.sql
 ls -sh
+# order time and reverse
+ls -lt
+ls -ltr
 -----------------------------------
 # ver tamaño de directorios.
 -----------------------------------
@@ -54,4 +57,7 @@ watch -n 1 "df -h"
  dmesg | grep Blu
  #ver tamanio de spacio en disco
  sudo df -h
+# ver peso de la carpeta o archivo
+du -sh
+du -sh *
 
