@@ -40,6 +40,7 @@ scp -r
 scp -r /home/acopitan/www/dbChamilo/ acopitan@toc:/home/acopitan/back
 
 scp acopitan@toc:/home/acopitan/caledu*.gz .
+scp -rv acopitan@toc:/home/acopitan/www/chamiloutp .
 
 mysqldump -u root -p --all-database > dump.sql
 ls -sh
@@ -50,7 +51,7 @@ ls -ltr
 # ver tamaño de directorios.
 -----------------------------------
 sudo du -h --max-depth=1 /home/cperales/ | sort -k1 -h
-df -h
+sudo df -h
 watch -n 1 "df -h"
 #ver dispositivos
  dmesg | grep Blu
