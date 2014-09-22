@@ -29,6 +29,29 @@ youtube-dl => descarga video
 wkhtmltopdf => de html a pdf :  wkhtmltopdf http file.pdf
 imagemagick => iamgen manage in linux
 -----------------------------------
+-----------------------------------
+:::::: Install App
+-----------------------------------
+# first
+vim
+ssh
+sublime-text
+phpStorm
+remarkable => editor markdown
+shutter => scream shot desktop
+guake => terminal
+transmission => client torrent
+recordmydesktop
+# second
+vlc
+alarm clock
+filezilla => ftp managers
+virtual box => machine OS virtual
+wine
+skype
+# third
+
+
 :::::: Tool SO tool
 -----------------------------------
 # VERSION DE UBUNTU
