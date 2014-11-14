@@ -89,3 +89,27 @@ N = repeat search in opposite direction
 %s/VAR/VARIABLE/gs = replace all antiguo con nuevo  en file eith confirmations.
 # working multiples files
 :e filename = edit a file multiples
+
+
+## add file.01.text
+ctrl + Z = sale del editor
+!q		= sale sin guarda cambios
+w		= guarda cambios
+
+:n		= siguiente archivo
+
+MODO COMANDO
+yy + p	= copia parafo
+
+dd		= borrar linea
+3+dd	= borra 3 lineas
+
+J		= direccion abajo
+K		= direccion arriba
+L		= pasa letra a letra
+
+
+/palabrabuscar	= buscador 
+n					= para pasar
+
+:g/palabra/s//remplazar

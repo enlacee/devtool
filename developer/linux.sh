@@ -60,4 +60,19 @@ watch -n 1 "df -h"
 # ver peso de la carpeta o archivo
 du -sh
 du -sh *
+# permisos chmod
+r = 4
+w = 2
+x = 1
+# permisos para archivos
+chmod 666 log.log
+# directorio
+chmor 755 carpeta
+
+
+# ver usuarios y eliminarlos
+cat /etc/passwd
+userdel usuario
+# apgar monitor lcd
+xset dpms force off 
 

@@ -79,3 +79,10 @@ convert -define jpeg:size=337x290 sansung.png  -thumbnail 500x500^ -gravity cent
 :::::: APPS INSTALL
 -----------------------------------
 wget and aria => manager dowloader
+
+-----------------------------------
+:::::: install tar
+-----------------------------------
+./configure
+make
+sudo make install

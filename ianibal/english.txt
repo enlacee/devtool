@@ -16,8 +16,40 @@ course = por supuesto
 becoming = convertirse en
 becasuse = porque
 cover = cubierta
-
-
+Around = alrededor
+Army = Ejercito
+---- music ---
+felt = sentido
+afraid = miedo
+found = encontrado, establecer
+almost = casi
+sheep = ganado, obeja
+your own toys = tu propios juquetes
+is just  = es solo.
+fairy = hada
+my magic wand = mi varita mágica.
+and turn you into a frog = y te convertire en una rana.
+a bit lonely = un poco solitario.
+George's chest = El pecho de Gorge.
+breath = aliento
+cough = tos.
+just for a little while = sólo por un rato.
+might get tired = podría cansarse.
+I have  a sore tummy = tengo un dolor de barriga.
+that tickles = hace consquillas
+I CAN HEAR = puedo oir..
+rumbling = retumbar
+I need lots of cookie = necesito un monton de galletas.
+away = lejos, fuera
+wet = mojado
+mess = estado sucio o desordebado de las cosas
+you let the balloon = deja que el globo
+let me tell = dejame decirte
+bell = campana
+bed = cama
+beg = pedir, mendigar
+ebb = reFlujo,
+web = red,telaraña
 
 FRASE
 awesome enough = bastante impresionante

@@ -24,9 +24,27 @@ show columns from table
  > FLUSH PRIVILEGES;
  > exit;
 
-
-
  #querys buscar en base de datos campos o field
 SELECT table_name,table_schema
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE column_name = 'columna_x'
+-----------------------------------
+:::::: show uft8 and others
+-----------------------------------
+-- Mostrar los CHARSETs instalados:
+SHOW CHARACTER SET;
+-- Mostrar COLLATIONS instalados:
+SHOW COLLATION;
+-----------------------------------
+:::::: database utf8
+-----------------------------------
+# create databse sql
+CREATE DATABASE mydb
+  DEFAULT CHARACTER SET utf8
+  DEFAULT COLLATE utf8_general_ci; 
+# config in server mysql  
+[mysqld]
+character-set-server=utf8
+collation-server=utf8_general_ci  
+# ALTER by table
+alter table <some_table> convert to character set utf8 collate utf8_unicode_ci;

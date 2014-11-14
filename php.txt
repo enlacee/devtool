@@ -14,6 +14,8 @@ sudo pecl install xhprof
 #+++
 sudo apt-get install php5-gd
 sudo apt-get install php5-gd
+# format standar xslt
+sudo apt-get install php5-xsl
 
 intl
 -----------------------------------
@@ -41,3 +43,6 @@ apt-get install php-pear #instalamos pear
 $ sudo pear channel-update pear.php.net #actualizamos los canales
 $ sudo pear list #nos muestra los paquetes instalados
 $ pear remote-list #muestra la lista de paquetes disponibles para instalar
+#install PHPUnit
+sudo pear config-set auto_discover 1
+sudo pear install pear.phpunit.de/PHPUnit
