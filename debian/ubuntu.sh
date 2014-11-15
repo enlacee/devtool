@@ -86,3 +86,9 @@ wget and aria => manager dowloader
 ./configure
 make
 sudo make install
+-----------------------------------
+:::::: Install programa edicion SRT video
+-----------------------------------
+aegisub => creador editor de SRT OR ASS
+subdownloader => dowloader subtitle for videos
+Gaupol => Subtitle editor or export format ass to srt easy
