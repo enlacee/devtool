@@ -74,5 +74,25 @@ chmor 755 carpeta
 cat /etc/passwd
 userdel usuario
 # apgar monitor lcd
-xset dpms force off 
+xset dpms force off
+
+#configuracion de RED Internet lubuntu
+/etc/network/interfaces
+
+Para ver el contenido de este archivo recuriremos al comando cat, asi que introduciriamos la siguente linea en consola:
+cat /etc/network/interfaces
+Nos aparecerán las siguientes lineas, que serán la configuracion de nuestra máquina:
+
+lo auto
+iface eth0 inet static
+address 192.168.1.128
+netmask 255.255.255.0
+network 192.168.1.0
+broadcast 192.168.1.255
+gateway 192.168.1.1
+
+@ref = http://userstrend.com/server/configurar-red-debian-ubuntu/
+
+
+(192.168.0.0 - 192.168.255.255).
 
