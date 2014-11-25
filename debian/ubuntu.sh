@@ -20,6 +20,12 @@ sudo apt-get autoremove
 :::::: Install tool
 -----------------------------------
 # YOUTUBE
+#install ppa
+sudo apt-add-repository ppa:nilarimogard/webupd8
+sudo apt-get update
+sudo apt-get upgrade
+dpkg -l|grep youtube-dl
+#install
 sudo apt-get install youtube-dl
 sudo apt-get install python-setuptools
 sudo easy_install pip
@@ -92,3 +98,25 @@ sudo make install
 aegisub => creador editor de SRT OR ASS
 subdownloader => dowloader subtitle for videos
 Gaupol => Subtitle editor or export format ass to srt easy
+-----------------------------------
+:::::: Add repositorio ubuntu
+-----------------------------------
+# source repositorie
+/etc/apt/sources.list
+# add repositories by synaptic
+setting
+# add repositories and key by terminal
+sudo add-apt-repository "http://ppa.launchpad.net/mc3man/gstffmpeg-keep/ubuntu trusty main"
+sudo add-apt-repository ppa:gwibber-daily/ppa
+
+#reproducir musica por terminal
+mplayer
+# grabar voz SOX
+
+
+# instalar TAR
+ - descomprimier
+ - ./config
+ - make
+ - sudo make install
+
