@@ -45,6 +45,8 @@ git reset --soft #hash
 
 #git diff
 git diff branch1 branch2
+# cambiar de nombre
+git branch -m newname
 
 #eliminar rama remota de github
 git push origin --delete 7160

@@ -11,6 +11,10 @@ Terminal=false
 Type=Application
 Encoding=UTF-8
 Categories=Application;Development;
+#descomprimir
+tar vxjf sublime_text_3_build_3047_x64.tar.bz2
+#crear link simbolico in :/usr/local/bin
+ln -s /opt/Sublime Text 2/sublime_text /usr/local/bin/sublime
 # ABRIR BY DEFAULT SUBLIME
 /usr/share/applications/sublime_text.desktop exists.
 # OPEN

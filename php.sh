@@ -19,15 +19,19 @@ sudo apt-get install php5-xsl
 
 intl
 -----------------------------------
-:::::: See Shell
+:::::: See Shell all libraries install
 -----------------------------------
 php -m
 -----------------------------------
 :::::: php.ini 
 -----------------------------------
-| configuracion  para enviar files pesados PHP OKKK
+# configuracion  para enviar files pesados PHP OKKK
 upload_max_filesize = 1000M ;1GB
 post_max_size = 1000M
+# show error
+display_errors = On
+
+
 -----------------------------------
 :::::: Code
 -----------------------------------

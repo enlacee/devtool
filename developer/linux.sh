@@ -50,6 +50,7 @@ ls -ltr
 -----------------------------------
 # ver tamaño de directorios.
 -----------------------------------
+du -lh httrack/
 sudo du -h --max-depth=1 /home/cperales/ | sort -k1 -h
 sudo df -h
 watch -n 1 "df -h"

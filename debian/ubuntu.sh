@@ -113,10 +113,29 @@ sudo add-apt-repository ppa:gwibber-daily/ppa
 mplayer
 # grabar voz SOX
 
-
 # instalar TAR
  - descomprimier
  - ./config
  - make
  - sudo make install
+# cofigurar bluetooh tool
+sudo apt-get install bluez-utils
+hcitool dev # ver dispositivos (see devices)
+-----------------------------------
+:::::: grabar escritorio
+-----------------------------------
+# instalar  ffmpeg in ubuntu : descargar tar.gz
+# descomprimir e instalr(TAR)
+# grabar video con recordMyDesktop -> return out.ogv
+# convertir a .MKV because error to format direct MP4
+./ffmpeg -i input.ogv -c:v huffyuv -c:a pcm_s16le output.mkv # .mkv
+# -vcodec : videoCodec
+ffmpeg -i out-3.ogv -q:v 3 avi.avi # best convert .avi
+ffmpeg -i out-3.ogv  -vcodec mpeg4 avi.avi # .avi
+
+# acodec : audioCodec
+ffmpeg -i input -acodec pcm_s32le yo.wav # pcm_s32le: s32le, pcm_s16le : s16le
+
+
+
 
