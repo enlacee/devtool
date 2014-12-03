@@ -114,7 +114,7 @@ mplayer
 # grabar voz SOX
 
 # instalar TAR
- - descomprimier
+ - descomprimier # tar xvf archivo.tar
  - ./config
  - make
  - sudo make install
@@ -135,7 +135,7 @@ ffmpeg -i out-3.ogv  -vcodec mpeg4 avi.avi # .avi
 
 # acodec : audioCodec
 ffmpeg -i input -acodec pcm_s32le yo.wav # pcm_s32le: s32le, pcm_s16le : s16le
-
+ffmpeg -i wav.wav -f mp2 output.mp3
 
 
 

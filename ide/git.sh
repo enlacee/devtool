@@ -6,6 +6,7 @@ git config --global user.email johndoe@example.com
 git config --global color.ui true
 # omitir de permisos git : How do I make Git ignore file mode (chmod) changes?
 git config core.fileMode false
+git config --global core.filemode false
 git -c core.fileMode=false diff
 
 # Set a new remote
@@ -64,3 +65,25 @@ git clean -f -d
 git log
 git log --grep "palabra_a_buscar"
 
+# see change data by files
+git log --stat
+# manager commits
+git diff #hash1..#hash2 index.html
+git diff --stat --sumary #hash8...HEAD
+# ignore space one and two
+git diff --ingnore-space-change #hash8..HEAD
+# description author and changes into commit
+git show #hash
+# Diferencia actual que hubo (OK)
+git show --format=oneline HEAD
+git show --format=oneline HEAD^
+git show --format=oneline HEAD^^
+git show --format=oneline HEAD~3
+# ver arborl de master
+git ls-tree master
+git show #hash(tree,blob,text,other)
+# buscar commit por fecha
+git log --since="2012-01-01"
+git log --until="2012-01-01"
+# buscar algo en log (util si estableces patron de nombres)
+git log --grep="fix"

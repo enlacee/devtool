@@ -50,3 +50,9 @@ $ pear remote-list #muestra la lista de paquetes disponibles para instalar
 #install PHPUnit
 sudo pear config-set auto_discover 1
 sudo pear install pear.phpunit.de/PHPUnit
+# insatall xdebug
+sudo apt-get install php5-dev
+sudo pecl install xdebug
+#create loader apache
+sudo cp json.ini  xdebug.ini # /etc/php5/mods-available
+sudo ln -s ../../mods-available/xdebug.ini 20-xdebug.ini #/etc/php5/mods-available

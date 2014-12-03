@@ -1,0 +1,943 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pu",
+				"public"
+			],
+			[
+				"remo",
+				"removeClass"
+			],
+			[
+				"wr",
+				"writeLog"
+			],
+			[
+				"lis",
+				"listNumber"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"arr",
+				"arraySrc"
+			],
+			[
+				"str",
+				"string"
+			],
+			[
+				"get_class",
+				"get_class_methods"
+			],
+			[
+				"string",
+				"stringHtml"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "http://localhost/sites/httrack/httrack/03www.unify-v1.com/feature_btn_brands.html\n\nhttp://localhost/sites/httrack/httrack/03www.unify-v1.com/page_registration.html\nhttp://localhost/sites/httrack/httrack/03www.unify-v1.com/page_services.html\n\n\n\n\nweb desing READY\nhttp://wrapbootstrap.com/preview/WB0307B17\nhttp://wrapbootstrap.com/preview/WB018MK20\nhttp://wrapbootstrap.com/preview/WB0C06H5D\nhttp://wrapbootstrap.com/preview/WB021609D\nhttp://wrapbootstrap.com/preview/WB08808B5\n",
+			"settings":
+			{
+				"buffer_size": 477,
+				"line_ending": "Unix",
+				"name": "http://localhost/sites/httrack/httrack/03www.unify"
+			}
+		},
+		{
+			"contents": "/*\n * Template Base\n * @description : main source of files.css  \n *\n **/\n\n/*Import Global Compulsory CSS Files*/\n@import url(app.css);\n\n\n/*Boxed Layout\n------------------------------------*/\n.container {\n  padding: 0px 0px !important;\n}\n\n.wrapper {\n  \n}\n.wrapper-slide {\n    background-color: #e3ecf1;\n    padding: 15px 0 50px 0;\n    border-top: 1px solid #d0dbe1;\n    border-bottom: 1px solid #d0dbe1;\n}\n\n/*Navber\n------------------------------------------*/\nul.nav a:hover { color: #0192d8 !important; }\n\nul.nav .active{ color: #0192d8 !important;}\n\n\n.footer {\n  background-color: #aaaeb1;\n}\n\n.footer-line-blue {\n	border-top: 2px solid #00528c;\n}\n\n.footer-line-sky {\n	border-top: 2px solid #0192d8;\n}\n\n.color-text-white {\n	color: white;\n}\n.color-text-blue {\n  color: #00528c;\n}\n.color-text-blue-dark {\n  color: #003f6a;\n}\n\n.color-text-gray-light {\n  color: #d3d3d5;\n}\n\n.color-text-gray {\n  color: #686c6f;\n}\n\n.color-text-gray-dark {\n  color: #49494b;\n}\n\n.color-bg-blue {\n  background-color: #00528c;\n}\n\n.color-bg-gray-light {\n  background-color: #d3d3d5;\n}\n\n.error {\ncolor: #F00 !important;\n}\n\n/*  center image and space\n------------------------------------*/\n.img-center {\n    margin: 0 auto;	\n}\n.img-100 {\n    min-width: 100%;\n    min-width: 100vw;\n}\n\n.vertical-center {\n  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */\n  min-height: 100vh; /* These two lines are counted as one :-)       */\n\n  display: flex;\n  align-items: center;\n}\n\n.div-radius {\n    border-radius: 5px;\n}\n\n@media (max-width: 450px) {\n   .img-center {\n      padding: 5px;\n   }   \n}\n\n/*   Navbar\n---------------------------------*/\n.header .navbar-default {\n    border: none;\n    background: none;\n}\n@media (max-width: 768px) {\n  .header .navbar-default {\n    border-color: #e7e7e7;\n    background-color: #f8f8f8;\n  }   \n}\n\n",
+			"settings":
+			{
+				"buffer_size": 1820,
+				"line_ending": "Unix",
+				"name": "/*"
+			}
+		},
+		{
+			"contents": "palabras en ingles (4400)\ningles español (6600)\ningles basico(8100)",
+			"file": "/home/anb/.cache/.fr-0nmbxt/Predestination.2014.DVDRip.XviD-EVO.srt",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 67,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "internet.sh",
+			"settings":
+			{
+				"buffer_size": 122,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ide/sublime.sh",
+			"settings":
+			{
+				"buffer_size": 105,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 369.0,
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Add Repository"
+			],
+			[
+				"PAC",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/anb/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/anb/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/anb/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/anb/sites/devTool/idea.sh",
+		"/home/anb/Escritorio/xdg-open.sh",
+		"/home/anb/sites/devTool/debian/lubuntu.sh",
+		"/home/anb/sites/devTool/developer/linux.sh",
+		"/home/anb/sites/devTool/webDesing.sh",
+		"/home/anb/sites/devTool/ide/key.sh",
+		"/home/anb/sites/devTool/ide/git.sh",
+		"/home/anb/sites/devTool/ide/sublime_linux.txt",
+		"/home/anb/sites/devTool/ide/vim.sh",
+		"/home/anb/sites/devTool/ide/sublime.sh",
+		"/home/anb/sites/devTool/ruby.sh",
+		"/var/www/html/www.subingleslyrics.com/assets/css/webDesign.sh",
+		"/home/anb/sites/devTool/developer/apache.sh",
+		"/home/anb/sites/devTool/php.sh",
+		"/media/anb/ACD1-72F9/anbCopitan/musica/video/02_febrero/Katy Perry - Unconditionally (Official)-XjwZAa2EjKA.srt",
+		"/var/www/html/info.php",
+		"/home/anb/sites/devTool/debian/ubuntu.sh",
+		"/home/anb/Escritorio/anb/PostBLogger/a.html",
+		"/home/anb/sites/jekyll/my-awesome-site/index.html",
+		"/home/anb/.cache/ruby.sh",
+		"/home/anb/sites/devTool/beeznest/v-learning.sh",
+		"/home/anb/.cache/.fr-hwOxGT/Serena English Subtitle.srt",
+		"/home/anb/sites/ikids/application/modules/skeleton/views/content/pagelet_panels.php",
+		"/home/anb/sites/ikids/application/modules/index/index.php",
+		"/w/sites/httrack/httrack/index.html",
+		"/w/sites/httrack/index.html",
+		"/home/anb/sites/httrack/index.html.1",
+		"/w/sites/httrack/httrack/livedemo00.template-help.com/wt_51873/index.html",
+		"/home/anb/sites/httrack/httrack/index.html",
+		"/home/anb/sites/httrack/httrack/livedemo00.template-help.com/wt_51873/index.html",
+		"/home/anb/sites/test/php/error.php",
+		"/home/anb/Descargas/Interstellar.2014.TS.XViD.AC3.MrSeeN-SiMPLE/Interstellar.2014.TS.XViD.AC3.MrSeeN-SiMPLE.srt",
+		"/home/anb/.cache/.fr-dW2lfS/Predestination.2014.DVDRip.XviD-EVO.srt",
+		"/home/anb/Descargas/Predestination.2014.DVDRip.XviD-EVO/Predestination.2014.srt",
+		"/home/anb/Descargas/amistosos.php",
+		"/home/anb/sites/devTool/developer/mysql.sh",
+		"/var/www/html/www.subingleslyrics.com/application/config/assets.php",
+		"/home/anb/sites/devTool/beeznest/2014.08.06/8236.txt",
+		"/home/anb/sites/devTool/php.txt",
+		"/home/anb/sites/devTool/intall.txt",
+		"/home/anb/Descargas/The.Theory.Of.Everything.DVDRip.XViD-en.srt",
+		"/home/anb/Descargas/ac_videos.sql",
+		"/home/anb/sites/devTool/ide/git.gist.sh",
+		"/var/www/html/sites/subingleslyrics.com/google.api/youtube/01.get.html",
+		"/var/www/html/sites/subingleslyrics.com/google.api/youtube/js/search.js",
+		"/var/www/html/sites/subingleslyrics.com/google.api/youtube/js/index.html",
+		"/home/anb/Descargas/Friends.S03.Season.3.1080p.5.1Ch.BluRay.ReEnc-DeeJayAhmed/DeeJayAhmed ReEncodes.txt",
+		"/var/www/html/www.subingleslyrics.com/README.md",
+		"/var/www/html/www.subingleslyrics.com/application/modules/cron/README.md",
+		"/var/www/html/sites/subingleslyrics.com/google.api/youtube/js/auth.js",
+		"/home/anb/Descargas/Friends.S03.Season.3.1080p.5.1Ch.BluRay.ReEnc-DeeJayAhmed/Friends.S03E01.1080p.5.1Ch.BluRay.ReEnc-DeeJayAhmed.srt",
+		"/home/anb/Escritorio/configurar lubuntu.txt",
+		"/home/anb/Escritorio/OneTab.export.txt",
+		"/home/anb/Escritorio/index.php",
+		"/media/anb/ACD1-72F9/USB/anbCopitan/configurar_network.txt",
+		"/media/anb/ACD1-72F9/USB/anbCopitan/Conexión cableada 1",
+		"/media/anb/ACD1-72F9/USB/anbCopitan/recuperar_ubuntu.txt",
+		"/home/anb/Descargas/The 4000 English Words Essential for an Educated Vocabulary/README.txt",
+		"/home/anb/sites/devTool/markdown.sh",
+		"/home/anb/sites/amazon/ssh.txt",
+		"/var/www/html/www.subingleslyrics.com/.htaccess",
+		"/tmp/Untitled Document.md.html",
+		"/home/anb/Escritorio/zzz.html",
+		"/home/anb/Escritorio/as.html",
+		"/var/www/www.subingleslyrics.com/application/modules/cron/controllers/subingles.php",
+		"/var/www/www.subingleslyrics.com/application/modules/cron/controllers/apiyoutube.php",
+		"/var/www/www.subingleslyrics.com/application/modules/video/models/video_model.php",
+		"/var/www/www.subingleslyrics.com/application/modules/video/views/video/index.php",
+		"/var/www/www.subingleslyrics.com/application/modules/video/controllers/video.php",
+		"/var/www/www.subingleslyrics.com/application/modules/skeleton/controllers/skeleton.php",
+		"/var/www/www.subingleslyrics.com/application/modules/cron/controllers/cron.php",
+		"/var/www/www.subingleslyrics.com/application/modules/cron/README.md",
+		"/var/www/www.subingleslyrics.com/application/modules/cron/views/apiyoutube/index.php",
+		"/var/www/www.subingleslyrics.com/application/modules/cron/view/api-youtube/index.php",
+		"/var/www/sites/test/php/substr.php",
+		"/var/www/sites/test/php/strpost.php",
+		"/var/www/www.subingleslyrics.com/application/modules/cron/view/apiyoutube/index.php",
+		"/var/www/www.subingleslyrics.com/application/third_party/MX/Loader.php",
+		"/var/www/www.subingleslyrics.com/application/core/MY_Controller.php",
+		"/var/www/www.subingleslyrics.com/application/third_party/MX/Controller.php",
+		"/var/www/www.subingleslyrics.com/application/third_party/MX/Base.php",
+		"/var/www/www.subingleslyrics.com/application/third_party/MX/Config.php",
+		"/var/www/www.subingleslyrics.com/application/modules/video/views/video/view.php",
+		"/var/www/www.subingleslyrics.com/application/views/header.php",
+		"/var/www/www.subingleslyrics.com/application/core/MY_ControllerCustom.php",
+		"/var/www/www.subingleslyrics.com/application/views/base_view.php",
+		"/var/www/www.subingleslyrics.com/application/modules/video/views/video/search.php",
+		"/var/www/www.subingleslyrics.com/application/modules/video/views/video/search-result.php",
+		"/var/www/www.subingleslyrics.com/application/libraries/Template.php",
+		"/var/www/www.subingleslyrics.com/application/views/base_view_base.php",
+		"/var/www/www.subingleslyrics.com/application/views.default/base_view.php",
+		"/home/anb/sites/subingleslyrics.com/googlesearchresults.html",
+		"/home/anb/sites/subingleslyrics.com/googlesearch.html",
+		"/var/www/www.subingleslyrics.com/application/modules/addons/data/jquery_file_upload/pagelet_jquery_file_upload.php",
+		"/home/anb/sites/subingleslyrics.com/googlesearchresult.html",
+		"/var/www/www.subingleslyrics.com/application/views/footer.php",
+		"/var/www/www.subingleslyrics.com/index.php",
+		"/home/anb/sites/scrapython/06.subingles.py",
+		"/var/www/www.subingleslyrics.com/bootstrap.php",
+		"/var/www/www.subingleslyrics.com/cron/getDataSubingles.php",
+		"/var/www/www.subingleslyrics.com/application/modules/video/video.php",
+		"/home/anb/sites/scrapython/06.subingles.log",
+		"/home/anb/Escritorio/database.php",
+		"/home/anb/sites/test/php/substr.php",
+		"/media/anb/ACD1-72F9/peliculas/Automata.2014/Automata.2014.HDRip.XviD-SaM[ETRG].nfo",
+		"/media/anb/UUI1/anb/e",
+		"/w/Accesos.txt",
+		"/var/www/www.subingleslyrics.com/application/modules/video/views/video/_aside1.php",
+		"/var/www/www.subingleslyrics.com/application/modules/video/views/video/_aside2.php",
+		"/var/www/www.subingleslyrics.com/application/modules/video/views/video/_aside3.php",
+		"/var/www/www.subingleslyrics.com/application/views/base_viewx.php",
+		"/var/www/www.subingleslyrics.com/assets/js/modules/video/videoplayer.js",
+		"/var/www/www.subingleslyrics.com/application/core/MY_Loader.php",
+		"/var/www/www.subingleslyrics.com/application/libraries/Dialog.php",
+		"/var/www/www.subingleslyrics.com/application/config/assets.php",
+		"/var/www/www.subingleslyrics.com/application/helpers/MY_url_helper.php",
+		"/var/www/www.subingleslyrics.com/composer.json",
+		"/var/www/www.subingleslyrics.com/application/config/config.php",
+		"/var/www/www.subingleslyrics.com/system/core/Loader.php",
+		"/var/www/www.subingleslyrics.com/application/libraries/Hashids.php...",
+		"/var/www/sites/subingleslyrics.com/id.php",
+		"/var/www/www.subingleslyrics.com/assets/css/app.css",
+		"/home/anb/sites/subingleslyrics.com/google.api/youtube/get.html",
+		"/home/anb/sites/subingleslyrics.com/youtube.html",
+		"/home/anb/sites/subingleslyrics.com/google.api/youtube/source.url"
+	],
+	"find":
+	{
+		"height": 51.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"*.*",
+			"*.sh",
+			"*.*",
+			"*.php",
+			"*.css",
+			"*.php",
+			"/var/www/www.subingleslyrics.com/application/modules",
+			"*.php",
+			"*.*",
+			"*.py",
+			"*.*",
+			"*.php",
+			"*.*",
+			"*.php",
+			"",
+			"*.js",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"apagar",
+			"scrot",
+			"utf",
+			"utf8",
+			".so",
+			"unit",
+			"tar",
+			"scrot",
+			"ff",
+			"ffmpeg",
+			"scrot -s",
+			"scrot",
+			"remote",
+			"tar",
+			"yar",
+			"ffmpeg",
+			"link",
+			"sublime",
+			"tar",
+			"alsa",
+			"erick",
+			"tamanio archivo",
+			"monster",
+			"php error",
+			"youtube-dl",
+			"ffmpeg",
+			"YOUTUBE",
+			"SOX",
+			"sox",
+			"ppa",
+			"repository",
+			"ffmpeg",
+			"rewrite",
+			"link",
+			"ls",
+			"lN",
+			"ln",
+			"link",
+			"simbolico",
+			"link ",
+			"ls",
+			"ssh",
+			"columns",
+			"source",
+			"lubuntu",
+			"ssh",
+			"rebase",
+			"loadAPIClientInterfaces",
+			"install",
+			"aegisub",
+			"mysql",
+			"eric",
+			"&gt;",
+			"&lt;",
+			"body",
+			"rewrite",
+			"tb_video",
+			"$this->url",
+			"urlprocess",
+			"url",
+			"                    $",
+			"$metadata['viewCount'] = $video['statistics']['viewCount'];",
+			");                ",
+			"console",
+			"ajaxApiYoutube",
+			"sleepDuration",
+			"initTimer",
+			"id_youtube",
+			"i",
+			"ajaxApiYoutube",
+			"());",
+			"FUNCTION model",
+			"searchAndUpdate",
+			"004501394547719902685",
+			"jsnip",
+			"add_jsnip",
+			"strScrip",
+			"jsnip",
+			"js",
+			"this->js",
+			"=",
+			";",
+			"favicon.ico",
+			"Favicon",
+			"fav",
+			"function add_metadata",
+			"astest Shots",
+			"_load_script",
+			"assets_url",
+			"$CI->",
+			"function assets_url",
+			" ",
+			"onYouTubeIframeAPIReady",
+			"onStateChange",
+			"stopVideo",
+			"onPlayerStateChange",
+			"onStateChange",
+			"onYouTubeIframeAPIReady",
+			"function add_js",
+			"done",
+			"onYouTubeIframeAPIReady",
+			"attr",
+			"linkPlayer",
+			"img",
+			"funny-boxes-left-green",
+			"funny-boxes funny-boxes-colored funny-boxes-red",
+			"overlay-icon.png",
+			"player",
+			"zoomer",
+			"getStreamMap",
+			"truncate_string",
+			"cache/",
+			"/cache",
+			"CACHE",
+			"Recent Works anb",
+			"ci->load->view",
+			"Skeleton",
+			"CodeIgniter Skeleton",
+			"assets_url",
+			"Todo",
+			"module_name",
+			"locations",
+			"APPPATH.'modules/'",
+			"modules_locations",
+			"addons",
+			"todo",
+			"module",
+			"addons"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			">",
+			"<",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 477,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46,
+								46
+							],
+							[
+								242,
+								242
+							]
+						],
+						"settings":
+						{
+							"auto_name": "http://localhost/sites/httrack/httrack/03www.unify",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 1820,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1461,
+								1461
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1767.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/anb/.cache/.fr-0nmbxt/Predestination.2014.DVDRip.XviD-EVO.srt",
+					"settings":
+					{
+						"buffer_size": 67,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "internet.sh",
+					"settings":
+					{
+						"buffer_size": 122,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								122,
+								122
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "ide/sublime.sh",
+					"settings":
+					{
+						"buffer_size": 105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"spell_check": false,
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"subl",
+				"ide/sublime.sh"
+			],
+			[
+				"sublime",
+				"ide/sublime.sh"
+			],
+			[
+				"git",
+				"ide/git.sh"
+			],
+			[
+				"web",
+				"webDesing.sh"
+			],
+			[
+				"subli",
+				"ide/sublime_linux.txt"
+			],
+			[
+				"linu",
+				"ide/sublime_linux.txt"
+			],
+			[
+				"linux",
+				"developer/linux.sh"
+			],
+			[
+				"lubuntu",
+				"debian/lubuntu.sh"
+			],
+			[
+				"ubu",
+				"debian/ubuntu.sh"
+			],
+			[
+				"vim",
+				"ide/vim.sh"
+			],
+			[
+				"bash",
+				"beeznest/v-learning.sh"
+			],
+			[
+				"ubuntu",
+				"debian/ubuntu.sh"
+			],
+			[
+				"php",
+				"php.txt"
+			],
+			[
+				"lubutu",
+				"debian/lubuntu.sh"
+			],
+			[
+				"apache",
+				"developer/apache.sh"
+			],
+			[
+				"sh",
+				"markdown.sh"
+			],
+			[
+				"video_model",
+				"application/modules/video/models/video_model.php"
+			],
+			[
+				"mxconfig",
+				"application/third_party/MX/Config.php"
+			],
+			[
+				"base.php",
+				"application/third_party/MX/Base.php"
+			],
+			[
+				"mxcontroller",
+				"application/third_party/MX/Controller.php"
+			],
+			[
+				"my_controller",
+				"application/core/MY_Controller.php"
+			],
+			[
+				"base_view",
+				"application/views/base_view.php"
+			],
+			[
+				"temp",
+				"application/libraries/Template.php"
+			],
+			[
+				"third_party/mx/loader.php",
+				"application/third_party/MX/Loader.php"
+			],
+			[
+				"view.php",
+				"application/modules/video/views/video/view.php"
+			],
+			[
+				"view.p",
+				"application/modules/video/views/video/view.php"
+			],
+			[
+				"contro",
+				"application/controllers/admin_banner.php"
+			],
+			[
+				"url",
+				"system/helpers/url_helper.php"
+			],
+			[
+				"admin/post/post",
+				"application/views/admin/post/post.php"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"my_form_helper",
+				"application/modules/addons/data/bs_form_helpers/MY_form_helper.php"
+			],
+			[
+				"bs_form_helpers",
+				"application/modules/addons/config/addon_bs_form_helpers.php"
+			],
+			[
+				"autoload",
+				"application/config/autoload.php"
+			],
+			[
+				"modules/addons/config/addons.php",
+				"application/modules/addons/config/addons.php"
+			],
+			[
+				"modules",
+				"application/third_party/MX/Modules.php"
+			],
+			[
+				"modules/skeleton/skeleton.json",
+				"application/modules/skeleton/skeleton.json"
+			],
+			[
+				"mysql",
+				"developer/mysql.sh"
+			],
+			[
+				"engl",
+				"ianibal/english.txt"
+			],
+			[
+				"urlmanager",
+				"main/inc/lib/urlmanager.lib.php"
+			],
+			[
+				"config.py",
+				"config.py"
+			],
+			[
+				"skype",
+				"Skype4Py/skype.py"
+			],
+			[
+				"skype4py",
+				"unittests/skype4pytest.py"
+			],
+			[
+				"src/modules/facebook.js",
+				"src/modules/facebook.js"
+			],
+			[
+				"trad4all.inc.php",
+				"main/lang/arabic/trad4all.inc.php"
+			],
+			[
+				"i_database.class.php",
+				"main/install/i_database.class.php"
+			],
+			[
+				"install.class.php",
+				"main/install/install.class.php"
+			],
+			[
+				"db_main.sq",
+				"main/install/db_main.sql"
+			],
+			[
+				"install.lib.php",
+				"main/install/install.lib.php"
+			],
+			[
+				"log.class.ph",
+				"main/inc/lib/log.class.php"
+			],
+			[
+				"database.lib.php",
+				"main/inc/lib/database.lib.php"
+			],
+			[
+				"lib/autoload.class.php",
+				"main/inc/lib/autoload.class.php"
+			],
+			[
+				"main/inc/autoload.inc.php",
+				"main/inc/autoload.inc.php"
+			],
+			[
+				"global_error_message.inc.php",
+				"main/inc/global_error_message.inc.php"
+			],
+			[
+				"main/install/index.php",
+				"main/install/index.php"
+			],
+			[
+				"inc/lib/main_api.lib.php",
+				"main/inc/lib/main_api.lib.php"
+			],
+			[
+				"conf/configuration.php",
+				"main/inc/conf/configuration.php"
+			],
+			[
+				"main/inc/global.inc.php",
+				"main/inc/global.inc.php"
+			],
+			[
+				"index",
+				"index.php"
+			],
+			[
+				"git.sh",
+				"ide/git.gist.sh"
+			],
+			[
+				"node",
+				"developer/node.sh"
+			],
+			[
+				"configura",
+				"main/inc/conf/configuration.php"
+			],
+			[
+				"vendor/class/mypdo.php",
+				"vendor/class/MyPdo.php"
+			],
+			[
+				"gi",
+				"ide/git.txt"
+			],
+			[
+				"ide/vim.sh",
+				"ide/vim.sh"
+			],
+			[
+				"developer/mysql.sh",
+				"developer/mysql.sh"
+			],
+			[
+				"vi",
+				"ide/vim.sh"
+			],
+			[
+				"coursecopy/create_backup.php",
+				"main/coursecopy/create_backup.php"
+			],
+			[
+				"main/course_home/course_home.php",
+				"main/course_home/course_home.php"
+			],
+			[
+				"courses/curso1/",
+				"courses/CURSO1/index.php"
+			],
+			[
+				"main/coursecopy/import_backup.php",
+				"main/coursecopy/import_backup.php"
+			],
+			[
+				"database.constants.inc.php",
+				"main/inc/lib/database.constants.inc.php"
+			],
+			[
+				"global.inc.php",
+				"main/inc/global.inc.php"
+			],
+			[
+				"main/inc/ajax/document.ajax.php",
+				"main/inc/ajax/document.ajax.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/var/www/sites/httrack/httrack/03www.unify-v1.com/unify.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 202.0,
+	"status_bar_visible": true
+}

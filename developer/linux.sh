@@ -96,4 +96,12 @@ gateway 192.168.1.1
 
 
 (192.168.0.0 - 192.168.255.255).
-
+# cambiar el formato ascci to utf8
+file index.html
+# en vim
+vim file.srt
+:set bomb
+:set fileencoding=utf-8
+:x
+# apagar monitor
+xset dpms force off 
