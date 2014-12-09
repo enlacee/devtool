@@ -44,4 +44,12 @@ sudo  apt-get install  sox
 sox -t alsa default test.wav
 mplayer test.wav
 sudo alsa force-reload
+# configurar teclado de acceso rapido | shortkeys
+## config file : ~/.config/openbox/lubuntu-rc.xml
+## refresh settings
+openbox --reconfigure
+## GUI
+obconf
+## refresh settings
+lxpanelctl restart
 

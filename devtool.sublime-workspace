@@ -44,47 +44,18 @@
 	"buffers":
 	[
 		{
-			"contents": "http://localhost/sites/httrack/httrack/03www.unify-v1.com/feature_btn_brands.html\n\nhttp://localhost/sites/httrack/httrack/03www.unify-v1.com/page_registration.html\nhttp://localhost/sites/httrack/httrack/03www.unify-v1.com/page_services.html\n\n\n\n\nweb desing READY\nhttp://wrapbootstrap.com/preview/WB0307B17\nhttp://wrapbootstrap.com/preview/WB018MK20\nhttp://wrapbootstrap.com/preview/WB0C06H5D\nhttp://wrapbootstrap.com/preview/WB021609D\nhttp://wrapbootstrap.com/preview/WB08808B5\n",
+			"contents": "\n-- template review\ntwenty-thirteen -> twenty twelve\n\n//var_dump(icl_get_languages('skip_missing=N&orderby=KEY&order=DIR&link_empty_to=str')); exit;\n\nhttp://wpml.org/documentation/getting-started-guide/language-setup/custom-language-switcher/",
 			"settings":
 			{
-				"buffer_size": 477,
-				"line_ending": "Unix",
-				"name": "http://localhost/sites/httrack/httrack/03www.unify"
-			}
-		},
-		{
-			"contents": "/*\n * Template Base\n * @description : main source of files.css  \n *\n **/\n\n/*Import Global Compulsory CSS Files*/\n@import url(app.css);\n\n\n/*Boxed Layout\n------------------------------------*/\n.container {\n  padding: 0px 0px !important;\n}\n\n.wrapper {\n  \n}\n.wrapper-slide {\n    background-color: #e3ecf1;\n    padding: 15px 0 50px 0;\n    border-top: 1px solid #d0dbe1;\n    border-bottom: 1px solid #d0dbe1;\n}\n\n/*Navber\n------------------------------------------*/\nul.nav a:hover { color: #0192d8 !important; }\n\nul.nav .active{ color: #0192d8 !important;}\n\n\n.footer {\n  background-color: #aaaeb1;\n}\n\n.footer-line-blue {\n	border-top: 2px solid #00528c;\n}\n\n.footer-line-sky {\n	border-top: 2px solid #0192d8;\n}\n\n.color-text-white {\n	color: white;\n}\n.color-text-blue {\n  color: #00528c;\n}\n.color-text-blue-dark {\n  color: #003f6a;\n}\n\n.color-text-gray-light {\n  color: #d3d3d5;\n}\n\n.color-text-gray {\n  color: #686c6f;\n}\n\n.color-text-gray-dark {\n  color: #49494b;\n}\n\n.color-bg-blue {\n  background-color: #00528c;\n}\n\n.color-bg-gray-light {\n  background-color: #d3d3d5;\n}\n\n.error {\ncolor: #F00 !important;\n}\n\n/*  center image and space\n------------------------------------*/\n.img-center {\n    margin: 0 auto;	\n}\n.img-100 {\n    min-width: 100%;\n    min-width: 100vw;\n}\n\n.vertical-center {\n  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */\n  min-height: 100vh; /* These two lines are counted as one :-)       */\n\n  display: flex;\n  align-items: center;\n}\n\n.div-radius {\n    border-radius: 5px;\n}\n\n@media (max-width: 450px) {\n   .img-center {\n      padding: 5px;\n   }   \n}\n\n/*   Navbar\n---------------------------------*/\n.header .navbar-default {\n    border: none;\n    background: none;\n}\n@media (max-width: 768px) {\n  .header .navbar-default {\n    border-color: #e7e7e7;\n    background-color: #f8f8f8;\n  }   \n}\n\n",
-			"settings":
-			{
-				"buffer_size": 1820,
-				"line_ending": "Unix",
-				"name": "/*"
-			}
-		},
-		{
-			"contents": "palabras en ingles (4400)\ningles español (6600)\ningles basico(8100)",
-			"file": "/home/anb/.cache/.fr-0nmbxt/Predestination.2014.DVDRip.XviD-EVO.srt",
-			"file_size": -1,
-			"file_write_time": -1,
-			"settings":
-			{
-				"buffer_size": 67,
+				"buffer_size": 242,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "internet.sh",
+			"file": "webDesing.sh",
 			"settings":
 			{
-				"buffer_size": 122,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "ide/sublime.sh",
-			"settings":
-			{
-				"buffer_size": 105,
+				"buffer_size": 1244,
 				"line_ending": "Unix"
 			}
 		}
@@ -92,27 +63,55 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 369.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
-				"package",
-				"Package Control: Install Package"
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdow",
+				"Markdown Preview: Open Markdown Cheat sheet"
 			],
 			[
 				"pac",
-				"Package Control: Add Repository"
-			],
-			[
-				"PAC",
 				"Package Control: Install Package"
 			],
 			[
 				"pack",
 				"Package Control: Install Package"
+			],
+			[
+				"markdo",
+				"Snippet: Markdown_image_(mdi)"
+			],
+			[
+				"PACKAGE INS",
+				"Package Control: Install Package"
+			],
+			[
+				"trimmer",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"trimer:",
+				"Trimmer: Collapse empty lines."
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"PAC",
+				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 540.0
 	},
 	"console":
 	{
@@ -129,26 +128,37 @@
 	},
 	"file_history":
 	[
-		"/home/anb/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
-		"/home/anb/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
-		"/home/anb/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
-		"/home/anb/sites/devTool/idea.sh",
-		"/home/anb/Escritorio/xdg-open.sh",
+		"/home/anb/sites/devTool/webDesing.sh",
 		"/home/anb/sites/devTool/debian/lubuntu.sh",
 		"/home/anb/sites/devTool/developer/linux.sh",
-		"/home/anb/sites/devTool/webDesing.sh",
+		"/home/anb/sites/devTool/debian/ubuntu.sh",
+		"/home/anb/sites/devTool/gimp.sh",
+		"/home/anb/sites/devTool/README.md",
+		"/home/anb/sites/devTool/ide/sublime.sh",
+		"/home/anb/sites/devTool/README.html",
+		"/home/anb/sites/wpandex/wp-cron.php",
+		"/home/anb/sites/canopus-master/README.md",
+		"/home/anb/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/anb/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/anb/sites/wordpress/wp-content/plugins/xili-language/readme.txt",
+		"/home/anb/sites/wordpress/wp-content/languages/admin-es_PE.mo",
 		"/home/anb/sites/devTool/ide/key.sh",
+		"/home/anb/sites/devTool/idea.sh",
+		"/home/anb/sites/devTool/ianibal/inglesforkids.sh",
+		"/home/anb/.cache/.fr-0nmbxt/Predestination.2014.DVDRip.XviD-EVO.srt",
+		"/home/anb/sites/devTool/internet.sh",
+		"/home/anb/.config/sublime-text-2/Packages/User/hello.macro.sublime-macro",
+		"/home/anb/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/anb/Escritorio/xdg-open.sh",
 		"/home/anb/sites/devTool/ide/git.sh",
 		"/home/anb/sites/devTool/ide/sublime_linux.txt",
 		"/home/anb/sites/devTool/ide/vim.sh",
-		"/home/anb/sites/devTool/ide/sublime.sh",
 		"/home/anb/sites/devTool/ruby.sh",
 		"/var/www/html/www.subingleslyrics.com/assets/css/webDesign.sh",
 		"/home/anb/sites/devTool/developer/apache.sh",
 		"/home/anb/sites/devTool/php.sh",
 		"/media/anb/ACD1-72F9/anbCopitan/musica/video/02_febrero/Katy Perry - Unconditionally (Official)-XjwZAa2EjKA.srt",
 		"/var/www/html/info.php",
-		"/home/anb/sites/devTool/debian/ubuntu.sh",
 		"/home/anb/Escritorio/anb/PostBLogger/a.html",
 		"/home/anb/sites/jekyll/my-awesome-site/index.html",
 		"/home/anb/.cache/ruby.sh",
@@ -245,18 +255,7 @@
 		"/var/www/www.subingleslyrics.com/application/views/base_viewx.php",
 		"/var/www/www.subingleslyrics.com/assets/js/modules/video/videoplayer.js",
 		"/var/www/www.subingleslyrics.com/application/core/MY_Loader.php",
-		"/var/www/www.subingleslyrics.com/application/libraries/Dialog.php",
-		"/var/www/www.subingleslyrics.com/application/config/assets.php",
-		"/var/www/www.subingleslyrics.com/application/helpers/MY_url_helper.php",
-		"/var/www/www.subingleslyrics.com/composer.json",
-		"/var/www/www.subingleslyrics.com/application/config/config.php",
-		"/var/www/www.subingleslyrics.com/system/core/Loader.php",
-		"/var/www/www.subingleslyrics.com/application/libraries/Hashids.php...",
-		"/var/www/sites/subingleslyrics.com/id.php",
-		"/var/www/www.subingleslyrics.com/assets/css/app.css",
-		"/home/anb/sites/subingleslyrics.com/google.api/youtube/get.html",
-		"/home/anb/sites/subingleslyrics.com/youtube.html",
-		"/home/anb/sites/subingleslyrics.com/google.api/youtube/source.url"
+		"/var/www/www.subingleslyrics.com/application/libraries/Dialog.php"
 	],
 	"find":
 	{
@@ -264,7 +263,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 			"*.*",
@@ -291,6 +290,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"grunt",
+			"scrot",
+			"apagar",
+			"instalar tar",
+			"sublime",
+			"plugin sublime",
+			"sublime plugin",
+			"plugin",
+			"bar",
+			"imagemagick",
 			"apagar",
 			"scrot",
 			"utf",
@@ -408,17 +417,7 @@
 			"Recent Works anb",
 			"ci->load->view",
 			"Skeleton",
-			"CodeIgniter Skeleton",
-			"assets_url",
-			"Todo",
-			"module_name",
-			"locations",
-			"APPPATH.'modules/'",
-			"modules_locations",
-			"addons",
-			"todo",
-			"module",
-			"addons"
+			"CodeIgniter Skeleton"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -430,7 +429,7 @@
 			"<",
 			""
 		],
-		"reverse": false,
+		"reverse": true,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -439,73 +438,14 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
 					"settings":
 					{
-						"buffer_size": 477,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								46,
-								46
-							],
-							[
-								242,
-								242
-							]
-						],
-						"settings":
-						{
-							"auto_name": "http://localhost/sites/httrack/httrack/03www.unify",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"settings":
-					{
-						"buffer_size": 1820,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1461,
-								1461
-							]
-						],
-						"settings":
-						{
-							"auto_name": "/*",
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1767.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/anb/.cache/.fr-0nmbxt/Predestination.2014.DVDRip.XviD-EVO.srt",
-					"settings":
-					{
-						"buffer_size": 67,
+						"buffer_size": 242,
 						"regions":
 						{
 						},
@@ -518,7 +458,98 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"auto_name": "",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -527,19 +558,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "internet.sh",
+					"buffer": 1,
+					"file": "webDesing.sh",
 					"settings":
 					{
-						"buffer_size": 122,
+						"buffer_size": 1244,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								122,
-								122
+								1206,
+								1206
 							]
 						],
 						"settings":
@@ -547,34 +578,7 @@
 							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "ide/sublime.sh",
-					"settings":
-					{
-						"buffer_size": 105,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								105,
-								105
-							]
-						],
-						"settings":
-						{
-							"spell_check": false,
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 285.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -617,6 +621,10 @@
 	{
 		"height": 118.0
 	},
+	"output.markdown":
+	{
+		"height": 124.0
+	},
 	"replace":
 	{
 		"height": 64.0
@@ -628,11 +636,51 @@
 		"selected_items":
 		[
 			[
-				"subl",
-				"ide/sublime.sh"
+				"web",
+				"webDesing.sh"
+			],
+			[
+				"lubuntu",
+				"debian/lubuntu.sh"
+			],
+			[
+				"webd",
+				"webDesing.sh"
+			],
+			[
+				"linux",
+				"developer/linux.sh"
+			],
+			[
+				"gim",
+				"gimp.sh"
 			],
 			[
 				"sublime",
+				"ide/sublime.sh"
+			],
+			[
+				"subli",
+				"ide/sublime.sh"
+			],
+			[
+				"ide.s",
+				"ide/sublime.sh"
+			],
+			[
+				"ubuntu",
+				"debian/ubuntu.sh"
+			],
+			[
+				"key",
+				"ide/key.sh"
+			],
+			[
+				"idea",
+				"idea.sh"
+			],
+			[
+				"subl",
 				"ide/sublime.sh"
 			],
 			[
@@ -640,24 +688,8 @@
 				"ide/git.sh"
 			],
 			[
-				"web",
-				"webDesing.sh"
-			],
-			[
-				"subli",
-				"ide/sublime_linux.txt"
-			],
-			[
 				"linu",
 				"ide/sublime_linux.txt"
-			],
-			[
-				"linux",
-				"developer/linux.sh"
-			],
-			[
-				"lubuntu",
-				"debian/lubuntu.sh"
 			],
 			[
 				"ubu",
@@ -670,10 +702,6 @@
 			[
 				"bash",
 				"beeznest/v-learning.sh"
-			],
-			[
-				"ubuntu",
-				"debian/ubuntu.sh"
 			],
 			[
 				"php",
@@ -929,7 +957,7 @@
 		[
 			[
 				"",
-				"/var/www/sites/httrack/httrack/03www.unify-v1.com/unify.sublime-project"
+				"/home/anb/sites/wpandex.html/wpandex.html.sublime-project"
 			]
 		],
 		"width": 380.0

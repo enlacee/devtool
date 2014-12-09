@@ -105,3 +105,6 @@ vim file.srt
 :x
 # apagar monitor
 xset dpms force off 
+
+#apagar PC
+sudo shutdown -h 110

@@ -33,7 +33,10 @@ sudo pip install --upgrade youtube-dl
 # APPLICATION UTIL
 youtube-dl => descarga video
 wkhtmltopdf => de html a pdf :  wkhtmltopdf http file.pdf
+# APPPLICATION DESIGN
 imagemagick => iamgen manage in linux
+gpick => capturar colo and mesclar
+
 -----------------------------------
 -----------------------------------
 :::::: Install App
@@ -47,7 +50,8 @@ remarkable => editor markdown
 shutter => scream shot desktop
 guake => terminal
 transmission => client torrent
-recordmydesktop
+recordmydesktop => grabar escritorio
+ffmpeg => convertidor de formato auido.video
 # second
 vlc
 alarm clock
@@ -69,8 +73,8 @@ uname -m
 :::::: imagemagick
 -----------------------------------
 # URL
-@http://www.imagemagick.org/Usage/thumbnails/ 
 # BASIC
+@http://www.imagemagick.org/Usage/thumbnails/ 
 convert example.png -resize 500×500 example.png
 # BASIC DEFORMA IMAGEN TAMANIO EXACTO
 convert example.png -resize 500×500! example.png
@@ -115,7 +119,7 @@ mplayer
 
 # instalar TAR
  - descomprimier # tar xvf archivo.tar
- - ./config
+ - ./configure
  - make
  - sudo make install
 # cofigurar bluetooh tool
@@ -136,6 +140,10 @@ ffmpeg -i out-3.ogv  -vcodec mpeg4 avi.avi # .avi
 # acodec : audioCodec
 ffmpeg -i input -acodec pcm_s32le yo.wav # pcm_s32le: s32le, pcm_s16le : s16le
 ffmpeg -i wav.wav -f mp2 output.mp3
-
-
-
+-----------------------------------
+:::::: buscar en ubuntu 
+-----------------------------------
+dpkg -L php-pear
+# copiar bin local
+/usr/bin
+/usr/local/bin # recommended

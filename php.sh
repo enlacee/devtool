@@ -42,7 +42,7 @@ console.log("loging")
 EOD
 
 ::::::
-#PEAR
+#PEAR : ubicacion en ubuntu : /usr/share/php/PEAR
 apt-get install php-pear #instalamos pear
 $ sudo pear channel-update pear.php.net #actualizamos los canales
 $ sudo pear list #nos muestra los paquetes instalados
@@ -56,3 +56,8 @@ sudo pecl install xdebug
 #create loader apache
 sudo cp json.ini  xdebug.ini # /etc/php5/mods-available
 sudo ln -s ../../mods-available/xdebug.ini 20-xdebug.ini #/etc/php5/mods-available
+-----------------------------------
+:::::: php shell
+-----------------------------------
+php --version # http://php.net/manual/en/install.pecl.php-config.php
+php-config --version # execute only command assisted
