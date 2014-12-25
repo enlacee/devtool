@@ -61,6 +61,7 @@ git tag -a v1.2 $SHA1
  
 # Subir tags al repositorio
 git push --tags
+git push origin <tag_name>
  
 ##############################################
 # Deshacer el último commit (sin haber hecho push)

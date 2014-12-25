@@ -68,7 +68,8 @@ x = 1
 # permisos para archivos
 chmod 666 log.log
 # directorio
-chmor 755 carpeta
+chmod 755 carpeta
+chmod -R 777 carpeta # recursivo
 
 
 # ver usuarios y eliminarlos

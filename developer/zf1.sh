@@ -25,6 +25,14 @@ zf configure dbadapter "adapter=Pdo_Mysql&username=root&password=123456&dbname=m
 # create table
 zf create dbtable User user
 
+# config for loader modules by defautl
+# 01.IN : application/modules/default/Bootstrap.php
+class Default_Bootstrap extends Zend_Application_Module_Bootstrap
+{
+}
+# 02.IN : application/configs/application.ini
+resources.modules[] =
+
 # --------------------------------------------
 # acceder al modulo promo and default
 http://myzend1.local/promo

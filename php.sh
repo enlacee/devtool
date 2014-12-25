@@ -22,6 +22,7 @@ intl
 :::::: See Shell all libraries install
 -----------------------------------
 php -m
+php -a # code in terminal
 -----------------------------------
 :::::: php.ini 
 -----------------------------------

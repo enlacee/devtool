@@ -43,22 +43,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "\n-- template review\ntwenty-thirteen -> twenty twelve\n\n//var_dump(icl_get_languages('skip_missing=N&orderby=KEY&order=DIR&link_empty_to=str')); exit;\n\nhttp://wpml.org/documentation/getting-started-guide/language-setup/custom-language-switcher/",
-			"settings":
-			{
-				"buffer_size": 242,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "webDesing.sh",
-			"settings":
-			{
-				"buffer_size": 1244,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -128,6 +112,10 @@
 	},
 	"file_history":
 	[
+		"/var/www/html/wpandex/wp-config.php",
+		"/home/anb/sites/devTool/wordpres.sh",
+		"/var/www/html/sites/devTool/wordpres.sh",
+		"/var/www/html/sites/devTool/webDesing.sh",
 		"/home/anb/sites/devTool/webDesing.sh",
 		"/home/anb/sites/devTool/debian/lubuntu.sh",
 		"/home/anb/sites/devTool/developer/linux.sh",
@@ -251,11 +239,7 @@
 		"/w/Accesos.txt",
 		"/var/www/www.subingleslyrics.com/application/modules/video/views/video/_aside1.php",
 		"/var/www/www.subingleslyrics.com/application/modules/video/views/video/_aside2.php",
-		"/var/www/www.subingleslyrics.com/application/modules/video/views/video/_aside3.php",
-		"/var/www/www.subingleslyrics.com/application/views/base_viewx.php",
-		"/var/www/www.subingleslyrics.com/assets/js/modules/video/videoplayer.js",
-		"/var/www/www.subingleslyrics.com/application/core/MY_Loader.php",
-		"/var/www/www.subingleslyrics.com/application/libraries/Dialog.php"
+		"/var/www/www.subingleslyrics.com/application/modules/video/views/video/_aside3.php"
 	],
 	"find":
 	{
@@ -290,6 +274,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tar",
+			"zip",
 			"grunt",
 			"scrot",
 			"apagar",
@@ -415,9 +401,7 @@
 			"/cache",
 			"CACHE",
 			"Recent Works anb",
-			"ci->load->view",
-			"Skeleton",
-			"CodeIgniter Skeleton"
+			"ci->load->view"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -438,151 +422,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"settings":
-					{
-						"buffer_size": 242,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"auto_name": "",
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "webDesing.sh",
-					"settings":
-					{
-						"buffer_size": 1244,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1206,
-								1206
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 285.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

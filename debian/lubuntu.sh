@@ -21,12 +21,6 @@ ln -s /opt/Sublime Text 2/sublime_text /usr/local/bin/sublime
 /usr/share/applications/defaults.list with Sublime:
 # CREATE SUBLIME2.DESKTOP IN 
 /usr/share/applications/sublime2.desktop
-# SUBLIME INSTALL PLUGIN
-- emmet
-- git 
-- Trimmer
-- MarkDown Editing
-
 -----------------------------------
 :::::: LXDE
 -----------------------------------
@@ -52,4 +46,12 @@ openbox --reconfigure
 obconf
 ## refresh settings
 lxpanelctl restart
+
+# configurar theme en lubuntu
+/usr/share/themes
+/usr/share/icons
+# source
+http://gnome-look.org/content/search.php
+
+
 
