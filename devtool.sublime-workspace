@@ -44,21 +44,56 @@
 	"buffers":
 	[
 		{
-			"contents": "que tal si me acompañas a comprar unas vitaminas, ropa,\nvoy ah ir con prima q acaba de llegar de visita.\n\nla intento besar, final de la cita FRASE : espero no creas que soy facil de besar",
+			"file": "/home/anb/sites/devTool/seo.md",
 			"settings":
 			{
-				"buffer_size": 187,
-				"line_ending": "Unix",
-				"name": "que tal si me acompañas a comprar unas vitaminas,"
+				"buffer_size": 6582,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/anb/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 294,
+				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 119.0,
 		"selected_items":
 		[
+			[
+				"previe",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"preview",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"trim",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"trimm",
+				"Trimmer: Trim trailing whitespace."
+			],
 			[
 				"mark",
 				"Markdown Preview: Preview in Browser"
@@ -66,10 +101,6 @@
 			[
 				"markdow",
 				"Markdown Preview: Open Markdown Cheat sheet"
-			],
-			[
-				"pac",
-				"Package Control: Install Package"
 			],
 			[
 				"pack",
@@ -92,10 +123,6 @@
 				"Trimmer: Collapse empty lines."
 			],
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"package",
 				"Package Control: Install Package"
 			],
@@ -104,7 +131,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 540.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -121,6 +148,11 @@
 	},
 	"file_history":
 	[
+		"/home/anb/.config/sublime-text-2/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/home/anb/.config/sublime-text-2/Packages/User/MarkdownPreview.sublime-settings",
+		"/home/anb/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/anb/sites/devTool/ianibal/elizabeth.get.04.01.2015.txt",
+		"/home/anb/sites/devTool/seo.sh",
 		"/home/anb/Descargas/Gone.Girl.2014.HDRip.XviD-SaM[ETRG]/Gone.Girl.2014.HDRip.XviD-SaM[ETRG].nfo",
 		"/home/anb/www/sites/devTool/seo2.sh",
 		"/home/anb/www/sites/devTool/seo.sh",
@@ -138,7 +170,6 @@
 		"/home/anb/sites/devTool/README.html",
 		"/home/anb/sites/wpandex/wp-cron.php",
 		"/home/anb/sites/canopus-master/README.md",
-		"/home/anb/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
 		"/home/anb/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
 		"/home/anb/sites/wordpress/wp-content/plugins/xili-language/readme.txt",
 		"/home/anb/sites/wordpress/wp-content/languages/admin-es_PE.mo",
@@ -244,11 +275,7 @@
 		"/var/www/www.subingleslyrics.com/cron/getDataSubingles.php",
 		"/var/www/www.subingleslyrics.com/application/modules/video/video.php",
 		"/home/anb/sites/scrapython/06.subingles.log",
-		"/home/anb/Escritorio/database.php",
-		"/home/anb/sites/test/php/substr.php",
-		"/media/anb/ACD1-72F9/peliculas/Automata.2014/Automata.2014.HDRip.XviD-SaM[ETRG].nfo",
-		"/media/anb/UUI1/anb/e",
-		"/w/Accesos.txt"
+		"/home/anb/Escritorio/database.php"
 	],
 	"find":
 	{
@@ -283,6 +310,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"CRAWLING",
+			"\n###",
 			"tar",
 			"zip",
 			"grunt",
@@ -408,9 +437,7 @@
 			"truncate_string",
 			"cache/",
 			"/cache",
-			"CACHE",
-			"Recent Works anb",
-			"ci->load->view"
+			"CACHE"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -436,23 +463,59 @@
 			[
 				{
 					"buffer": 0,
+					"file": "/home/anb/sites/devTool/seo.md",
 					"settings":
 					{
-						"buffer_size": 187,
+						"buffer_size": 6582,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								187,
-								187
+								3891,
+								3891
 							]
 						],
 						"settings":
 						{
-							"auto_name": "que tal si me acompañas a comprar unas vitaminas,",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"rulers":
+							[
+								80
+							],
+							"spell_check": true,
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true,
+							"wrap_width": 0
+						},
+						"translation.x": 0.0,
+						"translation.y": 1919.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/anb/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								15
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
