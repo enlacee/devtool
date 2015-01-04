@@ -43,6 +43,15 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "que tal si me acompañas a comprar unas vitaminas, ropa,\nvoy ah ir con prima q acaba de llegar de visita.\n\nla intento besar, final de la cita FRASE : espero no creas que soy facil de besar",
+			"settings":
+			{
+				"buffer_size": 187,
+				"line_ending": "Unix",
+				"name": "que tal si me acompañas a comprar unas vitaminas,"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -112,6 +121,9 @@
 	},
 	"file_history":
 	[
+		"/home/anb/Descargas/Gone.Girl.2014.HDRip.XviD-SaM[ETRG]/Gone.Girl.2014.HDRip.XviD-SaM[ETRG].nfo",
+		"/home/anb/www/sites/devTool/seo2.sh",
+		"/home/anb/www/sites/devTool/seo.sh",
 		"/var/www/html/wpandex/wp-config.php",
 		"/home/anb/sites/devTool/wordpres.sh",
 		"/var/www/html/sites/devTool/wordpres.sh",
@@ -236,10 +248,7 @@
 		"/home/anb/sites/test/php/substr.php",
 		"/media/anb/ACD1-72F9/peliculas/Automata.2014/Automata.2014.HDRip.XviD-SaM[ETRG].nfo",
 		"/media/anb/UUI1/anb/e",
-		"/w/Accesos.txt",
-		"/var/www/www.subingleslyrics.com/application/modules/video/views/video/_aside1.php",
-		"/var/www/www.subingleslyrics.com/application/modules/video/views/video/_aside2.php",
-		"/var/www/www.subingleslyrics.com/application/modules/video/views/video/_aside3.php"
+		"/w/Accesos.txt"
 	],
 	"find":
 	{
@@ -247,7 +256,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"*.*",
@@ -422,8 +431,35 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								187,
+								187
+							]
+						],
+						"settings":
+						{
+							"auto_name": "que tal si me acompañas a comprar unas vitaminas,",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

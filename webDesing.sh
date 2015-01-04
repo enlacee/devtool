@@ -56,3 +56,7 @@ http://bigwilliam.com/turn-off-responsive-behavior-for-bootstrap-3/
 @screen-sm: 0;
 ### step three : compile boostrap: command shell[grunt dist]
 
+
+# comprimir archivos con yuicompressor (js,css)
+java -jar yuicompressor-2.4.8.jar /var/www/html/wpandexen/wp-content/themes/andexone/assets/css/style.css -o file.css
+

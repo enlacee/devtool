@@ -1,0 +1,4 @@
+# install upack by tar
+composer install --prefer-source
+
+composer update = actualizar repositorios
