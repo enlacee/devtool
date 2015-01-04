@@ -2,7 +2,7 @@
 
 
 Este contenido es una recopilacion de tecnicas SEO, que recopile del libro
-Google SEO Secret[^1] : author : Dan Sisson
+Google SEO Secret [^1] : author : Dan Sisson
 
 ## 1. INTRODUCCION SEO
 1ero : preguntarse siempre que le gusta al motor de busqueda google
@@ -166,6 +166,13 @@ es para que google reconosca la frase.
 * Como regla **no usar mas de 2 GUIONES**, de lo contrario lo vera como span 
 cerrara la vista.
 
+
+
+:::python
+    import lifetime
+    
+    for each_day in lifetime.days():
+        carpe_diem()
 
 ***
 
