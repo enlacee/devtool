@@ -181,6 +181,7 @@ como páginas estáticas
 
 
 ### KEYWORDS IN FILE NAMES
+
 * Google observa si las palabras claves se utilizan en los archivos, esto influye
 en el pagerank.
 * Al crear nombre de archivos separemos las palabras con GUION '-' esto
@@ -196,14 +197,16 @@ Esto simplemente no tiene propiedades para ser CRAWLING
 link
 * Si de todas formas vas ah usar flash dejalo muy claro que lo estas
 utilizando con este codigo agrega tus palabras clave tambien aquí.
-    
-    <NOEMBED>My keyword-rich content</NOEMBED> 
+
+    <NOEMBED>My keyword-rich content</NOEMBED>
+
 
 *NOTA:* El tag html `NOEMBED` se utiliza para navegadores que no soportan contenido
 enbebido, actualmente los browser mas usados lo soportan incluso el navegador 
 android
 
 ### About Google Sitemaps
+
 *  Sitemaps es un archivo que lista todas las paginas de tu sitio, cuando tu
 contenido cambia o agregas nuevas paginas
 * En muchos casos no es necesario si tu pagina web tiene links relacionados unos
@@ -218,10 +221,12 @@ ser molestoso.
 ***
 
 ## Chapter 5 -  Optimizacion de tus paginas webs
+
 Google asigna mas puntuacion a paginas que contienen : “country and farm house plans”
 esta puntuacion puede ser inexacto en algunos casos por paises
 
 ### COLOCACION DE LAS PALABRAS CLAVE
+
 * Google revisa los kewwords en
     * en titulo de la pagina
     * en la cabecera
