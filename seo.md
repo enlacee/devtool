@@ -1,10 +1,16 @@
-# SEObook : Google SEO Secrets
+# SEObook : Google SEO Secrets 
 
 
-Este contenido es una recopilacion de tecnicas SEO, que recopile del libro
+Este contenido es una recopilacion de `tecnicas SEO`, que recopile del libro
 Google SEO Secret [^1] : author : Dan Sisson
 
-## 1. INTRODUCCION SEO
+
+***
+
+## Chapter 1 - The Importance of Google
+
+###  INTRODUCCION SEO
+
 1ero : preguntarse siempre que le gusta al motor de busqueda google
  - recordar que a google le gustan las personas ciegas
 
@@ -14,23 +20,27 @@ incrementar tu pageRank.
 Calidad y cantidad de link  hacia otros portales.
 
 
+***
+
+## Chapter 2 - How Google Works
+
 * google prefiere sitios antiguos
 * google pregiere sitios q se crean nuevos contenidos o actualizan a diario
 * google no le gusta link rotos o web caidas "ojo que afecta, puede desaparecer
 en la proxima actulaizacion"
 
-## 2. HOW GOOGLE RANKS PAGES
+### HOW GOOGLE RANKS PAGES
 
 Google se divide en 2 factores
 
 1. On-page (Keywords) : content relevante how, where and when
 2. Off-page (links) : calidad de las paginas refers
 
-RELEVANCIA : Keywords por palabras clave buscado en search google egnime.
-IMPORTANCIA : Importancia porque otros sitios web lo recomiendan con links.
+`RELEVANCIA` : Keywords por palabras clave buscado en search google egnime.
+`IMPORTANCIA` : Importancia porque otros sitios web lo recomiendan con links.
 
-Goggle indexara tu web, pero solo cuando tengas minimo una pagina que linkee a 
-tu web a rankear.
+> Goggle indexara tu web, pero solo cuando tengas minimo una pagina que linkee a 
+> tu web a rankear.
 
 **Cosas que google siempre observara :**
 
@@ -44,7 +54,16 @@ el portal tendra mas oportunidad de posicionamiento.
 6. A menudo tu contenido web debe ser actualizado, al menos 1 vez al mes.
 
 
-## 3. DETERMINAR PALABRAS RELEVANTES
+***
+
+## Chapter 3 – Keyword Research & Analysis
+
+El contexto de la web es una palabra clave `keyword` es el termino que la gente
+ingresa en el motor de busqueda, la gente ingresa frases que consisten en 2 a 5 
+palabras, estos tambien podemos llamarlo `keywords`
+Lo mas importante de los keyword son los mas relevantes
+
+### DETERMINAR PALABRAS RELEVANTES
 
     http://www.keyworddiscovery.com/?id=108400
     http://our.affiliatetracking.net/wordtracker/af.cgi?4562
@@ -88,8 +107,11 @@ resultados intereza poco
 5. About Us page: again, include “house plans” phrase several times on the page
 for the same reason as the Contact Us page
 
+***
 
-## 4. STRUCTURE BY THEME
+## Chapter 4 - Estructura tu sitio correctamente
+
+### STRUCTURE BY THEME
 
 1. Crear pagina debe hablar especificamente de un pais ajustar las palabras
 claves para esto.
@@ -147,15 +169,15 @@ ASI que debes de separar js and css en archivos distintos.
 
 4. Google no sigue links
         
-        http://www.mysite.com/products.php?id=1&style=a
-
-    * Google no sigue link que potencialmente caerán en bucles muy grandes
-    * Google no sigue link si la url contiene ID session
-    * No usar en link :&id : id, sessid, pid,
-    * Simple solucion y mas relevante para google es una pagina estatica
-    * Solucion alternativa crear un mapeo del sitio links
-    NOTA : Google no va a volver a rastrear las páginas dinámicas tan a menudo
-    como páginas estáticas
+    http://www.mysite.com/products.php?id=1&style=a
+* Sí tienes paginas dinamicas los procura que `parametros no sean mas de 2`
+* Google no sigue link que potencialmente caerán en bucles muy grandes
+* Google no sigue link si la url contiene ID session
+* No usar en link :&id : id, sessid, pid,
+* Simple solucion y mas relevante para google es una pagina estatica
+* Solucion alternativa crear un mapeo del sitio links
+NOTA : Google no va a volver a rastrear las páginas dinámicas tan a menudo
+como páginas estáticas
 
 
 ### KEYWORDS IN FILE NAMES
@@ -167,12 +189,147 @@ es para que google reconosca la frase.
 cerrara la vista.
 
 
+### MANTENGASE ALEJADO DE IFRAME Y FLASHS
 
-:::python
-    import lifetime
+Esto simplemente no tiene propiedades para ser CRAWLING
+* Es preferible que si tienes algo de esto, que sea pequeño o enlazarlo con un
+link
+* Si de todas formas vas ah usar flash dejalo muy claro que lo estas
+utilizando con este codigo agrega tus palabras clave tambien aquí.
     
-    for each_day in lifetime.days():
-        carpe_diem()
+    <NOEMBED>My keyword-rich content</NOEMBED> 
+
+*NOTA:* El tag html `NOEMBED` se utiliza para navegadores que no soportan contenido
+enbebido, actualmente los browser mas usados lo soportan incluso el navegador 
+android
+
+### About Google Sitemaps
+*  Sitemaps es un archivo que lista todas las paginas de tu sitio, cuando tu
+contenido cambia o agregas nuevas paginas
+* En muchos casos no es necesario si tu pagina web tiene links relacionados unos
+a otros ENTONCES ahi google siempre indexara todas tus paginas.
+* Pero es buena idea usar este sitemaps para CONTENIDO FLASH y otros parecidos,
+ya que sabemos que estos traen problemas de indexacion :s
+* Tener en cuenta que `si usted a iniciado session en el programa de GOOGLE Sitemaps
+usted esta comprometido a actualizar el archivo MAPA XML` regularmente eso puede 
+ser molestoso.
+
+
+***
+
+## Chapter 5 -  Optimizacion de tus paginas webs
+Google asigna mas puntuacion a paginas que contienen : “country and farm house plans”
+esta puntuacion puede ser inexacto en algunos casos por paises
+
+### COLOCACION DE LAS PALABRAS CLAVE
+* Google revisa los kewwords en
+    * en titulo de la pagina
+    * en la cabecera
+    * en el cuerpo body text
+    * en links
+    * en imagenes con `ALT` TEXT
+
+### EL PROTAGONISMO DE LAS PALABRAS CLAVE 'keywords'    
+
+Una medida de cuán temprano o tarde seran encontrados los `keywords` es
+* Tener keywords en la primera Cabecera `<h1>`
+* tener keywords en el primer parrafo `<p>` las primeras 20 palabras o menos.
+dentro de una pagina esto sera lo mejor.
+
+### LA DENSIDAD DE KEYWORDS
+
+Tambien conocido como el peso de la palabra clave.
+La densidad de las palabras en tu contenido no es muy importante pero ten encuenta
+que :
+* si tienes demaciados keywords google lo considara span
+* antes los motores consideraban esto como importante, ahora no lo es.
+
+### FORMATEAR DE KEYWORDS : no tan relevante : pero todo suma
+
+* Una medida tambien es dar **negrita** o *cursica* en la pagina
+enfocate solo en `Primary Keyword Phrase` y el mejor `Secondary Keyword` usa el tu
+producto servicio para enfocarte lo mas especifico posible a los `keywords`
+*NOTA*: Google trata a home/plants o home_plants como si fuera una sola palabra
+`homeplants` para que la trata como 2 palabras separadas no olvides:
+
+    home-plants
+
+* Google no hace diferencia 'sensitivo', en caso de mayusculas y minusculas
+HOME PLANTS
+home plants
+HoMe PlAnTs   
+todo esto es tratado de la misma forma.
+
+### The Importance of Title Text
+
+* Es muy importante tener los keywords aqui.
+* Los keywords `META` son ignorados por GOOGLE
+* Concentrate en fortalecer los titulos de cada pagina
+* `El titulo que se debe considerar, no debe ser mas 9 palabras  o  60 caracteres`
+las palabras claves siempre usarla en el principio
+* GOOGLE busca palabras relevantes, esto significa que tu no debes incluir 
+el nombre de la compañia al inicio si lo quieres hacer ponlo al ultimo
+* Lo siguiente muestra lo apropiado y no apropiado para uso de titulo:
+    * Improper Title : *Titulo Inapropiado*
+    * Proper Title : *Titulo apropiado*
+
+| Web page   | Improper Title | Proper Title |
+|------------|----------------|--------------|
+|Home page   |“Home”          |“Unique house plans, home plans & home designs”|
+|Contact page|“Contact us”    |“Contact us for questions about our house plans”|
+|About page  |“About us”      |“We are all about house plans”|
+|Links page  |“Links”         |“Links to more information about house plans”|
+
+Puedes usar keywords relevante en cada titulo en cada pagina de tu sitio.
+Mucha gente comete este error.
+
+### Escribir convincenteménte el titulo
+
+Se ve que desafortunadamente hay muchos titulos spam, con el fin de tener mejores
+resultados en PAGERANK puedes serparar el titulo con comas, o no.
+Esto servirar para diferenciarte de los demas ya que cambiar el formato del 
+anuncio que google mostrara
+exmaple lo que esto significa escribir convincentemente:
+
+**Ho-hum title:**
+House plans, home plans, home floor plans, home design plans, plans
+**Compelling title:**
+Unique home & house plans: dream homes start with `great floor plans`
+
+* Vamos si tu estableces unas cuantas diferencias en el titulo de tus paginas
+esto ayudara a diferenciarte y sobresalir en el PageRank con el tiempo.
+
+
+### Best Practices for Creating Titles
+
+Estas son las mejores practicas que debes de seguir para crear titulos
+en tus paginas.
+1. Each page should have a `unique title.`
+2. Try to include your `Primary Keyword Phrase` in every title of every page.
+3. Begin the title of your home page with your `Primary Keyword Phrase`,
+followed by your best `Secondary Keyword Phrases`.
+4. Use more specific variations to your Primary Keyword Phrase on your
+specific product, service, or content pages.
+5. If you must include your company name, put it at the end of the title.
+6. Use the best form, plural or singular, for your keywords based on what
+KeywordDiscovery or WordTracker says is searched on more often.
+7. Don’t overdo it – `don’t repeat your keywords more than two times` in the title.
+8. Make sure the <TITLE> tag is the first element in the <HEAD> section of your
+page – this makes it easier to find by Google.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ***
 
