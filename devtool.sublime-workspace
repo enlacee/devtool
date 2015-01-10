@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ke",
+				"keywords"
+			],
+			[
 				"pu",
 				"public"
 			],
@@ -47,15 +51,7 @@
 			"file": "/home/anb/sites/devTool/seo.md",
 			"settings":
 			{
-				"buffer_size": 6582,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/anb/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 294,
+				"buffer_size": 12579,
 				"line_ending": "Unix"
 			}
 		}
@@ -63,16 +59,24 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 119.0,
+		"height": 56.0,
 		"selected_items":
 		[
 			[
-				"previe",
-				"GitHub Flavored Markdown: Preview"
+				"install",
+				"Package Control: Install Package"
 			],
 			[
 				"remove",
 				"Package Control: Remove Package"
+			],
+			[
+				"previ",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"previe",
+				"GitHub Flavored Markdown: Preview"
 			],
 			[
 				"preview",
@@ -80,10 +84,6 @@
 			],
 			[
 				"pac",
-				"Package Control: Install Package"
-			],
-			[
-				"install",
 				"Package Control: Install Package"
 			],
 			[
@@ -148,6 +148,7 @@
 	},
 	"file_history":
 	[
+		"/home/anb/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 		"/home/anb/.config/sublime-text-2/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
 		"/home/anb/.config/sublime-text-2/Packages/User/MarkdownPreview.sublime-settings",
 		"/home/anb/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
@@ -274,8 +275,7 @@
 		"/var/www/www.subingleslyrics.com/bootstrap.php",
 		"/var/www/www.subingleslyrics.com/cron/getDataSubingles.php",
 		"/var/www/www.subingleslyrics.com/application/modules/video/video.php",
-		"/home/anb/sites/scrapython/06.subingles.log",
-		"/home/anb/Escritorio/database.php"
+		"/home/anb/sites/scrapython/06.subingles.log"
 	],
 	"find":
 	{
@@ -310,6 +310,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"My keyword-rich content",
+			"primary",
+			"[^1]",
 			"CRAWLING",
 			"\n###",
 			"tar",
@@ -434,10 +437,7 @@
 			"player",
 			"zoomer",
 			"getStreamMap",
-			"truncate_string",
-			"cache/",
-			"/cache",
-			"CACHE"
+			"truncate_string"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -466,15 +466,15 @@
 					"file": "/home/anb/sites/devTool/seo.md",
 					"settings":
 					{
-						"buffer_size": 6582,
+						"buffer_size": 12579,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3891,
-								3891
+								12579,
+								12579
 							]
 						],
 						"settings":
@@ -491,34 +491,7 @@
 							"wrap_width": 0
 						},
 						"translation.x": 0.0,
-						"translation.y": 1919.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/anb/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
-					"settings":
-					{
-						"buffer_size": 294,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15,
-								15
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 6019.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

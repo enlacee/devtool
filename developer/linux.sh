@@ -1,6 +1,8 @@
 tail -F license.txt
 find $HOME \! -iname "*.tif"
 find -name "*.jpg"
+# buscar carpeta firefox
+sudo find / -name firefox -print
 -----------------------------------
 :::::: configurar disco permission
 -----------------------------------
