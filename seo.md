@@ -380,12 +380,15 @@ la imagem
 
 ### Ecenario IDEAL
 
-1. Texto base (Ideal) link estructurado:
-    
+* Texto base (Ideal) link estructurado:
+
+
     <A HREF=”your-keywords.html”>your keywords</A>
 
-2. Grafico Link estructurado:
-    
+
+* Grafico Link estructurado:
+
+
     <A HREF=”your-keywords.html”>
     <IMG SRC=”your-keywords.gif” ALT=”your keywords” BORDER=”0”></A>
 
@@ -442,7 +445,7 @@ Las paginas importantes estan siendo vinculadas a partir de todas las otras
 paginas, pero no todas las paginas se apuntan entre si.
 Esto concentra el pageRank en las paginas mas importantes.
 
-![ 1 vinculacion jerarquica](https://lh4.googleusercontent.com/8cb-l5df-4i7_5UABlv-Ut1VaHKL58RVMA4IjafP3lZlVWM0LT6IhJKVk7m7CbbyAHelaA)
+![ 1 vinculacion jerarquica](http://i59.tinypic.com/dddp4l.jpg)
 *Solo paginas importantes se linkean entre , y consigue enlaces de otras 
 paginas*
 
@@ -450,7 +453,8 @@ paginas*
 Es cuando las paginas son consideradas de igual importancia y se enlazan entre 
 si para que dividan la importancia en partes iguales.
 
-![2 malla de vinculacion](https://lh5.googleusercontent.com/CrVNUcjSP2bRSF4xGEshwxcFIbKdAXyN5oTQqeih_cy3O7Vz0c_bSJCO_5XS7XoEPK-JKw)
+
+![2 malla de vinculacion](http://i58.tinypic.com/1252o9l.jpg)
 
 ### Mejores practicas para la vinculacion Interna
 
