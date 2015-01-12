@@ -324,6 +324,7 @@ page – this makes it easier to find by Google.
 
 
 ### Meta Description
+
 that not is a factor for ranking, pero esforcemonos en llenar 
 el meta tags.
 
@@ -380,14 +381,12 @@ la imagem
 
 ### Ecenario IDEAL
 
-* Texto base (Ideal) link estructurado:
-
+Texto base (Ideal) link estructurado:
 
     <A HREF=”your-keywords.html”>your keywords</A>
 
 
-* Grafico Link estructurado:
-
+Grafico Link estructurado:
 
     <A HREF=”your-keywords.html”>
     <IMG SRC=”your-keywords.gif” ALT=”your keywords” BORDER=”0”></A>
@@ -446,10 +445,12 @@ paginas, pero no todas las paginas se apuntan entre si.
 Esto concentra el pageRank en las paginas mas importantes.
 
 ![ 1 vinculacion jerarquica](http://i59.tinypic.com/dddp4l.jpg)
-*Solo paginas importantes se linkean entre , y consigue enlaces de otras 
-paginas*
 
-2. MAlla de vinculacion
+
+**Solo paginas importantes se linkean entre , y consigue enlaces de otras 
+paginas**
+
+2. **Malla de vinculacion**
 Es cuando las paginas son consideradas de igual importancia y se enlazan entre 
 si para que dividan la importancia en partes iguales.
 
@@ -471,11 +472,13 @@ No uses `click here` or `Home` como texto del link, esto no es relevante.
         * Ayuda al crawel de google a encontrar tus paginas rapidamente.
         * mejora la busqueda al encontrar lo necesitas rapido.
         * Ayuda a distribuir el pageRank de tus paginas importantes.
+
 `
 TIP: normalmente tu home sera el mas importante, desde tu home no permitas
 que salgan links hacia paginas externas que no sean de tu dominio. esto podra
 bajar tu PageRank.
 `
+
 4. LInk no relevante solo debe regresar al inicio al home.
 estas paginas no relevantes son las que no tienen keywords ricos y no contienen
 informacion relevante para el visitante, y tu no quieres que estas paginas
@@ -502,10 +505,10 @@ maximizar tu PageRank para tus paginas importantes.
 
 8. Siempre usa URL ABSOLUTA para enlazar a tu Home
 
-nota el `wwww`
+NOTA: el `wwww`
 
-uso incorrecto : `index.html`
-uso correcto : `http://www.yourdomain.com/index.html`
+Uso incorrecto : `index.html`
+Uso correcto : `http://www.yourdomain.com/index.html`
 
 Si lo haces de la manera incorrecta google tendra problemas en asignar
 un exacto valor PageRank a tu pagina.
