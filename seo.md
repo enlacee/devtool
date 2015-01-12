@@ -323,6 +323,200 @@ KeywordDiscovery or WordTracker says is searched on more often.
 page – this makes it easier to find by Google.
 
 
+### Meta Description
+that not is a factor for ranking, pero esforcemonos en llenar 
+el meta tags.
+
+    <META NAME="Description" CONTENT="Your best sales pitch here">
+
+* google usa los primeros `160` caracteres o tambien `25` palabras de `META 
+description` 
+* Lo mejor venta es con `25 palabras o menos`
+
+### Etimologia de la palabra
+
+* Esto es cuando usas la palabra en su sinonimo , singulat, plural, esto puede 
+ayudar o jugar en contra.
+* Ponte a pensar si tu pagina lo necesita
+example:
+    * house plan
+    * house planning
+    * house planner
+* Este rankeo de puede variar dependiento si la pagina esta sobre el tiempo
+
+
+### Analisis Semantico latente *LSA* or *LSI*
+
+Tecnologia que le permite a google analizar la cantidad de palbras claves relacionadas a lo largo del contenido web.
+
+Es una tecnologia compleja, el efecto de **LSI** que aporta a tu ranking
+
+`Esto significa que tu RANKING puede ser mejor si relacionas tus *keywords* o
+palabras clave`
+
+Estos keywords minimo 1 debe estar en tu pagina
+
+
+### Use Keywords en los siguientes Lugares
+
+El primero al cuarto items son los mas inportantes
+google busca el title y link anchor mas que en otras ubicaciones.
+
+1. **Title :**  `<TITLE>keywords</TITLE>` keywords debe aparecer en el primer 
+o segundo lugar.
+2. **Link (anchor) text :** `<A HREF>keywords</A>`
+3. **Heading :** `<H1>keywords</H1>, <H2>keywords</H2>`
+4. **Primer parrafo de la pagina :** las primeras 20 palabras 
+`<BODY><P>keywords</P>` Negrita y/o italica para las palabras claves.
+5. **Ultimo parrafo de la pagina :** `<P>keywords </P></BODY>`
+6. **Combo box o caja de seleccion : ** 
+'<FORM><OPTION>keywords</OPTION></FORM>`
+7. **URLs :** <A HREF=”http://www.keywords.com/”></A>
+8. **Carpetas y nombre de archivos :** `keywords/keywords.html, keywords.gif`
+9. **Imagenes ALT text :** `<IMG SRC=” ” ALT=”keywords” >` esto para graficar 
+la imagem
+
+*Observacion*: trata de usar solo link no uses button u otro tipo de grafico, mira los keyword que contienen el LINK anchor text.
+
+### Ecenario IDEAL
+
+1. Texto base (Ideal) link estructurado:
+    
+    <A HREF=”your-keywords.html”>your keywords</A>
+
+2. Grafico Link estructurado:
+    
+    <A HREF=”your-keywords.html”>
+    <IMG SRC=”your-keywords.gif” ALT=”your keywords” BORDER=”0”></A>
+
+
+### Que es lo que Google Ignora
+
+Amigo no abuse de los metatags estas son cosas del pasado de Google.
+
+Informacion en el `<META name= “Keywords”>` tag
+1. Information in all other META tags (see META “Description” tag caveat)
+2. Information within the <!—Comments --> tag
+3. Information within the <STYLE>
+4. Information within <SCRIPT> tags (JavaScript and other client-side code)
+5. Duplicate links to the same page (only counted once)
+6. Links that point to the same page they are on
+7. Any graphics or multimedia (menu buttons, photos, animations, Flash)
+8. Stop words (“a”, “the”, “is”, etc), single letters and numbers, punctuation.
+
+
+
+## Capitulo 6 - Linkeando tus paginas para unirlas
+
+En este punto enteremos porque importa que tus paginas estean vinculadas 
+en conjunto.
+
+**PageRank** es un valor numero que google establece como una pagina Importante
+en la web.
+
+El **PageRank** es determinado por por la cantidad de links entrantes que
+apuntan a la pagina.
+
+Cuando una pagina linkea a otra, Este es un efecto llamado `Casting a vote OR
+casting por votos`.
+
+A mas enlaces entrantes (votos) haya para una pagina, para google esta
+es la pagina mas importante
+
+### Jerarquia de links internos
+
+hay dos principales tipos
+
+1. **Vinculacion Jerarquica** 
+Esto consiste cuando uno o mas paginas de tu web apunta a tu HOME considerado
+el mas importante que otras,
+Las paginas importantes estan siendo vinculadas a partir de todas las otras
+paginas, pero no todas las paginas se apuntan entre si.
+Esto concentra el pageRank en las paginas mas importantes.
+
+![ 1 vinculacion jerarquica](https://lh4.googleusercontent.com/8cb-l5df-4i7_5UABlv-Ut1VaHKL58RVMA4IjafP3lZlVWM0LT6IhJKVk7m7CbbyAHelaA)
+*Solo paginas importantes se linkean entre , y consigue enlaces de otras 
+paginas*
+
+2. MAlla de vinculacion
+Es cuando las paginas son consideradas de igual importancia y se enlazan entre 
+si para que dividan la importancia en partes iguales.
+
+![2 malla de vinculacion](https://lh5.googleusercontent.com/CrVNUcjSP2bRSF4xGEshwxcFIbKdAXyN5oTQqeih_cy3O7Vz0c_bSJCO_5XS7XoEPK-JKw)
+
+### Mejores practicas para la vinculacion Interna
+
+1. Usar solo texto en los links y si es posible usa el proposito de la
+`estructura de link`
+
+2. Usar Keywords en los links text para todos los links.
+No uses `click here` or `Home` como texto del link, esto no es relevante.
+
+3. Enlaza desde tu home or `pagina mapeada links *sitemap*`
+    * Si tu pagina es pequeña (10 pags) usa links desde tu home.
+    * si tu pagina es grande usa **sitemap**, este sitemap funciona como
+    el index de tu web y es de gran importancia:
+        * Ayuda al crawel de google a encontrar tus paginas rapidamente.
+        * mejora la busqueda al encontrar lo necesitas rapido.
+        * Ayuda a distribuir el pageRank de tus paginas importantes.
+`
+TIP: normalmente tu home sera el mas importante, desde tu home no permitas
+que salgan links hacia paginas externas que no sean de tu dominio. esto podra
+bajar tu PageRank.
+`
+4. LInk no relevante solo debe regresar al inicio al home.
+estas paginas no relevantes son las que no tienen keywords ricos y no contienen
+informacion relevante para el visitante, y tu no quieres que estas paginas
+reciban mucha puntuacion PageRank que tus paginas importantes.
+examples :
+    * “Copyright” page
+    * “Privacy Policy” Page
+    * “Disclaimers” Page
+    * “About Us” page
+    * “Contact Us” page
+    * Order form, shopping cart pages
+    * “Link to Us” page
+    * “Testimonials” page
+
+Estas paginas debe de concentrar el PageRAnk al home. Recuerda que tu quieres
+maximizar tu PageRank para tus paginas importantes.
+
+5. Enlaza a tu pagina a cada otra pagina
+`Si tienes muchos links salientes a otros website` y son de calidad, no hay problema mientras no sean tantos, si tienes mas de 100 y no sean de mucha calidad para evitar que tu PageRank disminulle distribulle los enlaces salientes en varias paginas.
+
+6. Enlaza solo entre paginas que estan relacionados por keywords
+
+7. Asegurate de que cada pagina enlace al menos a otra pagina.
+
+8. Siempre usa URL ABSOLUTA para enlazar a tu Home
+
+nota el `wwww`
+
+uso incorrecto : `index.html`
+uso correcto : `http://www.yourdomain.com/index.html`
+
+Si lo haces de la manera incorrecta google tendra problemas en asignar
+un exacto valor PageRank a tu pagina.
+
+9. Usa `Bread Crumb` enlace de navegacion
+Efectivamente los links de navegacion  mejoran tus paginas esto provee keywords
+rich en los links internos, Y asiste al visitante al visitante a determinar
+exactamente en donde esta en el sitio.
+
+Esta popular tecnica llamada `BREAD CRUMMBS`,
+
+NOTA: con esto puedes incrementar  el contenido de enlaces con keywords-rich.
+
+10. Use EL `NOFOLLOW` atributo del enlace `link`
+EL `rel="NOFOLLOW"` este atributo en un link usado en blogs y foros para bloquear a **GOOGLE SPIDER** a seguir al link,
+Por lo tanto esto bloquea el paso de la puntuacion PageRank. esto reduce los 
+link spamming.
+
+Tu puedes usar el atributo NOFOLLOW  para tu ventaja para canalizar solo el
+pageRank de las paginas importantes.
+
+    <A HREF="yourpageURL" rel="NOFOLLOW">
+
 
 
 
@@ -337,6 +531,3 @@ page – this makes it easier to find by Google.
 
 
 ***
-
-[^1]: book escrito en ingles hasta el momento.
-[^2]: proceso de rastreo de las paginas que google realiza.

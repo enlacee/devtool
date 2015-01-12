@@ -18,6 +18,13 @@ For install C-SHARP is necesary something of documentation:
 #### 02 test code in ubuntu
 
 * Compile use mcs
+
     mcs hello.cs
+
 * Run exe
+    
     mono hello.exe
+
+
+
+

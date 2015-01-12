@@ -53,5 +53,10 @@ lxpanelctl restart
 # source
 http://gnome-look.org/content/search.php
 
+# Reparar o restaurar default PANEL lubuntu
+sudo cp /usr/share/lxpanel/profile/Lubuntu/panels/panel ~/.config/lxpanel/Lubuntu/panels
+
+sudo chown owner:group  ~/.config/lxpanel/Lubuntu/panels/panel
+lxpanelctl restart
 
 

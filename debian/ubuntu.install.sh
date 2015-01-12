@@ -97,11 +97,11 @@ hcitool dev # ver dispositivos (see devices)
 # convertir a .MKV because error to format direct MP4
 ./ffmpeg -i input.ogv -c:v huffyuv -c:a pcm_s16le output.mkv # .mkv
 # -vcodec : videoCodec
-ffmpeg -i out-3.ogv -q:v 3 avi.avi # best convert .avi
-ffmpeg -i out-3.ogv  -vcodec mpeg4 avi.avi # .avi
+ffmpeg -i out-3.ogv -q:v 3 avi.avi # camtasia  *hight-quality* convert .avi
+ffmpeg -i out-3.ogv  -vcodec mpeg4 avi.avi # low *low-quality* and many weidth .avi
 
 # acodec : audioCodec
-ffmpeg -i input -acodec pcm_s32le yo.wav # pcm_s32le: s32le, pcm_s16le : s16le
+ffmpeg -i input -acodec pcm_s32le yo.wav # camtasia pcm_s32le: s32le, pcm_s16le : s16le
 ffmpeg -i wav.wav -f mp2 output.mp3
 #-----------------------------------
 #:::::: buscar en ubuntu 

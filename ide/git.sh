@@ -4,6 +4,9 @@ ssh-keygen
 git config --global user.name "Anibal Copitan"
 git config --global user.email johndoe@example.com
 git config --global color.ui true
+# ver las configuraciones echas
+git config -l
+
 # omitir de permisos git : How do I make Git ignore file mode (chmod) changes?
 git config core.fileMode false
 git config --global core.filemode false
@@ -34,13 +37,16 @@ git stash branch nuevaramaStash # crea una rama apartir del stash
 
 git push --all
 git push --tags
+
+# Deshace todos los cambios actuales hasta el ultimo commit
+git reset --hard
 # retornar al commit anterior (SNAPSHOT commit)
 git reset --hard
 git reset --hard HEAD~3
 git reset --hard f414f31
 git reset --hard ORIG_HEAD
 
-# retornar ah al cambio anterior sin tocar el head,
+# retornar a  al cambio del anterior commit sin tocar el head,
 # dandote la opcion de hacer checkout
 git reset --soft #hash
 
