@@ -403,9 +403,9 @@ Informacion en el `<META name= “Keywords”>` tag
 
 2. Information within the tag <!--Comments--> 
 
-3. Information within the <STYLE>
+3. Information within the `<STYLE>`
 
-4. Information within <SCRIPT> tags (JavaScript and other client-side code)
+4. Information within `<SCRIPT>` tags (JavaScript and other client-side code)
 
 5. Duplicate links to the same page (only counted once)
 
