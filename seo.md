@@ -395,13 +395,21 @@ la imagem
 Amigo no abuse de los metatags estas son cosas del pasado de Google.
 
 Informacion en el `<META name= “Keywords”>` tag
+
 1. Information in all other META tags (see META “Description” tag caveat)
-2. Information within the <!—Comments --> tag
+
+2. Information within the tag <!--Comments--> 
+
 3. Information within the <STYLE>
+
 4. Information within <SCRIPT> tags (JavaScript and other client-side code)
+
 5. Duplicate links to the same page (only counted once)
+
 6. Links that point to the same page they are on
+
 7. Any graphics or multimedia (menu buttons, photos, animations, Flash)
+
 8. Stop words (“a”, “the”, “is”, etc), single letters and numbers, punctuation.
 
 
