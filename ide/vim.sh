@@ -50,7 +50,7 @@ set expandtab
 set ts=4
 set autoident
 #HOTKEY
-^ = SHIFT+` (costado de la tecla enter +)
+^ = SHIFT+ '`' (costado de la tecla enter +)
 $ = SHIFT+4 (numeral)
 #eliminar segun patron
 ci+' = elimina parrafo que inicie y termine con ''
@@ -59,8 +59,7 @@ ci+{ = elimina parrafo o lines de '{' a '}'
 d+$ = elimina hasta el final
 
 # vim tutor
-vimtutor es
-=======
+# vimtutor es
 # insert text
 a = append text after the cursor (despues del cursor)
 A = append text end of the line (al final de la lineak)
@@ -113,3 +112,24 @@ L		= pasa letra a letra
 n					= para pasar
 
 :g/palabra/s//remplazar
+
+# configuracion por defecto en vim con .vimrc
+# crear .vimrc en /home/anb
+syntax on
+set number
+set expandtab
+set tabstop=4
+retab
+## navegacion del documento
+gg # llevara el cursos al inicio
+G # ultima linea del documento
+## navegacion en palabras
+w  # en palabras hacia adelante
+e # la proxima palabra al final
+b # en palabras hacia atras
+CTRL + U # movimiento de pagina UP
+CTRL + D # movimeinto pagina DOWN
+## CURSOR EL LA PANTALL
+H : inicio de la pantalla
+M : medio de la pantalla
+L : final 

@@ -91,5 +91,22 @@ git show #hash(tree,blob,text,other)
 # buscar commit por fecha
 git log --since="2012-01-01"
 git log --until="2012-01-01"
+# ver cambios en los archivos con lista de commit
+git log --stat
 # buscar algo en log (util si estableces patron de nombres)
 git log --grep="fix"
+#---
+# Configuracion : alias en .gitconfig
+[alias]
+    s = status
+# por comando
+git config --global alias.a add
+git config --global alias.co checkout
+git config --global alias.cm commit
+
+# guardar cambios en memoria
+git stash
+git stash list # lista todo los stash echos
+git apply # aplica el ultimo cambio de memoria
+# agregar cambios INTERACTIVO
+git add -i

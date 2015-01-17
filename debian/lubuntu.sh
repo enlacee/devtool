@@ -59,4 +59,6 @@ sudo cp /usr/share/lxpanel/profile/Lubuntu/panels/panel ~/.config/lxpanel/Lubunt
 sudo chown owner:group  ~/.config/lxpanel/Lubuntu/panels/panel
 lxpanelctl restart
 
+# limpiar carpetas recientes : pcmanfm
+ echo > ~/.local/share/recently-used.xbel
 

@@ -1,3 +1,4 @@
+
 -----------------------------------
 :::::: install php plugin
 -----------------------------------
@@ -62,3 +63,6 @@ sudo ln -s ../../mods-available/xdebug.ini 20-xdebug.ini #/etc/php5/mods-availab
 -----------------------------------
 php --version # http://php.net/manual/en/install.pecl.php-config.php
 php-config --version # execute only command assisted
+
+# configurar date.timezone
+date.timezone = America/Lima
