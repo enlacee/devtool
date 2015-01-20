@@ -417,9 +417,9 @@ Informacion en el `<META name= “Keywords”>` tag
 
 ***
 
-['Capito 6'](devtool/blob/master/developer/seo/pages/capitulo-6.md)
+['Capito 6'](/devtool/blob/master/developer/seo/pages/capitulo-6.md)
 
-['Capito 7'](devtool/blob/master/developer/seo/pages/capitulo-7.md)
+['Capito 7'](/devtool/blob/master/developer/seo/pages/capitulo-7.md)
 
 
 
