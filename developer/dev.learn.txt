@@ -15,11 +15,11 @@ table-responsive <div></div> video : 3.3.1
 - google calendar API
 - postgress
 - laravel
-- TILDE
+- TIDE
 -----------------------------------
 :::::: other
 -----------------------------------
-- # INSTALAR TILDE : para ejecutar app Workana
+- # INSTALAR TIDE : para ejecutar app Workana
 sudo apt-get install libjpeg62-dev
 -https://github.com/sorich87/bootstrap-tour
 
