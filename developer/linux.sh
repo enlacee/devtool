@@ -99,6 +99,8 @@ gateway 192.168.1.1
 
 
 (192.168.0.0 - 192.168.255.255).
+# ver codificacion
+file -i file.html
 # cambiar el formato ascci to utf8
 file index.html
 # en vim

@@ -110,3 +110,6 @@ git stash list # lista todo los stash echos
 git apply # aplica el ultimo cambio de memoria
 # agregar cambios INTERACTIVO
 git add -i
+# reducir tamaño de .git
+git reflog expire --all --expire=now
+git gc --prune=now --aggressive

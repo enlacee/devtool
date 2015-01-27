@@ -42,9 +42,58 @@ fat     = 1g = 9cal
 Comer al dia *23 porciones de 100calorias*
 Calcular las porciones adecuadas:
 
+CONBINACION IDEAL 50:30:20 = 50.carbs|30.protein|20.fat
+
 - carboidratos  = 23 * 0.5% = 12 porciones -> 1200cal
 - proteinas     = 23 * 0.3% = 7  porciones -> 700cal
 - grasa         = 23 * 0.2% = 5  porciones -> 500cal
+
+# 07 - Dividir calorias en comidas
+DESAYUNO
+    - leche (100g)
+        - carbs     = 12.3g     = 49
+        - protein   =  3.7g     = 15
+        - fat       =  6.5g     = 58.5
+        - TOTAL                 = 122.5cal
+    - pan blanco(100g)
+        - carbs     = 51.5      = 222
+        - protein   =  8.4      = 33.6
+        - fat       =  1.6      = 14.4
+        - TOTAL                 = 270cal
+    - manzana(100g)
+        - carbs     = 11.5      = 46
+        - protein   =  0.3      = 1.2
+        - fat       =  0.3      = 2.7
+        - TOTAL                 = 50cal
+
+ALMUERZO
+    - arroz blanco(100g)
+        - carbs     = 81.6      = 326.4
+        - protein   =  6.6      = 26.4
+        - fat       =  0.9      = 8.1
+        - TOTAL                 = 360.9cal
+
+    - Mango(100g)
+        - carbs     = 12.5      = 50
+        - protein   =  0.6      = 2.4
+        - fat       =  0.4      = 3.6
+        - TOTAL                 = 56cal    
+
+    - huevo de gallina(100g)
+        - carbs     = 0.6       = 2.4
+        - protein   = 12.6      = 50.4
+        - fat       = 12        = 108
+        - TOTAL                 = 160.8cal
+
+- desayuno  = 600
+- almuerzo  = 800
+- precena   = 200
+- cena      = 400
+- postCena  = 200
+
+
+## Dato
+1kg de grasa = 7200 calorias
 
 
 

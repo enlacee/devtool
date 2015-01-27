@@ -60,3 +60,40 @@ http://bigwilliam.com/turn-off-responsive-behavior-for-bootstrap-3/
 # comprimir archivos con yuicompressor (js,css)
 java -jar yuicompressor-2.4.8.jar /var/www/html/wpandexen/wp-content/themes/andexone/assets/css/style.css -o file.css
 
+# comprimir html
+java -jar htmlcompressor-1.5.3.jar --preserve-comments --type html -o index.min.html index.html
+
+################
+# CSS  fonts
+# 
+/*
+ * Web Fonts from thesitewhereyougotit.com
+ *
+ * Font copyright information, which you should 
+ * never delete and should always be included 
+ * in your CSS where ever you call the fonts files. 
+ * Copyrights matter.
+ *
+ */
+
+@font-face {
+ font-family: 'FontName';
+ src: url('FontName.eot');
+ src: url('FontName.eot?#iefix') format('embedded-opentype'),
+ url('FontName-webfont.woff') format('woff'),
+ url('FontName-webfont.ttf') format('truetype'),
+ url('FontName-webfont.svg#FontName') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+
+# fix centrar tabla
+div.centered {
+    text-align: center;
+}
+
+div.centered table {
+    margin: 0 auto;
+    text-align: left;
+}
