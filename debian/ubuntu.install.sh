@@ -79,6 +79,11 @@ sudo add-apt-repository ppa:gwibber-daily/ppa
 #reproducir musica por terminal
 mplayer
 # grabar voz SOX
+# 1. install sox
+rec -b 32 -r 192000 myvoice.wv
+# 2. sox better
+sox -t alsa default test.wav
+mplayer test.wav
 
 # instalar TAR
  - descomprimier # tar xvf archivo.tar
@@ -117,3 +122,5 @@ sudo apt-get install mkvtoolnix
 # extraer track srt (buscar)
 # mkvextract tracks friends.s05e01.720p.bluray.x264-mrs.sujaidr.mkv 2:srt2.srt
 mkvextract tracks <your_mkv_video> <track_numer>:<subtitle_file.srt>
+# error ubuntu cuando bloquea
+sudo rm /var/cache/debconf/*.dat 

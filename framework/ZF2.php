@@ -122,7 +122,12 @@ die;
 :::::::: FORM
 ------------------------------
 $form->setData($request->getPost());
-
+------------------------------
+:::::::: llamar a un helper en la vista
+------------------------------
+$hash =  $this->hashids()->encode(12);
+// or
+$this->plugin("hashids")->encode(12);
 
 
 

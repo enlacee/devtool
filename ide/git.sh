@@ -1,5 +1,10 @@
 # ssh key generate
 ssh-keygen
+ssh-add
+# step1 : https://help.github.com/articles/generating-ssh-keys/
+# bug : https://help.github.com/articles/error-agent-admitted-failure-to-sign/
+
+
 # basic
 git config --global user.name "Anibal Copitan"
 git config --global user.email johndoe@example.com
@@ -16,6 +21,8 @@ git -c core.fileMode=false diff
 git remote add origin https://github.com/user/repo.git
 git remote -v
 gir remote rename remoteAntes remoteDespues
+# change remote
+git remote set-url origin git@github.com:enlacee/chamilo-lms.git
 # cambiar origin ()
 git remote rm origin
 git remote add origin git@github.com:enlacee/chamilo-lms.git

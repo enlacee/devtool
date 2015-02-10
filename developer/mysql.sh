@@ -48,3 +48,22 @@ character-set-server=utf8
 collation-server=utf8_general_ci  
 # ALTER by table
 alter table <some_table> convert to character set utf8 collate utf8_unicode_ci;
+# show databases;
+# CREAR USUARIO MYQSL
+CREATE USER 'redmine'@'localhost' IDENTIFIED BY '123456';
+# dando privilegios
+GRANT ALL PRIVILEGES ON * . * TO 'redmine'@'localhost';
+# eliminar base de datos
+DROP DATABASE redmine_dev;
+# reiniar mysql
+sudo /etc/init.d/mysql restart
+# otros mysql
+service mysqld status
+service mysqld stop
+service mysqld start 
+
+# mysqld.sock
+[client]
+port        = 3306
+#socket     = /var/run/mysqld/mysqld.sock
+socket      = /var/lib/mysql/mysql.sock

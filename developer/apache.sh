@@ -21,3 +21,7 @@ RewriteRule ^(.*)$ http://www.your-site.com/$1 [L,R=301]
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^your-site.com$ [NC]
 RewriteRule ^(.*)$ http://your-site.com/$1 [L,R=301]
+# activar y desactivar un modulo
+a2enmod rewrite # activar
+a2dismod rewrite # desactivar
+a2dismod pagespeed #desactivar

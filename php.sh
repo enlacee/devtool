@@ -68,3 +68,5 @@ php-config --version # execute only command assisted
 
 # configurar date.timezone
 date.timezone = America/Lima
+
+## a

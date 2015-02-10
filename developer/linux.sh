@@ -113,3 +113,7 @@ xset dpms force off
 
 #apagar PC
 sudo shutdown -h 110
+# copiar por terminal *copia en memoria*
+xclip -sel clip < sublime2.desktop
+# limpiar archivo
+sudo echo "" > /var/log/apache2/error.log
