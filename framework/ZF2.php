@@ -129,5 +129,6 @@ $hash =  $this->hashids()->encode(12);
 // or
 $this->plugin("hashids")->encode(12);
 
-
+## retornar url relativa
+$this->basePath();
 
