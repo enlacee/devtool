@@ -122,7 +122,12 @@ die;
 :::::::: FORM
 ------------------------------
 $form->setData($request->getPost());
-
+------------------------------
+:::::::: llamar a un helper en la vista
+------------------------------
+$hash =  $this->hashids()->encode(12);
+// or
+$this->plugin("hashids")->encode(12);
 
 <a href="<?php echo $this->url('news'); ?>">News Index</a>
 // <a href="/news">News Index</a>

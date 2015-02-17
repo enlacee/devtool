@@ -61,3 +61,7 @@ bin/rails generate scaffold Post nombre:string titulo:string contenido:text
 bin/rake db:migrate RAILS_ENV=development
 # or
 bin/rake db:migrate
+
+
+#### desinstalar gemas
+sudo gem uninstall mysql2

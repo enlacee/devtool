@@ -62,7 +62,7 @@ android delete avd -n myAndroid
 # 05 : DEBUG
 adb logcat
 
-
+# recurso INTEL better That jquery-mobile
 
 
 

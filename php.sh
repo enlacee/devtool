@@ -3,11 +3,13 @@
 :::::: install php plugin
 -----------------------------------
 sudo apt-get install php5-json
-sudo apt-get install php5-sqlite
+sudo apt-get install php5-sqlite 
 sudo apt-get install php-apc = (almacena en cache)
 apt-get install php5-mcrypt
 sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/apache2/conf.d/ # for Apache
 sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/cli/conf.d/ # for CLI
+#ver paquetes php instalados
+php -m
 # LDPA estructura
 # xhprof
 sudo pecl config-set preferred_state beta
@@ -66,3 +68,5 @@ php-config --version # execute only command assisted
 
 # configurar date.timezone
 date.timezone = America/Lima
+
+## a

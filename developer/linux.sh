@@ -99,6 +99,8 @@ gateway 192.168.1.1
 
 
 (192.168.0.0 - 192.168.255.255).
+# ver codificacion
+file -i file.html
 # cambiar el formato ascci to utf8
 file index.html
 # en vim
@@ -111,3 +113,7 @@ xset dpms force off
 
 #apagar PC
 sudo shutdown -h 110
+# copiar por terminal *copia en memoria*
+xclip -sel clip < sublime2.desktop
+# limpiar archivo
+sudo echo "" > /var/log/apache2/error.log

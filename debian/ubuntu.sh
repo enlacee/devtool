@@ -33,3 +33,4 @@ dualsub => merge 2 files srt (spanish english)
 mkvextract => bash extrae file.srt
 # cuarter : image
 scrot => catch image screem desktop
+convert file.pdf image.jpg # convertir pdf a imagen BY: imagemagick

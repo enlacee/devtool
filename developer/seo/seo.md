@@ -19,4 +19,18 @@ Google SEO Secret : author  *Dan Sisson*
 
 [Capitulo 07 - Dominios y Subdominios](/developer/seo/pages/capitulo-7.md)
 
+## web util
+http://www.semrush.com/ : muestra competidores por palabra clave
+https://es.majestic.com/ : seguimiento web
+https://developers.google.com/speed/pagespeed/insights/ : google metrica carga web
+https://ahrefs.com : links page
+http://loadimpact.com/ : ver si tu web tiene caigas o responde bien a muchas peticiones
+
+## install google-chrome
+plugin : pagerank
+plugin : seoquake (ver a detalle en el buscador google.com)
+plugin : mozbar (mostrar estadistica y datos de una web
+plugin : yslow (monitoriar page)
+plugin : alexa
+plugin : HTTP header (variables send header)
 
