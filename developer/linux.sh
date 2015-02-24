@@ -117,3 +117,23 @@ sudo shutdown -h 110
 xclip -sel clip < sublime2.desktop
 # limpiar archivo
 sudo echo "" > /var/log/apache2/error.log
+
+## ZIP comprimir
+zip archivo.zip ficheros
+# Descomprimir
+unzip archivo.zip
+# TAR 
+tar -c ficheros | bzip2 > archivo.tar.bz2
+# Descomprimir
+bzip2 -dc archivo.tar.bz2 | tar -xv
+# Ver: 
+bzip2 -dc archivo.tar.bz2 | tar -t
+
+# permisos hosting web (HOSTGATOR)
+# directories
+find . -type d -exec chmod 755 {} \;
+# files
+find . -type f -exec chmod 644 {} \;
+#exaples:
+sudo chmod -R 755 * # directories
+sudo chmod -R 644 *.* ## files

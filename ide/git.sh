@@ -120,3 +120,7 @@ git add -i
 # reducir tamaño de .git
 git reflog expire --all --expire=now
 git gc --prune=now --aggressive
+
+# descargar repositorio sin .git o solo ultimo commit
+git clone --depth=1 repositorio.git
+wget https://github.com/[user]/[repo]/[branch].zip
