@@ -129,60 +129,7 @@ $hash =  $this->hashids()->encode(12);
 // or
 $this->plugin("hashids")->encode(12);
 
+## retornar url relativa
+$this->basePath();
+
 <a href="<?php echo $this->url('news'); ?>">News Index</a>
-// <a href="/news">News Index</a>
-
-<a href="<?php echo $this->url('news', array('action' => 'details', 'id' =>42)); ?>">
-    Details of News #42
-</a>
-//<a href="/news/details/42">News Index</a>
-
-
-
-
-
-            // booking URL
-            'application' => array(
-                'type'    => 'Literal',
-                'options' => array(
-                    'route'    => '/booking',
-                    'defaults' => array(
-                        '__NAMESPACE__' => 'Booking\Controller',
-                        'controller'    => 'Booking',
-                        'action'        => 'index',
-                    ),
-                ),
-                'may_terminate' => true,
-                'child_routes' => array(
-                    'default' => array(
-                        'type'    => 'Segment',
-                        'options' => array(
-                            'route'    => '[/result][-:query][-:district]',
-                            'constraints' => array(
-                                'controller' => '[a-zA-Z][a-zA-Z0-9_]*',
-                                'action'     => '[a-zA-Z][a-zA-Z0-9_]*',
-                                'query'      => '[a-zA-Z][a-zA-Z0-9_+%]*',
-                                'district'   => '[a-zA-Z][a-zA-Z0-9_+%]*',
-                            ),
-                            'defaults' => array(
-                                'action'        => 'result',
-                            ),
-                        ),
-                    ),
-                    'default-otro' => array(
-                        'type'    => 'Segment',
-                        'options' => array(
-                            'route'    => '[/otro][-:query][-:district]',
-                            'constraints' => array(
-                                'controller' => '[a-zA-Z][a-zA-Z0-9_]*',
-                                'action'     => '[a-zA-Z][a-zA-Z0-9_]*',
-                                'query'      => '[a-zA-Z][a-zA-Z0-9_+%]*',
-                                'district'   => '[a-zA-Z][a-zA-Z0-9_+%]*',
-                            ),
-                            'defaults' => array(
-                                'action'        => 'otro',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
