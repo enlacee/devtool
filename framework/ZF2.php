@@ -132,3 +132,4 @@ $this->plugin("hashids")->encode(12);
 ## retornar url relativa
 $this->basePath();
 
+<a href="<?php echo $this->url('news'); ?>">News Index</a>

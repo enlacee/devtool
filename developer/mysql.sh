@@ -48,6 +48,10 @@ character-set-server=utf8
 collation-server=utf8_general_ci  
 # ALTER by table
 alter table <some_table> convert to character set utf8 collate utf8_unicode_ci;
+# Busqueda en mysql
+# Full-text Search Function
+ file gist
+
 # show databases;
 # CREAR USUARIO MYQSL
 CREATE USER 'redmine'@'localhost' IDENTIFIED BY '123456';
