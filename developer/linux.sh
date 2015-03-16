@@ -117,3 +117,11 @@ sudo shutdown -h 110
 xclip -sel clip < sublime2.desktop
 # limpiar archivo
 sudo echo "" > /var/log/apache2/error.log
+
+
+# permisos para carpetas y archivos
+# To change all the directories to 755 (-rwxr-xr-x):
+find . -type d -exec chmod 755 {} \;
+# To change all the files to 644 (-rw-r--r--):
+find . -type f -exec chmod 644 {} \;
+
