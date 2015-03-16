@@ -10,3 +10,5 @@ ctrl+shif+a => deseleccionas todo
 ctrl+i
 # invertir imagen
 layer>>transform>>flip horizontal
+# deseleccionar
+CTRL+SHIF+A

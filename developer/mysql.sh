@@ -67,3 +67,6 @@ service mysqld start
 port        = 3306
 #socket     = /var/run/mysqld/mysqld.sock
 socket      = /var/lib/mysql/mysql.sock
+
+# buscar socket 
+mysql_config --socket

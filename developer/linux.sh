@@ -111,7 +111,7 @@ vim file.srt
 # apagar monitor
 xset dpms force off 
 
-#apagar PC
+# apagar PC
 sudo shutdown -h 110
 # copiar por terminal *copia en memoria*
 xclip -sel clip < sublime2.desktop
@@ -137,3 +137,13 @@ find . -type f -exec chmod 644 {} \;
 #exaples:
 sudo chmod -R 755 * # directories
 sudo chmod -R 644 *.* ## files
+# acceder por ssh ingresar por ssh
+ssh -p 2222 cpanelusr@ip.add.re.ss
+
+# ver sistema operativo de mi computadora
+uname -a
+lsb_release -a
+# saber la version del kernel
+cat /proc/version
+# saber la version del kernel en debian
+cat /etc/debian_version

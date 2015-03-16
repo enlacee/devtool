@@ -10,6 +10,8 @@ system automata for public in facebook
 
 # dominio web
 - elementoweb.org
+# reference web desing
+http://monoku.com/
 
 # 01 app Mr GYM
 - category : exercice
@@ -25,4 +27,5 @@ Without The ugly English gramar
 - lista palabras comunmente usadas al hablar *search english and spanish*
 - 
 
-# 03 ...
+# 03 ...crear un libro
+lo que puedes hacer en ubuntu y no en windows
