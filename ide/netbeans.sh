@@ -10,3 +10,14 @@ ALT + FLAG(LEFT|RIGTH)
 ALT + SHIFT + O 
 # buscar simbolo (class : property)
 ALT + CTRL + SHIFT + O
+
+## moverse en posiciciones atras o adelante
+###
+#	MACOS
+CMD + F = buscar
+CMD + R = reemplazar textp
+=======
+# PASAR DE UN LUGAR A OTRO HISTORIAL
+ALT + DIRECCIONAL (LEFT OR RIGHT)
+
+

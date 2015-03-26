@@ -21,7 +21,9 @@ cordova build android
 cordova emulate android
 # Note los directorios de phonegap estan [platforms/ios, platforms/android]
 ## Alternative : error to create cordova platform Unstaller and Install again
-npm uninstall -g cordova 
+npm uninstall -g cordova
+# util ver plataformas
+cordova platforms ls
 # ===========================================
 
 ####
@@ -65,13 +67,32 @@ adb logcat
 # recurso INTEL better That jquery-mobile
 
 
+### install APLICACION EN Emulador cuando tenemos un divice ejecutado
+adb install miapp.apk
 
 
 
+#### install en mac
+npm install -g cordova
 
 
+### install MC
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  503  brew doctor
+  504  brew install ant
+  505  cordova build android
 
+# landspace
+CTRL+F11
 
+#######################
+# in MAC
+#######################
+# landspace
+vista horizontal => ctrl-fn-F12.
+improve landscape mode transition
+####
+export PATH=${PATH}:/Users/Bitalik/Documents/Applications/android-sdk-macosx/platform-tools:/Users/Bitalik/Documents/Applications/android-sdk-macosx/tools
 
 
 
