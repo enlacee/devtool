@@ -74,3 +74,24 @@ socket      = /var/lib/mysql/mysql.sock
 
 # buscar socket 
 mysql_config --socket
+
+
+
+
+
+##
+### CODE
+##
+
+### Util MYSQL replazar caracteres extraños:
+# remplazar ñ
+    update tabla set campo = replace(campo, 'Ã±', 'ñ');
+
+# util remplazar
+	UPDATE table SET field = REPLACE(field, 'string', 'anothervalue') WHERE field LIKE '%string%';
+# obtener string de la primera segunda posicion
+	SELECT SUBSTRING_INDEX('www.mytestpage.info','.',2);  
+
+
+
+

@@ -15,6 +15,7 @@ git config -l
 # omitir de permisos git : How do I make Git ignore file mode (chmod) changes?
 git config core.fileMode false
 git config --global core.filemode false
+# configurar solo una vez
 git -c core.fileMode=false diff
 
 # Set a new remote

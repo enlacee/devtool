@@ -92,6 +92,10 @@ Beyond Compare => comparador de archivos
 CMD + ALT + U => ver codigo fuente
 
 
+# kill process 'application'
+Activity monitor
+# in terminal
+kill (number pid)
 
 
 
