@@ -5,12 +5,14 @@ ssh-add
 # bug : https://help.github.com/articles/error-agent-admitted-failure-to-sign/
 
 
-# basic
+# basic : editor gir
 git config --global user.name "Anibal Copitan"
 git config --global user.email johndoe@example.com
 git config --global color.ui true
+git config --global core.editor vim
 # ver las configuraciones echas
 git config -l
+git config --list
 
 # omitir de permisos git : How do I make Git ignore file mode (chmod) changes?
 git config core.fileMode false

@@ -8,7 +8,15 @@ SHIF + ALT => ir a un archivo
 ## moverse en posiciciones atras o adelante
 
 
+=======
+# pasar de un lugar a otro historial
+ALT + FLAG(LEFT|RIGTH)
+# encontrar archivo
+ALT + SHIFT + O 
+# buscar simbolo (class : property)
+ALT + CTRL + SHIFT + O
 
+## moverse en posiciciones atras o adelante
 ###
 #	MACOS
 CMD + F = buscar

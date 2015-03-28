@@ -97,3 +97,8 @@ div.centered table {
     margin: 0 auto;
     text-align: left;
 }
+
+# lista 
+.list-unstyled
+.list-inline
+.dl-horizontal
