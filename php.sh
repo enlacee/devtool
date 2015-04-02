@@ -25,7 +25,7 @@ intl
 :::::: See Shell all libraries install
 -----------------------------------
 php -m
-php -a # code in terminal
+php -a # php por terminal (ok)
 -----------------------------------
 :::::: php.ini 
 -----------------------------------

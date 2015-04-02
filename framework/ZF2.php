@@ -133,3 +133,16 @@ $this->plugin("hashids")->encode(12);
 $this->basePath();
 
 <a href="<?php echo $this->url('news'); ?>">News Index</a>
+
+
+##### crear cookie
+// create a cookie \Zend\Http\Header\SetCookie
+$cookie = new SetCookie('cookieName', 'cookieValue', time() + 60 * 60 * 24 * 1);
+// seter to header
+$this->getResponse()->getHeaders()->addHeader($cookie);
+
+## crear cookie 2
+setcookie('pricemin', 140, time() + 7200);
+
+## leer cookie
+$this->getRequest()->getCookie()->cookieName
