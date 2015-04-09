@@ -90,6 +90,8 @@ Beyond Compare => comparador de archivos
 # teclados
 ###############################################################
 CMD + ALT + U => ver codigo fuente
+CMD+ALT+I => see developer
+CMD+SHIFT+BACKSPACE => removed cookie
 
 
 # kill process 'application'

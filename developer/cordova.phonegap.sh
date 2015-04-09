@@ -99,3 +99,25 @@ export PATH=${PATH}:/Users/Bitalik/Documents/Applications/android-sdk-macosx/pla
 
 ###
 @=http://yaizabailen.com/setting-up-an-android-app-build-environment-with-android-sdk-and-phonegap-in-ubuntu-13-04/#prettyPhoto
+
+
+
+###########################################################################   
+### Firmar tu apliación por comandos
+# paso 1
+keytool -genkey -v -keystore my-release-key.keystore -alias abc -keyalg RSA -keysize 2048 -validity 10000
+
+# paso 2 : compilar tu aplicacion .APK para obtener unsigned APK. /var/www/public_html/app-abc
+cordova build android --release
+
+# paso 3 : copia tu APK en donde ejecutaras esta linea  o ubicate dentro de la capeta que contiene tu [appliaction-release-unsignig.apk]
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore app.apk abc 
+
+# paso 4 : verificar si tu apk esta firmado
+jarsigner -verify -verbose -certs app.apk
+
+# paso 5 : Optimizacion (no fue probado)
+zipalign -v 4 your_project_name-unaligned.apk your_project_name.apk
+
+
+

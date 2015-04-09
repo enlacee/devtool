@@ -129,3 +129,8 @@ git gc --prune=now --aggressive
 # descargar repositorio sin .git o solo ultimo commit
 git clone --depth=1 repositorio.git
 wget https://github.com/[user]/[repo]/[branch].zip
+
+# MERGE con todos los mensajes commit
+git checkout master
+git merge --squash bugfix
+git commit

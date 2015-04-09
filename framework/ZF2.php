@@ -44,6 +44,12 @@ $this->params()->fromQuery('param', $default);
 // para POST
 $this->params()->fromPost('param', $default);
 
+$this->params()->fromPost('paramname');   // From POST
+$this->params()->fromQuery('paramname');  // From GET
+$this->params()->fromRoute('paramname');  // From RouteMatch
+$this->params()->fromHeader('paramname'); // From header
+$this->params()->fromFiles('paramname');  // From file being uploaded
+
 
 ------------------------------
 :::::::: Plugins redirect y forward
@@ -146,3 +152,14 @@ setcookie('pricemin', 140, time() + 7200);
 
 ## leer cookie
 $this->getRequest()->getCookie()->cookieName
+
+
+###################### helper o plugin ####################
+
+### helper para controller
+$urlify = $this->helper->get('urlify');
+$urlify->filter('123/6*');
+
+
+### helper para vista
+var_dump($this->plugin("urlify")->filter('pepe lucho noré'));
