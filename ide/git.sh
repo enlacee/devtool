@@ -43,7 +43,7 @@ git stash apply
 git stash list # ver numero de cambios termporales guardados
 
 git stash pop # remueve el stash and apply changes in TOP.
-git stash clean
+git stash clear
 git stash branch nuevaramaStash # crea una rama apartir del stash
 
 

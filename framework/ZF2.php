@@ -163,3 +163,11 @@ $urlify->filter('123/6*');
 
 ### helper para vista
 var_dump($this->plugin("urlify")->filter('pepe lucho noré'));
+
+
+## SQL ADNVACED
+    foreach ($arrayDistrict as $key => $value) {
+        $select->where("facilities_extended.district = '{$value}'", 'OR');
+    }            
+    // NEGAR
+    $select->where->notEqualTo('facilities_extended.id_user', $doctorLess);
