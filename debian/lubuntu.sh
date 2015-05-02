@@ -62,3 +62,30 @@ lxpanelctl restart
 # limpiar carpetas recientes : pcmanfm borrar historial
 echo > ~/.local/share/recently-used.xbel
 
+## hoykeys lubuntu
+#
+# Teclados de acceso rapido como en Windows
+WINDOWS + D #=> mostrar escritorio
+WINDOWS + R #=> ejecutar comando o programa
+CTRL + ALT + SUPRIMIR #=> Manejador de tareas
+ALT + SPACE #=> util para maximizar (Alt+Space+x)
+ALT + TAB #=> cambiador de ventabas
+
+# Teclados de acceso rapido del propio de lubuntu
+CTRL + ALT + LEFT|RIGHT #=> cambiar de escritorio
+WINDOWS + S + FECHAS-DIRECCIONALES #=> mover y redimensionar a4 posiciones del monitor
+WINDOWS + LEFT|RIGHT #=> mueve la ventana a la derecha o isquierda
+CTRL + ALT + T #=> abrir el terminal
+
+
+# comandos utilies en terminal
+pcmanfm #=> abre tus carpetas en la posicion actual.
+
+
+
+
+
+Windows+E # explorador de carpeta home
+
+
+

@@ -154,3 +154,23 @@ cat /proc/version
 # saber la version del kernel en debian
 cat /etc/debian_version
 
+
+# INTALAR CRACK RAR
+rarcrack = programa para crack rarcrack
+# instalar depencias como libc
+# sudo apt-get install libc6
+sudo apt-get install libc6
+sudo pecl install pthreads
+sudo apt-get install libxml2
+# intall in ubuntu
+sudo add-apt-repository ppa:ole.wolf/rarcrack
+sudo apt-get update
+sudo apt-get install rarcrack
+# usar comando
+rarcrack --type rar file.rar
+## MONTAR UN DISCO
+# ver tamaño de disco o espacio
+fdisk -l
+# discos duros siempre se ubuican en /dev
+# buscar y encontrar dispositivo luego proceder a montar
+mount /dev/sdb2 /media/anb/windows7

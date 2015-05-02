@@ -69,8 +69,8 @@ adb logcat
 
 ### install APLICACION EN Emulador cuando tenemos un divice ejecutado
 adb install miapp.apk
-
-
+## desintalar
+adb uninstall <package>
 
 #### install en mac
 npm install -g cordova
