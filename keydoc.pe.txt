@@ -1,0 +1,6 @@
+
+// api servicio article
+http://asiste.app/v1/contents/articles/2
+
+// validar correo
+http://asiste.app/engines/user-signup?exist_email=detops.tka@gmail.com
