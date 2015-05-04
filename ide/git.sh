@@ -134,3 +134,6 @@ wget https://github.com/[user]/[repo]/[branch].zip
 git checkout master
 git merge --squash bugfix
 git commit
+
+## sobreescribir commit anterior
+git commit --amend -m "message commit"

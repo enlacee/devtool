@@ -63,6 +63,9 @@ return $this->redirect()->toRoute('application', array('controller' => 'usuario'
 
 return $this->redirect()->toUrl($this->getRequest()->getBaseUrl() . '/application/usuario/listar');
 
+// adition URL
+$this->getRequest()->getUri()->getHost();
+
 // El primer parámetro es el nombre del controller a invocar
 // corresponde al nombre de la clase o alias configurado en module.config.php,
 // el segundo son los parámetros, ej nombre de la acción
@@ -171,3 +174,24 @@ var_dump($this->plugin("urlify")->filter('pepe lucho noré'));
     }            
     // NEGAR
     $select->where->notEqualTo('facilities_extended.id_user', $doctorLess);
+
+
+
+## zftool en ZF2
+## INSTALL
+composer require zendframework/zftool:dev-master
+## execute
+vendor/bin/zf.php --version
+
+## controller
+vendor/bin/zf.php create controller Hello Booking
+
+### limpiar session+
+$session_user->getManager()->getStorage()->clear('user');
+## up
+$sessionName = $this->getController()->getServiceLocator()->get('Config')['sessionNameForWeb'];
+$session = new Container($sessionName);
+$session->offsetSet('user', null); 
+
+
+
