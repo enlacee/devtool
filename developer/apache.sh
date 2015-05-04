@@ -25,3 +25,6 @@ RewriteRule ^(.*)$ http://your-site.com/$1 [L,R=301]
 a2enmod rewrite # activar
 a2dismod rewrite # desactivar
 a2dismod pagespeed #desactivar
+# desactivar pagespeed in /etc/apache2/mods-available/pagespeed.conf
+# update to Off
+ ModPagespeed off

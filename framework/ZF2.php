@@ -91,6 +91,8 @@ $unParametroGet= $this->getRequest()->getQuery("id", 'valor_defecto');
 $obtenemosTodosParametrosGet = $request->getQuery()->toArray();
 //Obtener el base Url:
 $baseUrl = $this->getRequest()->getBaseUrl()
+## validar si es post
+$this->request->isPost();
 -- uso
 $request->isPost()
 // agregar o configurar un tipo de respuesta final,
@@ -120,6 +122,8 @@ etc ...
 'layout/header' => __DIR__ . '/../view/layout/header.phtml',
 'layout/footer' => __DIR__ . '/../view/layout/footer.phtml',
 etc ...
+# pasar variable al layout desde controlador
+$this->layout()->setVariable('dataUser', $this->myUsuario()->getSession());
 
 ------------------------------
 :::::::: SQL
@@ -176,7 +180,6 @@ var_dump($this->plugin("urlify")->filter('pepe lucho noré'));
     $select->where->notEqualTo('facilities_extended.id_user', $doctorLess);
 
 
-
 ## zftool en ZF2
 ## INSTALL
 composer require zendframework/zftool:dev-master
@@ -194,4 +197,14 @@ $session = new Container($sessionName);
 $session->offsetSet('user', null); 
 
 
+#
+## llamar a un plugin en module.php
+#
+    public function onBootstrap(EventInterface $evm)
+    {
+        $sm = $evm->getApplication()
+                      ->getServiceManager();
+        $plugin = $sm->get('ControllerPluginManager')->get('myUsuario');
 
+// var_dump($plugin->getSession()); exit;;
+//  var_dump(get_class_methods($plugin)); exit;

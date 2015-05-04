@@ -1,5 +1,5 @@
 ## commad basic:
-CTRL + SHIFT + M  : ver markdown como github
+CTRL + SHIFT +WINDOWS + M  : ver markdown como github
 CTRL+ SHIFT+P : helper shortkey
 
 ## intall package : https://atom.io/packages

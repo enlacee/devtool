@@ -74,6 +74,8 @@ socket      = /var/lib/mysql/mysql.sock
 
 # buscar socket 
 mysql_config --socket
+### install mysql
+sudo apt-get install mysql-server 
 
 
 
@@ -92,6 +94,27 @@ mysql_config --socket
 # obtener string de la primera segunda posicion
 	SELECT SUBSTRING_INDEX('www.mytestpage.info','.',2);  
 
+# installar depencias
+sudo dpkge -i programa.deb 
+sudo apt-get -f install
 
+#error workbench
+sudo apt-get purge mysql-workbench* 
+sudo dpkg --force-all -i mysql-workbench-community-6.0.6-1ubu1204-i386.deb 
+
+# para instalar una determinada version ir AL SYNAPTIC PACKAGE
+# ir y remover los nuevos link de los repositorios de descarga.
+# despues instalar  los paquetes de la version anterios EN ESTE CASO mysql 5.6
+# 
+# opcional agregar repositorio mysql 5.6
+apt-get -y remove mysql-server
+apt-get -y autoremove
+apt-get -y install software-properties-common
+add-apt-repository -y ppa:ondrej/mysql-5.6
+apt-get update
+apt-get -y install mysql-server
+
+## install por primera vez
+apt-get install php5-mysqlnd
 
 
