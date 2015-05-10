@@ -19,7 +19,7 @@ ln -s /opt/Sublime Text 2/sublime_text /usr/local/bin/sublime
 /usr/share/applications/sublime_text.desktop exists.
 # OPEN
 /usr/share/applications/defaults.list with Sublime:
-# CREATE SUBLIME2.DESKTOP IN 
+# CREATE SUBLIME2.DESKTOP IN
 /usr/share/applications/sublime2.desktop
 -----------------------------------
 :::::: LXDE
@@ -80,12 +80,35 @@ CTRL + ALT + T #=> abrir el terminal
 
 # comandos utilies en terminal
 pcmanfm #=> abre tus carpetas en la posicion actual.
-
-
-
-
-
 Windows+E # explorador de carpeta home
 
+# Bloquear el trackpad en laptop thinkpad t430
+xinput list
+xinput set-prop 12 "Device Enabled" 0
 
-
+## configurar magnet en google chrome
+#--------------------------------------
+# ANTES
+detectDE()
+{
+    if [ x"$KDE_FULL_SESSION" = x"true" ]; then DE=kde;
+    elif [ x"$GNOME_DESKTOP_SESSION_ID" != x"" ]; then DE=gnome;
+    elif `dbus-send --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.GetNameOwner string:org.gnome.SessionManager > /dev/null 2>&1` ; then DE=gnome;
+    elif xprop -root _DT_SAVE_MODE 2> /dev/null | grep ' = \"xfce4\"$' >/dev/null 2>&1; then DE=xfce;
+    elif [ x"$DESKTOP_SESSION" = x"LXDE" ]; then DE=lxde;
+    else DE=""
+    fi
+}
+#--------------------------------------
+# DESPUES
+detectDE()
+{
+    if [ x"$KDE_FULL_SESSION" = x"true" ]; then DE=kde;
+    elif [ x"$GNOME_DESKTOP_SESSION_ID" != x"" ]; then DE=gnome;
+    elif `dbus-send --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.GetNameOwner string:org.gnome.SessionManager > /dev/null 2>&1` ; then DE=gnome;
+    elif xprop -root _DT_SAVE_MODE 2> /dev/null | grep ' = \"xfce4\"$' >/dev/null 2>&1; then DE=xfce;
+    elif [ x"$DESKTOP_SESSION" = x"LXDE" ]; then DE=lxde;
+    elif [ x"$DESKTOP_SESSION" = x"Lubuntu" ]; then DE=lxde; # changed
+    else DE=""
+    fi
+}
