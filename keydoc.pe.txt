@@ -1,0 +1,15 @@
+
+// api servicio article
+http://asiste.app/v1/contents/articles/2
+
+// validar correo
+http://asiste.app/engines/user-signup?exist_email=detops.tka@gmail.com
+
+## preparacion de imagenes
+
+
+1) size-0 : img/812x422/image.jpg
+2) size-1 : img/460x345/image.jpg
+3) size-2 : img/452x297/image.jpg
+4) size-3 : img/100x100/image.jpg 
+

@@ -2,13 +2,16 @@
 # configuracion de apache
 /opt/local/apache2/conf/extra
 
-# apache
+# apache NATIVO
 sudo apachectl stop
 sudo apachectl restart
 
 # cargar y recargar apache
 sudo /opt/local/bin/port unload apache2
 sudo /opt/local/bin/port load apache2
+
+## configuracion virtual host
+/opt/local/apache2/conf/extra/httpd-vhosts.conf
 
 # ruta mysql
 /opt/local/var/db/mysql56
@@ -20,6 +23,10 @@ mysql_config --socket
 ## AGREGAR el socket en archivos temporales
 ln -s /opt/local/var/run/mysql56/mysqld.sock /tmp/mysql.sock
 
+## CAMBIAR PERMISOS : cambiar usuario 
+# sudo vim  /etc/apache2/httpd.conf
+# whoami : Bitalik
+sudo vim  /etc/apache2/httpd.conf
 
 
 
@@ -98,7 +105,8 @@ CMD+SHIFT+BACKSPACE => removed cookie
 Activity monitor
 # in terminal
 kill (number pid)
-
+## eliminar programas : xkill
+Command, Alt, Escape
 
 
 

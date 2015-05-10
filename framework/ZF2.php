@@ -63,6 +63,9 @@ return $this->redirect()->toRoute('application', array('controller' => 'usuario'
 
 return $this->redirect()->toUrl($this->getRequest()->getBaseUrl() . '/application/usuario/listar');
 
+// adition URL
+$this->getRequest()->getUri()->getHost();
+
 // El primer parámetro es el nombre del controller a invocar
 // corresponde al nombre de la clase o alias configurado en module.config.php,
 // el segundo son los parámetros, ej nombre de la acción
@@ -164,6 +167,11 @@ $this->getRequest()->getCookie()->cookieName
 $urlify = $this->helper->get('urlify');
 $urlify->filter('123/6*');
 
+## ok 1
+ $this->getServiceLocator()->get('viewhelpermanager')->get('helperName');
+## ok 2
+ $this->getController()->getServiceLocator()->get('viewhelpermanager');
+
 
 ### helper para vista
 var_dump($this->plugin("urlify")->filter('pepe lucho noré'));
@@ -175,6 +183,25 @@ var_dump($this->plugin("urlify")->filter('pepe lucho noré'));
     }            
     // NEGAR
     $select->where->notEqualTo('facilities_extended.id_user', $doctorLess);
+
+
+## zftool en ZF2
+## INSTALL
+composer require zendframework/zftool:dev-master
+## execute
+vendor/bin/zf.php --version
+
+## controller
+vendor/bin/zf.php create controller Hello Booking
+
+### limpiar session+
+$session_user->getManager()->getStorage()->clear('user');
+## up
+$sessionName = $this->getController()->getServiceLocator()->get('Config')['sessionNameForWeb'];
+$session = new Container($sessionName);
+$session->offsetSet('user', null); 
+
+
 #
 ## llamar a un plugin en module.php
 #
@@ -186,3 +213,62 @@ var_dump($this->plugin("urlify")->filter('pepe lucho noré'));
 
 // var_dump($plugin->getSession()); exit;;
 //  var_dump(get_class_methods($plugin)); exit;
+
+
+# config router
+# module/Booking/config/module.config.php
+### ===== init 
+            'blog' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route' => '/blog',
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'Booking\Controller',
+                        'controller' => 'Blog',
+                        'action' => 'index',
+                    ),
+                ),
+                'may_terminate' => true,
+                    'child_routes' => array(
+                        'blog-category' => array(
+                            'type' => 'Regex',
+                            'options' => array(
+                                'regex' => '/(?<category>[a-zA-Z0-9_.%20]*)',
+                                'defaults' => array (
+                                    'action' => 'post',
+                                ),
+                                'spec' => '/%category%',
+                            ),
+                        ),
+                        
+                        'blog-post' => array(
+                            'type' => 'Regex',
+                            'options' => array(
+                                'regex' => '/(?<category>[a-zA-Z0-9_.%20]*)/(?<post>[a-zA-Z0-9_.%20]*)-(?<id>[0-9]+)',
+                                'defaults' => array (
+                                    'action' => 'post',
+                                ),
+                                'spec' => '/%category%/%post%-%id%',
+                            ),
+                        ),
+                        
+                ),
+
+            ),
+### ===== end
+
+## helper html
+$viewHelperManager = $this->getServiceLocator()->get('ViewHelperManager');
+$escapeHtml = $viewHelperManager->get('escapeHtml'); // $escapeHtml can be called as function because of its __invoke method       
+$escapedVal = $escapeHtml('string');
+
+## documentation of servicemanage ZF2
+# http://framework.zend.com/manual/current/en/modules/zend.service-manager.intro.html
+
+$serviceManager->setService('my-foo', new stdClass());
+$serviceManager->setService('my-settings', array('password' => 'super-secret'));
+
+var_dump($serviceManager->get('my-foo')); // an instance of stdClass
+var_dump($serviceManager->get('my-settings')); // array('password' => 'super-secret')
+
+

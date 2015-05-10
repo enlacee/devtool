@@ -120,4 +120,8 @@ jarsigner -verify -verbose -certs app.apk
 zipalign -v 4 your_project_name-unaligned.apk your_project_name.apk
 
 
+### agregar plugin en cordova
+cordova plugin add https://github.com/brodysoft/Cordova-SQLitePlugin.git
+
+
 
