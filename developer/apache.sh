@@ -28,3 +28,24 @@ a2dismod pagespeed #desactivar
 # desactivar pagespeed in /etc/apache2/mods-available/pagespeed.conf
 # update to Off
  ModPagespeed off
+
+
+ ##############################################
+ ## crear virtual host
+ ## importante habilitar  :: rewrite
+ ## siempre apuntar desde /var/www/html
+ ## html = /home/anb/sites
+ ##############################################
+<VirtualHost *:80>
+    ServerName asiste.app
+    DocumentRoot "/var/www/html/develoweb/asistemas/webservice/public"
+    <Directory /var/www/html/develoweb/asistemas/webservice/public>
+        DirectoryIndex index.php
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+</VirtualHost>
+
+
+

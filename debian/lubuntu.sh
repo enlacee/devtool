@@ -1,7 +1,7 @@
 -----------------------------------
 :::::: Desktop
 -----------------------------------
-# create Icon LDX file : sublime2.desktop
+# create Icon LDX file : d
 [Desktop Entry]
 Name=Sublime Text 2
 Comment=Editor Text
@@ -19,7 +19,7 @@ ln -s /opt/Sublime Text 2/sublime_text /usr/local/bin/sublime
 /usr/share/applications/sublime_text.desktop exists.
 # OPEN
 /usr/share/applications/defaults.list with Sublime:
-# CREATE SUBLIME2.DESKTOP IN
+# CREATE SUBLIME2.DESKTOP IN : add in menu
 /usr/share/applications/sublime2.desktop
 -----------------------------------
 :::::: LXDE
@@ -112,3 +112,9 @@ detectDE()
     else DE=""
     fi
 }
+
+## redes  wifi
+# ver redes
+nmcli dev wifi
+## acceder red
+nmcli dev wifi connect mynetwork password my-password
