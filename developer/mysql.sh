@@ -117,4 +117,7 @@ apt-get -y install mysql-server
 ## install por primera vez
 apt-get install php5-mysqlnd
 
+## ver proceso mysql
+watch -n 1 mysqladmin --user=root --password=123456 processlist
+
 
