@@ -169,6 +169,8 @@ $urlify->filter('123/6*');
 
 ## ok 1
  $this->getServiceLocator()->get('viewhelpermanager')->get('helperName');
+## service mailtransport in controller 
+ $this->getServiceLocator()->get('mail.transport')
 ## ok 2
  $this->getController()->getServiceLocator()->get('viewhelpermanager');
 
@@ -270,5 +272,19 @@ $serviceManager->setService('my-settings', array('password' => 'super-secret'));
 
 var_dump($serviceManager->get('my-foo')); // an instance of stdClass
 var_dump($serviceManager->get('my-settings')); // array('password' => 'super-secret')
+
+## Agregar controlador en zf2
+# /module/Booking/config/module.config.php
+
+'controllers' => array(
+    'invokables' => array(
+        'Booking\Controller\Blog' => 'Booking\Controller\BlogController',
+        'Booking\Controller\Login' => 'Booking\Controller\LoginController',
+        'Booking\Controller\Page' => 'Booking\Controller\PageController',
+    ),
+    'factories' => array(
+        'Booking\Controller\Booking' => 'Booking\Controller\BookingControllerFactory'
+    )
+),
 
 
