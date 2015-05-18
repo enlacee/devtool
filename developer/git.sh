@@ -64,6 +64,7 @@ git reset --hard ORIG_HEAD
 # retornar a  al cambio del anterior commit sin tocar el head,
 # dandote la opcion de hacer checkout
 git reset --soft #hash
+git reset --soft HEAD ## return to last stage (archivos sin commitear)
 
 #git diff
 git diff branch1 branch2
