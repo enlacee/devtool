@@ -19,6 +19,8 @@ sudo apt-get install php5-gd
 sudo apt-get install php5-gd
 # format standar xslt
 sudo apt-get install php5-xsl
+# instalar para fechas en zf2
+sudo apt-get install php5-intl
 
 intl
 -----------------------------------
@@ -69,4 +71,5 @@ php-config --version # execute only command assisted
 # configurar date.timezone
 date.timezone = America/Lima
 
-## a
+## prevent atach xss
+echo htmlspecialchars($string, ENT_QUOTES, 'UTF-8');

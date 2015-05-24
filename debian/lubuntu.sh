@@ -118,3 +118,10 @@ detectDE()
 nmcli dev wifi
 ## acceder red
 nmcli dev wifi connect mynetwork password my-password
+
+## custom Lubuntu
+Cairo Dock and Conky.
+## buscar en themes ubuntu : existen muchos temas
+
+## configurar terminal o xterminal
+~/.config/lxterminal/lxterminal.conf

@@ -28,7 +28,7 @@ dpkg -l|grep youtube-dl
 sudo apt-get install youtube-dl
 sudo apt-get install python-setuptools
 sudo easy_install pip
-sudo pip install --upgrade youtube-dl
+sudo pip install --upgrade youtube-dl ## actualizar youtube-dl OK
 #-----------------------------------
 #:::::: Tool SO tool
 #-----------------------------------
