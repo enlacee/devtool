@@ -8,4 +8,4 @@ Development and Tools 'notes knowledge' enviroment (LINUX,Ubuntu,Lubuntu, Mac)
 - Tecnologies Web
 - Step for config or intall packages y sofware
 
-Useful for your daily activity  as a developer
+Usefull for your daily activity  as a developer
