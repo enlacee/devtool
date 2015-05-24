@@ -121,3 +121,14 @@ apt-get install php5-mysqlnd
 watch -n 1 mysqladmin --user=root --password=123456 processlist
 
 
+## error al eliminar tablas relacionadas
+# resolver poniendo las tablas = ON DELETE CASCADE 
+
+
+## truncar tabla sin error forenkey
+SET FOREIGN_KEY_CHECKS = 0; 
+TRUNCATE articles; 
+SET FOREIGN_KEY_CHECKS = 1;
+
+
+

@@ -38,15 +38,6 @@ post_max_size = 1000M
 display_errors = On
 
 
------------------------------------
-:::::: Code
------------------------------------
-$js = <<<EOD
-<script type="text/javascript"><!--
-console.log("loging")
---></script>
-EOD
-
 ::::::
 #PEAR : ubicacion en ubuntu : /usr/share/php/PEAR
 apt-get install php-pear #instalamos pear
@@ -71,5 +62,5 @@ php-config --version # execute only command assisted
 # configurar date.timezone
 date.timezone = America/Lima
 
-## prevent atach xss
-echo htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
+## debug : tracking : profile
+XHProf

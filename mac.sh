@@ -108,8 +108,9 @@ kill (number pid)
 ## eliminar programas : xkill
 Command, Alt, Escape
 
-
-
+## install PEAR IN MAC
+# http://jason.pureconcepts.net/2012/10/install-pear-pecl-mac-os-x/
+sudo pecl install xhprof-beta
 
 
 

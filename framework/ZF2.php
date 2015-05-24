@@ -11,6 +11,15 @@ zf2
 *
 */
 
+# crear un proyecto zf2
+# 01 : descargar
+zftool.phar
+# 02 : crear proyecto
+php zftool.phar create project keydoc
+# 03 : install zf2 library
+
+
+
 En
 un proyecto, donde hay más de un desarrollador, es importante que la
 arquitectura se mantenga “simple”, de lo contrario, cuando crezca, será más
@@ -169,6 +178,8 @@ $urlify->filter('123/6*');
 
 ## ok 1
  $this->getServiceLocator()->get('viewhelpermanager')->get('helperName');
+## service mailtransport in controller 
+ $this->getServiceLocator()->get('mail.transport')
 ## ok 2
  $this->getController()->getServiceLocator()->get('viewhelpermanager');
 
@@ -271,4 +282,23 @@ $serviceManager->setService('my-settings', array('password' => 'super-secret'));
 var_dump($serviceManager->get('my-foo')); // an instance of stdClass
 var_dump($serviceManager->get('my-settings')); // array('password' => 'super-secret')
 
+## Agregar controlador en zf2
+# /module/Booking/config/module.config.php
 
+'controllers' => array(
+    'invokables' => array(
+        'Booking\Controller\Blog' => 'Booking\Controller\BlogController',
+        'Booking\Controller\Login' => 'Booking\Controller\LoginController',
+        'Booking\Controller\Page' => 'Booking\Controller\PageController',
+    ),
+    'factories' => array(
+        'Booking\Controller\Booking' => 'Booking\Controller\BookingControllerFactory'
+    )
+),
+
+
+### recursos zf2
+# varios servicios librerias ya contruidad : RABIT :MONGO
+https://github.com/bernardphp/bernard
+## aouth
+https://github.com/silvester/ReverseOAuth2
