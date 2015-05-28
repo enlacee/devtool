@@ -122,6 +122,8 @@ zipalign -v 4 your_project_name-unaligned.apk your_project_name.apk
 
 ### agregar plugin en cordova
 cordova plugin add https://github.com/brodysoft/Cordova-SQLitePlugin.git
+### plugin cordova googlemap
+https://github.com/wf9a5m75/phonegap-googlemaps-plugin
 
 
 
