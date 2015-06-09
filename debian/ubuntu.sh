@@ -34,3 +34,11 @@ mkvextract => bash extrae file.srt
 # cuarter : image
 scrot => catch image screem desktop
 convert file.pdf image.jpg # convertir pdf a imagen BY: imagemagick
+
+-----------------------------------
+:::::: APP
+-----------------------------------
+# descargar mp3
+youtube-dl --extract-audio --audio-format mp3 -l [YOUTUBE VIDEO LINK]
+# cd ffmpeg and Install
+sudo ./configure --

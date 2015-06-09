@@ -1,3 +1,5 @@
 # ides (phpstorm, netbenas, etc)
 ~.*
 *.~
+*.sublime-project
+*.sublime-workspace

@@ -1,7 +1,0 @@
-# install upack by tar
-composer install --prefer-source
-
-composer update = actualizar repositorios
-
-# instalar con php  las depencias
-php composer.phar install

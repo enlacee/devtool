@@ -86,35 +86,15 @@ Windows+E # explorador de carpeta home
 xinput list
 xinput set-prop 12 "Device Enabled" 0
 
-## configurar magnet en google chrome
-#--------------------------------------
-# ANTES
-detectDE()
-{
-    if [ x"$KDE_FULL_SESSION" = x"true" ]; then DE=kde;
-    elif [ x"$GNOME_DESKTOP_SESSION_ID" != x"" ]; then DE=gnome;
-    elif `dbus-send --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.GetNameOwner string:org.gnome.SessionManager > /dev/null 2>&1` ; then DE=gnome;
-    elif xprop -root _DT_SAVE_MODE 2> /dev/null | grep ' = \"xfce4\"$' >/dev/null 2>&1; then DE=xfce;
-    elif [ x"$DESKTOP_SESSION" = x"LXDE" ]; then DE=lxde;
-    else DE=""
-    fi
-}
-#--------------------------------------
-# DESPUES
-detectDE()
-{
-    if [ x"$KDE_FULL_SESSION" = x"true" ]; then DE=kde;
-    elif [ x"$GNOME_DESKTOP_SESSION_ID" != x"" ]; then DE=gnome;
-    elif `dbus-send --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.GetNameOwner string:org.gnome.SessionManager > /dev/null 2>&1` ; then DE=gnome;
-    elif xprop -root _DT_SAVE_MODE 2> /dev/null | grep ' = \"xfce4\"$' >/dev/null 2>&1; then DE=xfce;
-    elif [ x"$DESKTOP_SESSION" = x"LXDE" ]; then DE=lxde;
-    elif [ x"$DESKTOP_SESSION" = x"Lubuntu" ]; then DE=lxde; # changed
-    else DE=""
-    fi
-}
-
 ## redes  wifi
 # ver redes
 nmcli dev wifi
 ## acceder red
 nmcli dev wifi connect mynetwork password my-password
+
+## custom Lubuntu
+Cairo Dock and Conky.
+## buscar en themes ubuntu : existen muchos temas
+
+## configurar terminal o xterminal
+~/.config/lxterminal/lxterminal.conf

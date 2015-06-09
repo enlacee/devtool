@@ -19,6 +19,8 @@ sudo apt-get install php5-gd
 sudo apt-get install php5-gd
 # format standar xslt
 sudo apt-get install php5-xsl
+# instalar para fechas en zf2
+sudo apt-get install php5-intl
 
 intl
 -----------------------------------
@@ -35,15 +37,6 @@ post_max_size = 1000M
 # show error
 display_errors = On
 
-
------------------------------------
-:::::: Code
------------------------------------
-$js = <<<EOD
-<script type="text/javascript"><!--
-console.log("loging")
---></script>
-EOD
 
 ::::::
 #PEAR : ubicacion en ubuntu : /usr/share/php/PEAR
@@ -77,3 +70,4 @@ echo mb_strtoupper("aáeéiíoóuúnñ", "utf-8");
 
 ## imprimir real path
 var_dump(realpath(__DIR__ ."/../../.."));
+

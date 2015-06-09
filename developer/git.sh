@@ -136,3 +136,14 @@ wget https://github.com/[user]/[repo]/[branch].zip
 
 # traer rama remota
 git fetch origin merge:merge
+
+#-------------------------------------------------------
+# configurar git para ver rama opcion (1)
+#-----------------------------------
+# intall prompt SHELL modific on final (~.bashrc)
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+export PS1="\[\033[00m\]\u@\h\[\033[01;33m\] \W \[\033[31m\]\$(parse_git_branch)\[\033[00m\]$\[\033[00m\] "
+
+

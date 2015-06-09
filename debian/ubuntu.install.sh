@@ -28,7 +28,7 @@ dpkg -l|grep youtube-dl
 sudo apt-get install youtube-dl
 sudo apt-get install python-setuptools
 sudo easy_install pip
-sudo pip install --upgrade youtube-dl
+sudo pip install --upgrade youtube-dl ## actualizar youtube-dl OK
 #-----------------------------------
 #:::::: Tool SO tool
 #-----------------------------------
@@ -123,4 +123,17 @@ sudo apt-get install mkvtoolnix
 # mkvextract tracks friends.s05e01.720p.bluray.x264-mrs.sujaidr.mkv 2:srt2.srt
 mkvextract tracks <your_mkv_video> <track_numer>:<subtitle_file.srt>
 # error ubuntu cuando bloquea
-sudo rm /var/cache/debconf/*.dat 
+sudo rm /var/cache/debconf/*.dat
+#-----------------------------------
+#:::::: INSTALAR SERVIDOR APACHE Y MYSQL
+#-----------------------------------
+sudo apt-get install tasksel
+sudo tasksel install lamp-server
+# rewrite apache
+sudo a2enmod rewrite && sudo service apache2 restart
+# in : /etc/apache2/sites-available (habilitar sobreescritura)
+# <Directory /var/www/>
+# before :
+AllowOverride None
+# after :
+AllowOverride all 
