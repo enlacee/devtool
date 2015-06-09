@@ -54,3 +54,17 @@
 
 
 
+
+## POSTMAN
+# URL : PATCH
+    http://asiste.app/engines/users/896
+# HEADER
+Content-Type  : application/json
+Accept        : application/json
+# RAW:JSON
+{"ss_token_signup_user" : "ddd"}
+
+
+
+
+

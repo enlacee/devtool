@@ -71,3 +71,9 @@ date.timezone = America/Lima
 
 ## debug : tracking : profile
 XHProf 
+
+##
+echo mb_strtoupper("aáeéiíoóuúnñ", "utf-8");
+
+## imprimir real path
+var_dump(realpath(__DIR__ ."/../../.."));

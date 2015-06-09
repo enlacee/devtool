@@ -4,8 +4,10 @@
 SET FOREIGN_KEY_CHECKS=0;
 TRUNCATE table;
 SET FOREIGN_KEY_CHECKS=1;
-# utf8
+# utf8 : database
 ALTER DATABASE <database_name> CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+# utf8 : table
+ALTER TABLE tablename CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
 # mysql import
 # -- 01
 mysql -u root -p
@@ -131,4 +133,7 @@ TRUNCATE articles;
 SET FOREIGN_KEY_CHECKS = 1;
 
 
-
+## mysql query update : update massivo
+UPDATE `especialities` SET
+`status_especiality` = '1'
+WHERE `relevance_especiality`  > 0
