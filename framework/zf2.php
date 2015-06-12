@@ -302,3 +302,22 @@ var_dump($serviceManager->get('my-settings')); // array('password' => 'super-sec
 https://github.com/bernardphp/bernard
 ## aouth
 https://github.com/silvester/ReverseOAuth2
+
+
+## obtener URL EN LA vista : view manager en la vista
+$this->getHelperPluginManager()->getServiceLocator()->get('request');
+$this->getHelperPluginManager()->getServiceLocator()->get('request')->getUri()->getPath();
+
+## obtener router and request en la vista
+    $request = $this->getHelperPluginManager()->getServiceLocator()->get('request');
+    $router = $this->getHelperPluginManager()->getServiceLocator()->get('router');
+    $routeMatch = $router->match($request);
+    
+    echo "<pre>"; print_r($routeMatch->getParams());     
+  
+    $id = $routeMatch->getParams('param1');  
+    $token = $routeMatch->getParams('param2');
+
+
+
+

@@ -28,6 +28,9 @@ ln -s /opt/local/var/run/mysql56/mysqld.sock /tmp/mysql.sock
 # whoami : Bitalik
 sudo vim  /etc/apache2/httpd.conf
 
+# error log
+/opt/local/apache2/logs/error.log
+
 
 
 
