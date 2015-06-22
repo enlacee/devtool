@@ -17,6 +17,7 @@ guake => terminal
 transmission => client torrent
 recordmydesktop => grabar escritorio
 ffmpeg => convertidor de formato auido.video
+poedit => traduccion de texto
 # second
 vlc
 alarm clock

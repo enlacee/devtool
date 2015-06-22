@@ -174,3 +174,12 @@ fdisk -l
 # discos duros siempre se ubuican en /dev
 # buscar y encontrar dispositivo luego proceder a montar
 mount /dev/sdb2 /media/anb/windows7
+
+# cambiar home del usuario
+# nota cambiar permisos para que sea accesible
+cd /home;
+sudo mkdir peter
+sudo chown anibal:anibal peter
+sudo usermod -d /home/peter peter
+# cambiar carpeta funciono
+sudo usermod -m -d /home/nuevo anibal

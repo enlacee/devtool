@@ -49,3 +49,11 @@ function limit_words( $str, $num='', $append_str='' ) {
     unset( $palabras, $num );
     return trim( $str );
 }
+## get link WPL traduccion
+$icl_object_id = icl_object_id(get_the_ID()); VAR_DUMP($icl_object_id)
+
+## translatle title widget
+public function widget( $args, $instance ) {
+    extract($args);
+    $title = apply_filters( 'widget_title', empty($instance['title']) ? '' : $instance['title'], $instance );
+    $text = apply_filters( 'widget_text', $instance['text'], $instance );

@@ -92,6 +92,13 @@ nmcli dev wifi
 ## acceder red
 nmcli dev wifi connect mynetwork password my-password
 
+## abrir por terminal wifi ok
+nm-apple
+## add in panel
+Preferences > Default applications for LXSession,
+then click on the Autostart tab and under "Manual autostarted applications"
+type "nm-applet", then click the "+ Add"
+
 ## custom Lubuntu
 Cairo Dock and Conky.
 ## buscar en themes ubuntu : existen muchos temas

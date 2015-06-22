@@ -137,3 +137,6 @@ sudo a2enmod rewrite && sudo service apache2 restart
 AllowOverride None
 # after :
 AllowOverride all 
+
+## install poedit
+sudo apt-get install poedit
