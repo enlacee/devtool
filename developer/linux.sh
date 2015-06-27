@@ -175,7 +175,7 @@ fdisk -l
 # buscar y encontrar dispositivo luego proceder a montar
 mount /dev/sdb2 /media/anb/windows7
 
-# cambiar home del usuario
+# cambiar carpeta home del usuario
 # nota cambiar permisos para que sea accesible
 cd /home;
 sudo mkdir peter

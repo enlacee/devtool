@@ -38,7 +38,7 @@ export PATH="$HOME/software/adt-bundle-linux-x86_64-20140702/sdk/tools:$ANDROID_
 
 ## Install Android SDK
 # 01
- vi ~/.profile
+ vi ~/.bashrc # or .profile
 # 02
 export PATH="$HOME/android-sdk-linux/tools:$HOME/android-sdk-linux/platforms:$PATH"
 # 03 : install java and ant
@@ -46,7 +46,7 @@ sudo apt-get install openjdk-6-jdk ant
 # 04 : init android and install APIS
 android
 # 05 : new folder create called platform-tools
-PATH="$HOME/android-sdk-linux/tools:$HOME/android-sdk-linux/platforms:$HOME/android-sdk-linux/platform-tools:$PATH"
+export PATH="$HOME/android-sdk-linux/tools:$HOME/android-sdk-linux/platforms:$HOME/android-sdk-linux/platform-tools:$PATH"
 # 06 : install the adb package. (comand line) (comunique with emulador)
 sudo apt-get install android-tools-adb
 # 07 : if you machine is 64 bit
