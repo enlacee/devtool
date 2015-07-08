@@ -1,6 +1,9 @@
 # ssh key generate
 ssh-keygen
 ssh-add
+# crear otra llave con personalidad (bitbucket)
+ ssh-keygen -f ~/.ssh/bitbucket -C "bitbucket"
+
 # step1 : https://help.github.com/articles/generating-ssh-keys/
 # bug : https://help.github.com/articles/error-agent-admitted-failure-to-sign/
 
