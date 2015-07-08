@@ -21,6 +21,8 @@ sudo apt-get install php5-gd
 sudo apt-get install php5-xsl
 # instalar para fechas en zf2
 sudo apt-get install php5-intl
+# install for image
+sudo apt-get install php5-imagick
 
 intl
 -----------------------------------
