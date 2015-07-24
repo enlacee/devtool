@@ -25,7 +25,10 @@ npm uninstall -g cordova
 # util ver plataformas
 cordova platforms ls
 # ===========================================
-
+# creating app with name Professional
+phonegap create path/to/my-app --id "com.example.app" --name "My App"
+#example
+cordova create /home/anb/sites/develoweb/appabc --id "com.develoweb.appabc" --name "ABC Play Kids"
 ####
 #### NOTE : configuration Example setting
 export HOME="/home/indranil"
@@ -104,11 +107,12 @@ export PATH=${PATH}:/Users/Bitalik/Documents/Applications/android-sdk-macosx/pla
 
 ###########################################################################   
 ### Firmar tu apliación por comandos
-# paso 1
-keytool -genkey -v -keystore my-release-key.keystore -alias abc -keyalg RSA -keysize 2048 -validity 10000
 
 # paso 2 : compilar tu aplicacion .APK para obtener unsigned APK. /var/www/public_html/app-abc
 cordova build android --release
+
+# paso 1
+keytool -genkey -v -keystore my-release-key.keystore -alias abc -keyalg RSA -keysize 2048 -validity 10000
 
 # paso 3 : copia tu APK en donde ejecutaras esta linea  o ubicate dentro de la capeta que contiene tu [appliaction-release-unsignig.apk]
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore app.apk abc 
