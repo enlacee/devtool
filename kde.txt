@@ -1,0 +1,8 @@
+# resolver bug
+sudo apt-get upgrade --fix-missing
+sudo dpkg --configure -a
+
+
+# kde reiniciar escritorio
+killall plasmashell
+plasmashell
