@@ -2,7 +2,18 @@
 sudo apt-get upgrade --fix-missing
 sudo dpkg --configure -a
 
+### Intall 20 things for kubuntu
+http://www.binarytides.com/better-kubuntu-14-04/
 
 # kde reiniciar escritorio
 killall plasmashell
 plasmashell
+
+# Shortcut key
+#################
+CTRL+ALT+L => bloquear desktop
+CTRL+ESC => administrador de tareas
+
+# install package
+#################
+sudo apt-get install libx11-dev
