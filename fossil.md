@@ -28,3 +28,10 @@ fossil rm file...
 fossil addremove file...
 ### cambiar rama
 fossil update anibalprivado
+
+### ver cambios (agregados: nuevos archivos)
+fossil extras
+
+### para commiter, eliminar archivos que no existen
+fossil rm file.js
+fossil commit -m "message description"
