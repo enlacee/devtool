@@ -29,9 +29,10 @@ fossil addremove file...
 ### cambiar rama
 fossil update anibalprivado
 
-### ver cambios (agregados: nuevos archivos)
-fossil extras
+## resetear los cambiaos al ultimo commit
+fossil revert
 
-### para commiter, eliminar archivos que no existen
-fossil rm file.js
-fossil commit -m "message description"
+## cambiar de rama en fossil
+fossil update mirama
+## fossil no seguir archivos
+.fossil-settings/ignore-glob

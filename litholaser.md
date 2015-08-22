@@ -47,3 +47,9 @@ create database flujo_imagenes
 # uuid example
 123e4567-e89b-12d3-a456-426655440000
 
+
+###############
+# riot obs
+##############
+-Optimiza de la mejor manera el dom (guardando en cache).
+-solo actualiza lo necesario (merge dom and apply changes or no)

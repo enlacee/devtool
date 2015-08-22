@@ -17,3 +17,12 @@ CTRL+ESC => administrador de tareas
 # install package
 #################
 sudo apt-get install libx11-dev
+
+# buscar codigo ; ack-grep
+ack-grep "console.log"
+
+## instalacion basica KDE
+sudo apt-get install lubuntu-restricted-extras
+sudo apt-get install exuberant-ctags
+
+##
