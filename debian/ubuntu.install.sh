@@ -2,6 +2,7 @@
 #:::::: Install basic
 #-----------------------------------
 sudo apt-get install ubuntu-restricted-extras
+sudo apt-get install preload ## mejora el rendimeinto
 # in terminal
 sudo apt-get install nautilus-open-terminal
 nautilus -q
