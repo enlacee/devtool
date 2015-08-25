@@ -78,8 +78,11 @@ chmod -R 777 carpeta # recursivo
 
 
 # ver usuarios y eliminarlos
+deluser <username> <groupname>
 cat /etc/passwd
 userdel usuario
+# ver permisos usuarios
+vipw -g 
 # apgar monitor lcd
 xset dpms force off
 

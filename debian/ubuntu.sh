@@ -41,6 +41,8 @@ convert file.pdf image.jpg # convertir pdf a imagen BY: imagemagick
 -----------------------------------
 # descargar mp3
 youtube-dl --extract-audio --audio-format mp3 -l [YOUTUBE VIDEO LINK]
+# descargar con thumbnail
+youtube-dl -t -f 18 --write-thumbnail https://www.youtube.com/watch?v=yz7V_Jh0aVw
 # cd ffmpeg and Install
 sudo ./configure --
 ## eliminar tacho de basura : archivos de garbase

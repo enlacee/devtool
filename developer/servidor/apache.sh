@@ -49,3 +49,7 @@ a2dismod pagespeed #desactivar
 
 
 
+########################
+# NGINX
+########################
+sudo service nginx stop

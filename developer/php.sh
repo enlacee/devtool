@@ -5,7 +5,8 @@
 sudo apt-get install php5-json
 sudo apt-get install php5-sqlite 
 sudo apt-get install php-apc = (almacena en cache)
-apt-get install php5-mcrypt
+sudo apt-get install php5-mcrypt
+sudo apt-get install php5-curl
 sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/apache2/conf.d/ # for Apache
 sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/cli/conf.d/ # for CLI
 #ver paquetes php instalados
@@ -73,3 +74,28 @@ echo mb_strtoupper("aáeéiíoóuúnñ", "utf-8");
 ## imprimir real path
 var_dump(realpath(__DIR__ ."/../../.."));
 
+-----------------------------------
+:::::: install multiple php version
+-----------------------------------
+::: step 01
+sudo apt-get install bison flex libmysqlclient-dev libzzip-dev libcurl4-gnutls-dev libmcrypt-dev libmhash-dev libjpeg8-dev libpng12-dev
+sudo apt-get install libjpeg62-dev libpng-dev libfreetype6-dev
+
+::: step 02
+cd /opt
+sudo wget http://es.php.net/distributions/php-4.4.9.tar.gz
+sudo tar -xvzf php-4.4.9.tar.gz
+cd php-4.4.9
+sudo ./configure --prefix=/opt/php4 --with-config-file-path=/opt/php4 --with-mysql --with-libdir=/lib/x86_64-linux-gnu
+sudo make
+sudo make install
+
+::: step 03
+sudo mkdir -p /opt/etc/php4/cgi
+sudo cp php.ini-dist /opt/etc/php4/cgi/php.ini
+sudo a2enmod actions
+
+::: step 04 : modificar archivo para que no ejecte con php5 actual, quitamos del archivo
+/etc/apache2/mods_available/php5.conf
+
+SetHandler application/x-httpd-php
