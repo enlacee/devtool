@@ -22,6 +22,9 @@ groupadd contabilidad
  usermod -a -G contabilidad pedro
 # cambiar usuario de grupo
 usermod -g retirados pedro
+# añadir usuario a un nuevo grupo
+sudo adduser anb btsync
+
 # VER RESOLUCION DE PC
 xrandr -q | grep -w Screen
 -----------------------------------

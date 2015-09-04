@@ -142,5 +142,16 @@ sudo make PREFIX=/usr install
 # translate terminal
 trans "hello"
 trans :es -input /home/anb/hola.txt
+#-----------------------------------
+#:::::: sincronizar archivos por bittorrent
+#-----------------------------------
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:tuxpoldo/btsync
+sudo apt-get update
+sudo apt-get install btsync
+#-----------------------------------
+#:::::: install keyboard o teclado vitual
+#-----------------------------------
+sudo apt-get install onboard
 
 
