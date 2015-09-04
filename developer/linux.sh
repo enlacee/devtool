@@ -186,3 +186,11 @@ sudo chown anibal:anibal peter
 sudo usermod -d /home/peter peter
 # cambiar carpeta funciono
 sudo usermod -m -d /home/nuevo anibal
+
+####
+#### -----------------------------------------------
+####
+### cambiar de usuario temporal a usuario anb
+sudo usermod -l anb temporal
+### cambiar nombre de home
+sudo usermod -d /home/anb -m anb
