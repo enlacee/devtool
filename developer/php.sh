@@ -8,6 +8,7 @@ sudo apt-get install php-apc = (almacena en cache)
 sudo apt-get install php5-mcrypt
 sudo apt-get install php5-curl
 sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/apache2/conf.d/ # for Apache
+## or : sudo ln -s /etc/php5/mods-available/mcrypt.ini mcrypt.ini
 sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/cli/conf.d/ # for CLI
 #ver paquetes php instalados
 php -m

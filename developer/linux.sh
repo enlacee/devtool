@@ -197,3 +197,5 @@ sudo usermod -m -d /home/nuevo anibal
 sudo usermod -l anb temporal
 ### cambiar nombre de home
 sudo usermod -d /home/anb -m anb
+### buscar
+
