@@ -149,4 +149,7 @@ parse_git_branch() {
 }
 export PS1="\[\033[00m\]\u@\h\[\033[01;33m\] \W \[\033[31m\]\$(parse_git_branch)\[\033[00m\]$\[\033[00m\] "
 
-
+#-------------------------------------------------------
+# configura pront para git
+#-------------------------------------------------------
+https://github.com/magicmonty/bash-git-prompt
