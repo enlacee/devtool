@@ -153,5 +153,7 @@ sudo apt-get install btsync
 #:::::: install keyboard o teclado vitual
 #-----------------------------------
 sudo apt-get install onboard
-
-
+#-----------------------------------
+#:::::: cambiar nombre pc
+#-----------------------------------
+hostname NEW_NAME_HERE

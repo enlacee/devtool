@@ -23,3 +23,18 @@ sudo chmod 777 /usr/share/applications/sublime.desktop
 # http://netgator.blogspot.com/2012/07/home-documents-desktop-icon-on-lubuntu.html
 #  http://wiki.lxde.org/en/Main_Menu
 /home/anb/.local/share/applications
+
+# Configurar sublime default en todos
+# preferences>setting-user
+{
+	"open_files_in_new_window": false,
+	"highlight_modified_tabs": true,
+	"save_on_focus_lost": true,
+	"translate_tabs_to_spaces": false,
+	"tab_size": 4,
+	"font_size": 13.0,
+	"ignored_packages":
+	[
+	  "Vintage"
+	]
+}

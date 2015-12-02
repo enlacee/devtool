@@ -1,3 +1,4 @@
+mi
 ## commad basic:
 CTRL + SHIFT +WINDOWS + M  : ver markdown como github
 CTRL+ SHIFT+P : helper shortkey
