@@ -9,13 +9,17 @@ nautilus -q
 #-----------------------------------
 #:::::: desintalar programa
 #-----------------------------------
-sudo apt-get remove google-chrome-stable 
-sudo apt-get purge google-chrome-stable 
+sudo apt-get remove google-chrome-stable
+sudo apt-get purge google-chrome-stable
 sudo apt-get autoclean
 sudo apt-get clean
 sudo apt-get autoremove
 #list of repositories intall
 /etc/apt/source.list
+#-----------------------------------
+#:::::: remover repositorio en ubuntu
+#-----------------------------------
+ir a Software o Software o software and update
 #-----------------------------------
 #:::::: Install tool
 #-----------------------------------
@@ -43,7 +47,7 @@ uname -m
 #-----------------------------------
 # URL
 # BASIC
-@http://www.imagemagick.org/Usage/thumbnails/ 
+@http://www.imagemagick.org/Usage/thumbnails/
 convert example.png -resize 500×500 example.png
 # BASIC DEFORMA IMAGEN TAMANIO EXACTO
 convert example.png -resize 500×500! example.png
@@ -96,14 +100,14 @@ sudo apt-get install bluez-utils
 hcitool dev # ver dispositivos (see devices)
 
 #-----------------------------------
-#:::::: buscar en ubuntu 
+#:::::: buscar en ubuntu
 #-----------------------------------
 dpkg -L php-pear
 # copiar bin local
 /usr/bin
 /usr/local/bin # recommended
 #-----------------------------------
-#:::::: install mkvextract 
+#:::::: install mkvextract
 #-----------------------------------
 sudo apt-get install mkvtoolnix
 # extraer track srt (buscar)
@@ -123,7 +127,7 @@ sudo a2enmod rewrite && sudo service apache2 restart
 # before :
 AllowOverride None
 # after :
-AllowOverride all 
+AllowOverride all
 
 ## install poedit
 sudo apt-get install poedit
@@ -136,7 +140,7 @@ dict -d fd-spa-eng "odiar"
 git clone https://github.com/soimort/translate-shell
 cd translate-shell/
 make
-sudo make install 
+sudo make install
 make TARGET=zsh
 sudo make PREFIX=/usr install
 # translate terminal
@@ -153,5 +157,3 @@ sudo apt-get install btsync
 #:::::: install keyboard o teclado vitual
 #-----------------------------------
 sudo apt-get install onboard
-
-

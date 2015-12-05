@@ -83,6 +83,7 @@ pcmanfm #=> abre tus carpetas en la posicion actual.
 Windows+E # explorador de carpeta home
 
 # Bloquear el trackpad en laptop thinkpad t430
+# desabilitad pad
 xinput list
 xinput set-prop 12 "Device Enabled" 0
 

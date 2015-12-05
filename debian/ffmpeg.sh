@@ -42,3 +42,6 @@ ffmpeg -i mp4.mp4 -i m4a.m4a -c:v copy -c:a copy output.mp4
 #
 # video+audio (ok) fusionado (cuando el mas corto termine!)
 ffmpeg -i mp4.mp4 -i m4a.m4a -c:v copy -c:a aac -strict experimental -shortest output.mp4
+
+## combinar archivos mp3
+ffmpeg -f concat -i <(for f in ./*.mp3; do echo "file '$PWD/$f'"; done) -c copy output.mp3
