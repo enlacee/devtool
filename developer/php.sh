@@ -3,8 +3,9 @@
 :::::: install php plugin
 -----------------------------------
 sudo apt-get install php5-json
-sudo apt-get install php5-sqlite 
+sudo apt-get install php5-sqlite
 sudo apt-get install php5-mysql
+sudo apt-get install php5-sqlite
 sudo apt-get install php-apc = (almacena en cache)
 sudo apt-get install php5-mcrypt
 sudo apt-get install php5-curl
@@ -34,7 +35,7 @@ intl
 php -m
 php -a # php por terminal (ok)
 -----------------------------------
-:::::: php.ini 
+:::::: php.ini
 -----------------------------------
 # configuracion  para enviar files pesados PHP OKKK
 upload_max_filesize = 1000M ;1GB
@@ -52,6 +53,14 @@ $ pear remote-list #muestra la lista de paquetes disponibles para instalar
 #install PHPUnit
 sudo pear config-set auto_discover 1
 sudo pear install pear.phpunit.de/PHPUnit
+#install PHPUnit 2
+sudo apt-get update
+sudo apt-get install phpunit
+sudo apt-get install php5-xdebug
+sudo apt-get install php5-curl
+sudo pear channel-update pear.php.net
+#probar si instalo
+phpunit --version
 # insatall xdebug
 sudo apt-get install php5-dev
 sudo pecl install xdebug
@@ -68,7 +77,7 @@ php-config --version # execute only command assisted
 date.timezone = America/Lima
 
 ## debug : tracking : profile
-XHProf 
+XHProf
 
 ##
 echo mb_strtoupper("aáeéiíoóuúnñ", "utf-8");

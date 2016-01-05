@@ -38,6 +38,12 @@ create database flujo_imagenes
 # listar bases de datos y tablasdjango_sitedjango_site
 \list or \l: list all databases
 \dt: list all tables in the current database
+######################
+# POSTGRES 2
+######################
+sudo -i -u postgres
+createdb test # yes we're still in bash
+psql -d test
 
 #########################
 # UUID : Universal unique Identifier (standar)

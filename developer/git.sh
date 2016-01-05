@@ -41,6 +41,8 @@ git checkout -b 7683-1
 git checkout HEAD index.html
 # checkout de un archivo
 git checkout HASH file.html
+# recuperar el archivo eliminado
+git checkout file.html
 # pasar tus cambios a otro lado - y aplicar nuevamente
 git stash
 git stash save # o comentat git stash save "comentario"
