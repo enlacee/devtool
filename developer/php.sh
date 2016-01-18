@@ -4,6 +4,8 @@
 -----------------------------------
 sudo apt-get install php5-json
 sudo apt-get install php5-sqlite
+sudo apt-get install php5-mysql
+sudo apt-get install php5-sqlite
 sudo apt-get install php-apc = (almacena en cache)
 sudo apt-get install php5-mcrypt
 sudo apt-get install php5-curl

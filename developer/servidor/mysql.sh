@@ -74,6 +74,11 @@ port        = 3306
 #socket     = /var/run/mysqld/mysqld.sock
 socket      = /var/lib/mysql/mysql.sock
 
+# alternativa
+ln -s /var/run/mysqld/mysqld.sock /tmp/mysql.sock 
+#alternativa
+
+
 # buscar socket 
 mysql_config --socket
 ### install mysql
@@ -137,3 +142,9 @@ SET FOREIGN_KEY_CHECKS = 1;
 UPDATE `especialities` SET
 `status_especiality` = '1'
 WHERE `relevance_especiality`  > 0
+
+### CONFIGURAR LOG MYSQL
+/etc/mysql/mysql.conf.d/mysqld.cnf
+# SETER VALORES
+general_log_file        = /var/log/mysql/mysql.log
+general_log             = 1

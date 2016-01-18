@@ -53,3 +53,54 @@ a2dismod pagespeed #desactivar
 # NGINX
 ########################
 sudo service nginx stop
+
+########################
+# configurar cache expiracion para el browser
+########################
+#activar modulo
+sudo a2enmod expires 
+# set file .htaccess (1)
+ExpiresActive on
+ExpiresByType image/jpg "access plus 1 month" 
+ExpiresByType image/jpeg "access plus 1 month" 
+ExpiresByType image/gif "access plus 1 month" 
+ExpiresByType image/png "access plus 1 month" 
+ExpiresByType text/css "access plus 1 month"
+
+# acivar set file.htaccess (2)
+ExpiresActive on
+# Media
+ExpiresByType audio/ogg                             "access plus 1 month"
+ExpiresByType image/gif                             "access plus 1 month"
+ExpiresByType image/jpeg                            "access plus 1 month"
+ExpiresByType image/png                             "access plus 1 month"
+ExpiresByType video/mp4                             "access plus 1 month"
+ExpiresByType video/ogg                             "access plus 1 month"
+ExpiresByType video/webm                            "access plus 1 month"
+
+# Web feeds
+ExpiresByType application/atom+xml                  "access plus 1 hour"
+ExpiresByType application/rss+xml                   "access plus 1 hour"
+
+# Web fonts
+ExpiresByType application/font-woff                 "access plus 1 month"
+ExpiresByType application/font-woff2                "access plus 1 month"
+ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
+ExpiresByType application/x-font-ttf                "access plus 1 month"
+ExpiresByType font/opentype                         "access plus 1 month"
+ExpiresByType image/svg+xml                         "access plus 1 month" 
+
+########################
+# configurar cache expiracion en apache
+# Cache-Control:max-age=604800, public
+######################## 
+# activar o verificar este servicio 
+sudo a2enmod headers
+
+# set file
+<IfModule mod_headers.c>
+    # WEEK
+    <FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
+        Header set Cache-Control "max-age=604800, public"
+    </FilesMatch>
+</IfModule>
