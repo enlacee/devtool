@@ -199,3 +199,8 @@ sudo usermod -l anb temporal
 sudo usermod -d /home/anb -m anb
 ### buscar
 
+### reiniciar wifi
+sudo service network-manager restart
+# more
+ifconfig wlan0 down
+ifconfig wlan0 up

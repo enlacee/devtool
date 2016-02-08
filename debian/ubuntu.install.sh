@@ -161,3 +161,7 @@ sudo apt-get install onboard
 #:::::: cambiar nombre pc
 #-----------------------------------
 hostname NEW_NAME_HERE
+#-----------------------------------
+#:::::: reconocer android
+#-----------------------------------
+sudo apt-get install mtpfs
