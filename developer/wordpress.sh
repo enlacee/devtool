@@ -57,3 +57,24 @@ public function widget( $args, $instance ) {
     extract($args);
     $title = apply_filters( 'widget_title', empty($instance['title']) ? '' : $instance['title'], $instance );
     $text = apply_filters( 'widget_text', $instance['text'], $instance );
+
+### fitrar texto para url o *limpiar* decode
+sanitize_title('string')
+
+### configuracion de variable enviroment en Apache y php
+Apache config
+```apache
+<VirtualHost *:80>
+    #ServerName 
+    #DocumentRoot
+
+        SetEnv APPLICATION_ENV "development"
+
+    # Directory
+</VirtualHost>
+```
+
+PHP config
+```php
+$env = getenv('APP_ENV') ?: 'production';
+```
