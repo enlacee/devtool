@@ -1,5 +1,12 @@
 # ! /bin/bash
 # create backup
+# comprimir:
+# tar -zcvf /home/Escritorio compress.tar.gz
+# descomprimir:
+# tar -zxvf merge.esika.tar.gz -C /home/anb/Documentos/
+
+
+
 BASE="$HOME/Escritorio"
 ME_DATE=`date +%Y-%m-%d:%H:%M:%S`
 FOLDER_SYNC="$HOME/AnibalSync"
