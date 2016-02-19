@@ -48,8 +48,7 @@ export PATH="$HOME/android-sdk-linux/tools:$HOME/android-sdk-linux/platforms:$PA
 sudo apt-get install openjdk-6-jdk ant
 # 04 : init android and install APIS
 android
-# 05 : new folder create called platform-tools
-export PATH="$HOME/android-sdk-linux/tools:$HOME/android-sdk-linux/platforms:$HOME/android-sdk-linux/platform-tools:$PATH"
+# 05 : new folder crexport PATH="$HOME/android-sdk-linux/tools:$HOME/android-sdk-linux/platforms:$HOME/android-sdk-linux/platform-tools:$PATH"
 # 06 : install the adb package. (comand line) (comunique with emulador)
 sudo apt-get install android-tools-adb
 # 07 : if you machine is 64 bit
@@ -131,3 +130,12 @@ https://github.com/wf9a5m75/phonegap-googlemaps-plugin
 
 
 
+###########
+# update android
+###########
+cordova platform update android
+
+## nota not find * zipalign *
+http://stackoverflow.com/questions/24442213/cannot-find-zip-align-when-publishing-app
+# hacer: sdk/build-tools/android-4.4W folder to sdk/tools/
+# referencia: en Android SDK Build-tools 20
