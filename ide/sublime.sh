@@ -27,14 +27,9 @@ sudo chmod 777 /usr/share/applications/sublime.desktop
 # Configurar sublime default en todos
 # preferences>setting-user
 {
-	"open_files_in_new_window": false,
-	"highlight_modified_tabs": true,
-	"save_on_focus_lost": true,
+	"font_size": 10,
 	"translate_tabs_to_spaces": false,
+	"detect_indentation": false,
 	"tab_size": 4,
-	"font_size": 13.0,
-	"ignored_packages":
-	[
-	  "Vintage"
-	]
+	"draw_white_space": "all"
 }
