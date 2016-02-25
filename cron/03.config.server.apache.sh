@@ -5,9 +5,22 @@
 
 ## 01: crear virtual host
 ME_FILE_NAME="local.local.conf"
-ME_FILE="./03/virtualhost.txt" #the file where you keep your string name
 ME_FILE_HOST="/etc/hosts"
-ME_STRING=$(cat "$ME_FILE")
+ME_STRING=$(cat <<EOF
+<VirtualHost *:80>
+	ServerName local.local
+	DocumentRoot /var/www/html/
+	<Directory /var/www/html/>
+		Options Indexes FollowSymLinks Multiviews
+		AllowOverride All
+		Order allow,deny
+		allow from all
+		RewriteEngine on
+	</Directory>
+	ErrorLog ${APACHE_LOG_DIR}/local.local-error.log
+</VirtualHost>
+EOF
+)
 
 echo "$ME_STRING" >> $ME_FILE_NAME
 sudo mv $PWD/$ME_FILE_NAME /etc/apache2/sites-available/$ME_FILE_NAME

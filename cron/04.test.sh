@@ -1,3 +1,4 @@
+SQL=$(cat <<EOF
 <VirtualHost *:80>
 	ServerName local.local
 	DocumentRoot /var/www/html/
@@ -10,3 +11,7 @@
 	</Directory>
 	ErrorLog ${APACHE_LOG_DIR}/local.local-error.log
 </VirtualHost>
+EOF
+)
+
+echo "$SQL"
