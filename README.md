@@ -1,11 +1,14 @@
 devTool
 =======
 
-Development and Tools 'notes knowledge' enviroment (LINUX,Ubuntu,Lubuntu, Mac)
+Notes about languague programmer or steps of how to make anything work.
+Table of contents
 
-- project development
-- platforms SO
-- Tecnologies Web
-- Step for config or intall packages y sofware
+* Linux `Ubuntu, Lubuntu, Kubuntu`
+* Bash, Shell
+* Php `zf2, codeigniter, wordpress`
+* Python
+* Javascript
+* Java `Android`
 
-Usefull for your daily activity  as a developer
+Usefull for your daily activity as a geek developer
