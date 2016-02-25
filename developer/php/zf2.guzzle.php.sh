@@ -13,9 +13,9 @@
         $client = new Client();
         $client->setDefaultOption('headers/Content-type', 'application/json');
         $client->setDefaultOption('headers/Accept', 'application/json');
-        
+
         $optionsFormat = array('body' => '{"id_user" : "2", "content_question" : "aaaa", "id_especiality" : "3"}');
-        
+
         //$optionsFormat = array('body' => '{"views_article" : "122344"}');
         //echo $strJson; exit;
         $URL = 'http://asiste.app/v1/contents/questions';
@@ -27,8 +27,8 @@
             // return code error
             return $statusCode;
         }
-               
-        
+
+
         echo "<pre>"; print_r($response); exit;
     }
 
@@ -63,8 +63,3 @@ Content-Type  : application/json
 Accept        : application/json
 # RAW:JSON
 {"ss_token_signup_user" : "ddd"}
-
-
-
-
-
