@@ -18,6 +18,8 @@ php -m
 # xhprof
 sudo pecl config-set preferred_state beta
 sudo pecl install xhprof
+# ver graficos de xhprof
+apt-get install graphviz
 #+++
 sudo apt-get install php5-gd
 sudo apt-get install php5-gd
@@ -78,6 +80,7 @@ date.timezone = America/Lima
 
 ## debug : tracking : profile
 XHProf
+@reference [install xhprof](http://techportal.inviqa.com/2009/12/01/profiling-with-xhprof/)
 
 ##
 echo mb_strtoupper("aáeéiíoóuúnñ", "utf-8");
