@@ -1,10 +1,12 @@
 # ! /bin/bash
 # Ejecutar programas de preferencia
-#
-# google-chrome
 
 APP[0]='google-chrome'
-APP[1]='rescuetime' # medidor de productividad
-APP[2]='thunderbird'
-APP[3]='atom'
-APP[4]=''
+APP[1]='thunderbird'
+APP[2]='atom'
+
+for element  in ${APP[@]}
+do
+	echo $element
+	eval $element
+done
