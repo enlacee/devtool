@@ -70,7 +70,7 @@ Widget.MAX_HEIGHT = 320;
 Widget.MAX_WIDTH = 480;
 
 ---------------
-# LE PASAMOS UN PARAMETRO DE TIPO FUNCION PARA EJECUTAR LUEGO 
+# LE PASAMOS UN PARAMETRO DE TIPO FUNCION PARA EJECUTAR LUEGO
 # DE HACER UNA OPERACION ASINCRONA
 function esperarUnSegundo(callback) {
   setTimeout(function() {
@@ -108,3 +108,12 @@ tbody.rows[1].insertCell(1);
 tbody.rows[1].cells[1].appendChild(document.createTextNode(“Cell 2,2”));
 //add the table to the document body
 document.body.appendChild(table);
+
+
+### JAVASCRIPT REGEX
+Permitir vocales utf8 = \p{L}
+
+``` javascript
+var unicodeWord = XRegExp('^\\p{L}+$');
+unicodeWord.test('Русский'); // -> true
+```
