@@ -78,3 +78,11 @@ PHP config
 ```php
 $env = getenv('APP_ENV') ?: 'production';
 ```
+
+
+
+### lectura wordpress
+Links de referencia utiles
+
+* [Cargar archivos js & css](http://scribu.net/wordpress/optimal-script-loading.html)
+* 

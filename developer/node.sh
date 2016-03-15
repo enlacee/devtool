@@ -31,5 +31,6 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
   body!= body
 
-  
-
+# install node v4
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt-get install -y nodejs
