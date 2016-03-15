@@ -25,6 +25,10 @@ usermod -g retirados pedro
 # añadir usuario a un nuevo grupo
 sudo adduser anb btsync
 
+# agregar usuario como sudo
+adduser demo
+gpasswd -a demo sudo
+
 # VER RESOLUCION DE PC
 xrandr -q | grep -w Screen
 -----------------------------------
