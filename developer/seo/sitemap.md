@@ -1,4 +1,4 @@
- # SITEMAP
+# SITEMAP
 
 [fuente](https://searchenginewatch.com/sew/how-to/2048706/the-site-map-gateway-optimization)
 
