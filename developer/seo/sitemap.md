@@ -2,7 +2,7 @@
 
 [fuente](https://searchenginewatch.com/sew/how-to/2048706/the-site-map-gateway-optimization)
 
-Podemos crear los sitemap, que creamos necesarios, todos estos archivos lo tendremos que subir a: 
+Podemos crear los sitemaps necesarios, todos estos archivos lo tendremos que subir a: 
 
 [Google Tool Webmaster](https://www.google.com/webmasters/tools)
 
