@@ -18,6 +18,7 @@ ME_STRING=$(cat <<EOF
 		RewriteEngine on
 	</Directory>
 	ErrorLog ${APACHE_LOG_DIR}/local.local-error.log
+	SetEnv APPLICATION_ENV "development"
 </VirtualHost>
 EOF
 )
