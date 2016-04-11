@@ -17,3 +17,13 @@ source bin/activate
 deactivate
 # instalar packeque en virtualenv
 pip install django
+
+## instalar mkdocs *documentacion*
+# funciona
+wget https://bootstrap.pypa.io/get-pip.py
+sudo -H python get-pip.py
+sudo -H pip uninstall mkdocs
+sudo -H pip install mkdocs
+
+# Iniciar servidor
+mkdocs serve
