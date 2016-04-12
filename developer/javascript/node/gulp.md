@@ -21,3 +21,21 @@ npm install --save-dev gulp
 npm install --save-dev gulp-concat
 npm install --save-dev gulp-uglify
 ```
+
+### 03. configurar en la misma direccion
+
+``` javascript
+gulp.task('demojs', function () {
+
+	var paths = [
+		'a/a1.js',
+		'a/zx/abc/a1.js',
+		'a/abc/a4.js',
+	];
+	gulp.src(paths, {base: "./"})
+		.pipe(uglify())
+		.pipe(rename({suffix:'.min'}))
+		.pipe(gulp.dest("./"));
+
+});
+```

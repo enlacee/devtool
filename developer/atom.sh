@@ -11,7 +11,7 @@ CTRL+ SHIFT+P : helper shortkey
     apm install jshint
 
 
-    
+
 
 ## plugin
 - emmet : html>head>body
@@ -22,3 +22,8 @@ CTRL+ SHIFT+P : helper shortkey
 
 # emmet
 emmet sintaxis : http://docs.emmet.io/abbreviations/syntax/
+
+### ERROR ATOM
+
+Error para mostrar archivos ingorador por controlador de versiones
+Abrir el plugin `tree view` and enable **Hide VCP ignored files**

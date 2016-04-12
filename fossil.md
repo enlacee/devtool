@@ -36,3 +36,12 @@ fossil revert
 fossil update mirama
 ## fossil no seguir archivos
 .fossil-settings/ignore-glob
+
+## Inicio rapido con Fossil
+Crear repositorio central, ahi te da un usuario y clave de acceso.
+
+	fossil init mirepo.fossil
+
+Abrir repositorio en el mismo Server
+
+	fossil open /home/anb/sites/repocentral/mirepo.fossil
