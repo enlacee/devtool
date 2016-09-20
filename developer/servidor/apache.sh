@@ -104,3 +104,6 @@ sudo a2enmod headers
         Header set Cache-Control "max-age=604800, public"
     </FilesMatch>
 </IfModule>
+
+# ver servicios
+service --status-all

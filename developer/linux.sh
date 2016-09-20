@@ -40,7 +40,7 @@ sudo chown -Rv username directory
 -----------------------------------
 # copiar y pegar ::
 scp -rv chamilo acopitan@192.168.1.167:/home/acopitan/
-# ingresar x ssh 
+# ingresar x ssh
 ssh acopitan : password = acopitan
 ssh acopitan@toc
 # Copiar archivo de local a toc
@@ -86,7 +86,7 @@ deluser <username> <groupname>
 cat /etc/passwd
 userdel usuario
 # ver permisos usuarios
-vipw -g 
+vipw -g
 # apgar monitor lcd
 xset dpms force off
 
@@ -119,7 +119,7 @@ vim file.srt
 :set fileencoding=utf-8
 :x
 # apagar monitor
-xset dpms force off 
+xset dpms force off
 
 # apagar PC
 sudo shutdown -h 110
@@ -138,11 +138,11 @@ find . -type f -exec chmod 644 {} \;
 zip archivo.zip ficheros
 # Descomprimir
 unzip archivo.zip
-# TAR 
+# TAR
 tar -c ficheros | bzip2 > archivo.tar.bz2
 # Descomprimir
 bzip2 -dc archivo.tar.bz2 | tar -xv
-# Ver: 
+# Ver:
 bzip2 -dc archivo.tar.bz2 | tar -t
 
 # permisos hosting web (HOSTGATOR)
@@ -208,3 +208,5 @@ sudo service network-manager restart
 # more
 ifconfig wlan0 down
 ifconfig wlan0 up
+### buscar maquinas en la red local
+arp-scan --interface=wlan0 --localnet
