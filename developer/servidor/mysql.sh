@@ -17,7 +17,7 @@ mysql -u username -p database_name < file.sql
 mysqldump -u root -p ac_gym > sql.sql
 #options
 -d, --no-data
-# mysql 
+# mysql
 show columns from table
 # config all privileges
  mysql -u root -p
@@ -43,11 +43,11 @@ SHOW COLLATION;
 # create databse sql
 CREATE DATABASE mydb
   DEFAULT CHARACTER SET utf8
-  DEFAULT COLLATE utf8_general_ci; 
-# config in server mysql  
+  DEFAULT COLLATE utf8_general_ci;
+# config in server mysql
 [mysqld]
 character-set-server=utf8
-collation-server=utf8_general_ci  
+collation-server=utf8_general_ci
 # ALTER by table
 alter table <some_table> convert to character set utf8 collate utf8_unicode_ci;
 # Busqueda en mysql
@@ -66,7 +66,7 @@ sudo /etc/init.d/mysql restart
 # otros mysql
 service mysqld status
 service mysqld stop
-service mysqld start 
+service mysqld start
 
 # mysqld.sock
 [client]
@@ -75,14 +75,14 @@ port        = 3306
 socket      = /var/lib/mysql/mysql.sock
 
 # alternativa
-ln -s /var/run/mysqld/mysqld.sock /tmp/mysql.sock 
+ln -s /var/run/mysqld/mysqld.sock /tmp/mysql.sock
 #alternativa
 
 
-# buscar socket 
+# buscar socket
 mysql_config --socket
 ### install mysql
-sudo apt-get install mysql-server 
+sudo apt-get install mysql-server
 
 
 
@@ -99,20 +99,20 @@ sudo apt-get install mysql-server
 # util remplazar
 	UPDATE table SET field = REPLACE(field, 'string', 'anothervalue') WHERE field LIKE '%string%';
 # obtener string de la primera segunda posicion
-	SELECT SUBSTRING_INDEX('www.mytestpage.info','.',2);  
+	SELECT SUBSTRING_INDEX('www.mytestpage.info','.',2);
 
 # installar depencias
-sudo dpkge -i programa.deb 
+sudo dpkge -i programa.deb
 sudo apt-get -f install
 
 #error workbench
-sudo apt-get purge mysql-workbench* 
-sudo dpkg --force-all -i mysql-workbench-community-6.0.6-1ubu1204-i386.deb 
+sudo apt-get purge mysql-workbench*
+sudo dpkg --force-all -i mysql-workbench-community-6.0.6-1ubu1204-i386.deb
 
 # para instalar una determinada version ir AL SYNAPTIC PACKAGE
 # ir y remover los nuevos link de los repositorios de descarga.
 # despues instalar  los paquetes de la version anterios EN ESTE CASO mysql 5.6
-# 
+#
 # opcional agregar repositorio mysql 5.6
 apt-get -y remove mysql-server
 apt-get -y autoremove
@@ -129,12 +129,12 @@ watch -n 1 mysqladmin --user=root --password=123456 processlist
 
 
 ## error al eliminar tablas relacionadas
-# resolver poniendo las tablas = ON DELETE CASCADE 
+# resolver poniendo las tablas = ON DELETE CASCADE
 
 
 ## truncar tabla sin error forenkey
-SET FOREIGN_KEY_CHECKS = 0; 
-TRUNCATE articles; 
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE articles;
 SET FOREIGN_KEY_CHECKS = 1;
 
 
@@ -148,3 +148,20 @@ WHERE `relevance_especiality`  > 0
 # SETER VALORES
 general_log_file        = /var/log/mysql/mysql.log
 general_log             = 1
+
+## acceder a mysql remoto *ubuntu 15*
+# 01: comentar restriccion acceder a mysql local. *por default solo escucha 127.0.0.1*
+vim /etc/mysql/mysql.conf.d/mysqld.cnf
+	#bind-address           = 127.0.0.1
+# 01.1 reiniciar mysql
+sudo /etc/init.d/mysql restart
+
+# 02: crear usuario en consola MYSQL
+CREATE USER 'myuser'@'localhost' IDENTIFIED BY 'some_pass';
+GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'localhost';
+CREATE USER 'myuser'@'%' IDENTIFIED BY 'some_pass';
+GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%';
+FLUSH PRIVILEGES;
+
+# 03: Ping test *consola MYSQL*
+mysql -h 192.168.1.31 -u myuser -p
