@@ -47,7 +47,7 @@ git checkout file.html
 git stash
 git stash save # o comentat git stash save "comentario"
 git stash show # ver cambios actuales
-git stash apply 
+git stash apply
 git stash list # ver numero de cambios termporales guardados
 
 git stash pop # remueve el stash and apply changes in TOP.
@@ -82,7 +82,7 @@ git push origin : 7160
 
 # cambiar el nombre de rama
 git branch -m nombre_rama_anterior nombre_rama_nuevo
-# 
+#
 git add -u -- ok
 git add -a
 
@@ -155,3 +155,5 @@ export PS1="\[\033[00m\]\u@\h\[\033[01;33m\] \W \[\033[31m\]\$(parse_git_branch)
 # configura pront para git
 #-------------------------------------------------------
 https://github.com/magicmonty/bash-git-prompt
+# archivo sin cambios
+git update-index --assume-unchanged file…

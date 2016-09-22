@@ -40,4 +40,5 @@ ack-grep "console.log"
 sudo apt-get install lubuntu-restricted-extras
 sudo apt-get install exuberant-ctags
 
-##
+## limpiar papelera
+rm -rf ~/.local/share/Trash/*
