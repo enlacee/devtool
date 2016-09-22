@@ -16,10 +16,10 @@ markdow Preview => [,build : ctrl+b]
 sudo ln -s /opt/Sublime Text 2/sublime_text /usr/bin/sublime
 # Crear icono de sublime
 sudo cp /home/anb/Escritorio/netbeans.desktop /usr/share/applications/sublime.desktop
-# dar permisos para que cualquier usuario pueda llamarlo desde 
+# dar permisos para que cualquier usuario pueda llamarlo desde
 sudo chmod 777 /usr/share/applications/sublime.desktop
 ##
-# ojo en esta carpeta se configuran los iconos temporales del # sistema  mas infor en : 
+# ojo en esta carpeta se configuran los iconos temporales del # sistema  mas infor en :
 # http://netgator.blogspot.com/2012/07/home-documents-desktop-icon-on-lubuntu.html
 #  http://wiki.lxde.org/en/Main_Menu
 /home/anb/.local/share/applications
@@ -33,3 +33,10 @@ sudo chmod 777 /usr/share/applications/sublime.desktop
 	"tab_size": 4,
 	"draw_white_space": "all"
 }
+
+
+## install plugins
+- emmet
+- sublime linter
+- BracketHighlighter
+- git gutter
