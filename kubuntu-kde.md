@@ -42,3 +42,11 @@ sudo apt-get install exuberant-ctags
 
 ## limpiar papelera
 rm -rf ~/.local/share/Trash/*
+
+####################################
+## config kde
+####################################
+## ver detalle sys 
+infocenter
+## workspace
+workspace > virtual desktop

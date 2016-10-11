@@ -21,14 +21,14 @@ wp get nav menu items
 wp_reset_postdata()
 
 ## agregar en function para saber numero de post
-## function.php 
+## function.php
 function wpse8170_get_posts_count() {
     global $wp_query;
     return $wp_query->post_count;
 }
 # funcion para cortar string
 function limit_string($cadena, $limite, $corte=" ", $pad="...")
-{   
+{
     if(strlen($cadena) <= $limite)
         return $cadena;
     if(false !== ($breakpoint = strpos($cadena, $corte, $limite))) {
@@ -37,7 +37,7 @@ function limit_string($cadena, $limite, $corte=" ", $pad="...")
         }
     }
 
-    return $cadena;    
+    return $cadena;
 }
 # funcion para cortar palabra string
 function limit_words( $str, $num='', $append_str='' ) {
@@ -65,7 +65,7 @@ sanitize_title('string')
 Apache config
 ```apache
 <VirtualHost *:80>
-    #ServerName 
+    #ServerName
     #DocumentRoot
 
         SetEnv APPLICATION_ENV "development"
@@ -85,4 +85,10 @@ $env = getenv('APP_ENV') ?: 'production';
 Links de referencia utiles
 
 * [Cargar archivos js & css](http://scribu.net/wordpress/optimal-script-loading.html)
-* 
+*
+
+### wordpress cli
+# exportar db
+wp db export --allow-root --path=/var/www/html/Fashionblog/app
+# instalar plugin
+wp plugin install jetpack --allow-root --path=/var/www/html/Fashionblog/app

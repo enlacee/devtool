@@ -79,6 +79,11 @@ chmod 666 log.log
 # directorio
 chmod 755 carpeta
 chmod -R 777 carpeta # recursivo
+# permisos para archivos
+744
+# permisos para carpetas
+755
+
 
 
 # ver usuarios y eliminarlos
