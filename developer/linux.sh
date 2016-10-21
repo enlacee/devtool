@@ -215,3 +215,10 @@ ifconfig wlan0 down
 ifconfig wlan0 up
 ### buscar maquinas en la red local
 arp-scan --interface=wlan0 --localnet
+
+### formatear usb
+umount
+sudo mkfs.vfat -n myusb -I /dev/sdb
+### bootear usb live
+sudo blkid
+sudo dd if=archivo.iso of=/dev/sdX

@@ -92,3 +92,52 @@ Links de referencia utiles
 wp db export --allow-root --path=/var/www/html/Fashionblog/app
 # instalar plugin
 wp plugin install jetpack --allow-root --path=/var/www/html/Fashionblog/app
+
+
+### Avanzado configurar: wp-config.php
+
+Mostrar errores log
+
+@ini_set( 'log_errors','On' );
+@ini_set( 'display_errors','Off' );
+@ini_set( 'error_log','/public_html/wordpress/php_error.log' );
+
+###
+define( 'LANGDIR', '/wp-content/bury/my/languages' );
+
+###
+define( 'FTP_USER', 'username' );
+define( 'FTP_PASS', 'password' );
+define( 'FTP_HOST', 'ftp.example.com:21' );
+
+###
+Configurar en VirtualHost
+
+php_flag display_startup_errors off
+php_flag display_errors off
+php_flag html_errors off
+php_flag log_errors on
+php_value error_log /public_html/php-errors.log
+
+###
+variables globales WPL
+
+### VARIBABLE
+global $is_lynx, $is_gecko, $is_IE, $is_opera, $is_NS4,
+$is_safari, $is_chrome, $is_iphone;
+
+
+wp_is_mobile()
+
+global $is_apache, $is_IIS;
+### Data Validation and Sanitization
+esc_html( $text );
+<input type="text" name="first_name" value="<?php echo esc_attr( $text ); ?>">
+<textarea name="description"><?php echo esc_textarea( $text ); ?></textarea>
+<a href="<?php echo esc_url( $url ); ?>">
+<script>
+var bwar='<?php echo esc_js( $text ); ?>';
+</script>
+<?php sanitize_text_field( $text ); ?>
+ sanitize_email( '    éric@loremipsum.com!' )
+
