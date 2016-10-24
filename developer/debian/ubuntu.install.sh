@@ -165,3 +165,8 @@ hostname NEW_NAME_HERE
 #:::::: reconocer android
 #-----------------------------------
 sudo apt-get install mtpfs
+#-----------------------------------
+#:::::: install USB LIVE *anywhere*
+#-----------------------------------
+sudo dd if=archivo.iso of=/dev/sdX
+sudo blkid
