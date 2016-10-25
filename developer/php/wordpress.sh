@@ -141,3 +141,8 @@ var bwar='<?php echo esc_js( $text ); ?>';
 <?php sanitize_text_field( $text ); ?>
  sanitize_email( '    éric@loremipsum.com!' )
 
+## activar debug en wp-config
+define('WP_DEBUG', true);
+define('WP_DEBUG_DISPLAY', true);
+define('WP_DEBUG_LOG', true);
+
