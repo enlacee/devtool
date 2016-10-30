@@ -27,11 +27,12 @@ sudo chmod 777 /usr/share/applications/sublime.desktop
 # Configurar sublime default en todos
 # preferences>setting-user
 {
-	"font_size": 10,
+	"font_size": 11,
 	"translate_tabs_to_spaces": false,
 	"detect_indentation": false,
 	"tab_size": 4,
-	"draw_white_space": "all"
+	"draw_white_space": "all",
+	"update_check": false
 }
 
 
