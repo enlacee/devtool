@@ -30,3 +30,9 @@ docker run  -v /home/anb/zdata/sites:/var/www/html:rw -p 80:80 -p 3306:3306 -it 
 docker run -v /home/anb/zdata/sites:/var/www/html:rw  -it --name my_lamp -p 80:80 nickistre/ubuntu-lamp
 docker start my_lamp
 docker exec -it my_lamp /bin/bash
+
+### eliminar
+sudo docker rmi 5b2d41f89d4b
+
+### importar container docker
+sudo docker load -i container1.tar
