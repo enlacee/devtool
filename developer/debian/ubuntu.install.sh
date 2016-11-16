@@ -170,3 +170,6 @@ sudo apt-get install mtpfs
 #-----------------------------------
 sudo dd if=archivo.iso of=/dev/sdX
 sudo blkid
+
+#install terminal como background
+sudo apt-get install tilda
