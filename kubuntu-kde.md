@@ -50,3 +50,8 @@ rm -rf ~/.local/share/Trash/*
 infocenter
 ## workspace
 workspace > virtual desktop
+####################################
+## config kde monitores
+####################################
+xrandr --output
+xrandr --output LVDS-1 --auto
