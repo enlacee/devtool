@@ -222,3 +222,5 @@ sudo mkfs.vfat -n myusb -I /dev/sdb
 ### bootear usb live
 sudo blkid
 sudo dd if=archivo.iso of=/dev/sdX
+### current process
+ps -A

@@ -36,3 +36,7 @@ sudo docker rmi 5b2d41f89d4b
 
 ### importar container docker
 sudo docker load -i container1.tar
+
+### ver carpetas de imagen
+sudo docker run container1 ls -l
+
