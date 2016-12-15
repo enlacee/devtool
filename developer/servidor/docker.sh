@@ -40,3 +40,10 @@ sudo docker load -i container1.tar
 ### ver carpetas de imagen
 sudo docker run container1 ls -l
 
+
+## Crear una imagen en base a `Dockerfile`
+Simple example: `https://github.com/dockerfile/ubuntu`
+nginx_image : nombre de la imagen
+```bash
+docker build -t nginx_image .
+```
