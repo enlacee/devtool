@@ -2,8 +2,8 @@
 
 #iniciar docker
 sudo docker start lamp
-# acceder al shell
-sudo docker exec -i -t lamp /bin/bash
+# acceder al shells
+udo docker exec -i -t lamp /bin/bash
 
 
 # BASH : iniciar en ubuntu
@@ -47,3 +47,43 @@ nginx_image : nombre de la imagen
 ```bash
 docker build -t nginx_image .
 ```
+
+
+###################
+## DJANGO
+###################
+sudo docker pull dockerfiles/django-uwsgi-nginx
+sudo docker run -t -i dockerfiles/django-uwsgi-nginx /bin/bash
+
+##################
+# crear un container apartir de un repositorio docker
+#################
+* Paso 1: clonar el repositorio
+
+	git clone git@github.com:dockerfiles/django-uwsgi-nginx.git
+
+* Paso 2: ir al repositorio
+
+	cd django-uwsgi-nginx
+
+* Paso 3: construir la imagen llamado *webapp*
+
+	sudo docker build -t webapp .
+
+* Paso 4: crear el container
+
+	sudo docker run -d webapp
+
+* Paso 5: ingresar por terminal
+
+	sudo docker exec -i -t *hashContainer* /bin/bash
+
+* Paso 6: ingresar al home del app e iniciar el servidor
+
+	cd /home/docker/code/app
+
+*
+
+
+
+python manage.py runserver
