@@ -8,7 +8,6 @@ pip install requests
 python -m SimpleHTTPServer 8000
 
 # crear entornos de python
-<<<<<<< HEAD:developer/python.sh
 Instalar `virtualenv`
 
 Opción #1 en debian
@@ -43,6 +42,12 @@ source bin/activate
 deactivate
 # instalar packeque en virtualenv
 pip install django
+# crear proyecto:
+django-admin.py startproject mysite
+# crear app:
+cd mysite
+django-admin.py startapp my_app
+
 
 ## instalar mkdocs *documentacion*
 # funciona
