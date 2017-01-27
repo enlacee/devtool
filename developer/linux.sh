@@ -218,7 +218,8 @@ arp-scan --interface=wlan0 --localnet
 
 ### formatear usb
 umount
-sudo mkfs.vfat -n myusb -I /dev/sdb
+sudo mkfs.vfat -n myusb -I /dev/sdb # formato FAT
+sudo mkfs.ntfs -I /dev/sdb1 # formato NTFS
 ### bootear usb live
 sudo blkid
 sudo dd if=archivo.iso of=/dev/sdX
