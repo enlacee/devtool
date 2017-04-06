@@ -8,8 +8,8 @@ php_value date.timezone 'Europe/London'
 /etc/apache2/apache2.conf
 /etc/apache2/envvars
 # other
-AddType video/x-flv .flv 
-AddType video/x-flv flv  
+AddType video/x-flv .flv
+AddType video/x-flv flv
 # ver version de apache
 apache2ctl -v
 #config no www
@@ -58,13 +58,13 @@ sudo service nginx stop
 # configurar cache expiracion para el browser
 ########################
 #activar modulo
-sudo a2enmod expires 
+sudo a2enmod expires
 # set file .htaccess (1)
 ExpiresActive on
-ExpiresByType image/jpg "access plus 1 month" 
-ExpiresByType image/jpeg "access plus 1 month" 
-ExpiresByType image/gif "access plus 1 month" 
-ExpiresByType image/png "access plus 1 month" 
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
 ExpiresByType text/css "access plus 1 month"
 
 # acivar set file.htaccess (2)
@@ -88,13 +88,13 @@ ExpiresByType application/font-woff2                "access plus 1 month"
 ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
 ExpiresByType application/x-font-ttf                "access plus 1 month"
 ExpiresByType font/opentype                         "access plus 1 month"
-ExpiresByType image/svg+xml                         "access plus 1 month" 
+ExpiresByType image/svg+xml                         "access plus 1 month"
 
 ########################
 # configurar cache expiracion en apache
 # Cache-Control:max-age=604800, public
-######################## 
-# activar o verificar este servicio 
+########################
+# activar o verificar este servicio
 sudo a2enmod headers
 
 # set file
@@ -105,5 +105,15 @@ sudo a2enmod headers
     </FilesMatch>
 </IfModule>
 
-# ver servicios
-service --status-all
+####################
+# evalucacion comparativa *benchmark*
+####################
+# Activar Apache benchmark *ab* test de request web basica
+
+	apt-get install apache2-utils
+
+# utilizar por consola
+ab -n 500 -c 20 http://example.com/
+
+#
+sudo aptitude install siege

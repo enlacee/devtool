@@ -3,7 +3,7 @@
 #iniciar docker
 sudo docker start lamp
 # acceder al shells
-udo docker exec -i -t lamp /bin/bash
+sudo docker exec -i -t lamp /bin/bash
 
 
 # BASH : iniciar en ubuntu

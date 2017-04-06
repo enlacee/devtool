@@ -7,7 +7,13 @@ sudo pacman -S git tk
 
 ### install con antergos
 
-# actualizar
+# actualizar sistema y paquetes
 sudo pacman -Sy
-# instalar
+sudo pacman -Su
+
+# instalar uno a uno
 sudo pacman -S virtualbox
+
+## actualizar sistema
+
+pacman -Syu

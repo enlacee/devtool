@@ -18,3 +18,6 @@ $ df -hT /boot
  curl ifconfig.me/ip
  # ver el tamaño
  $ df -hT /boot
+
+### clone website
+wget -k -p -nH -N http://browservictim.com

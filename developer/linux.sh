@@ -225,3 +225,6 @@ sudo blkid
 sudo dd if=archivo.iso of=/dev/sdX
 ### current process
 ps -A
+
+# ver servicios activos
+service --status-all
