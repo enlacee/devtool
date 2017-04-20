@@ -103,16 +103,30 @@ w		= guarda cambios
 
 :n		= siguiente archivo
 
-MODO COMANDO
-yy + p	= copia parafo
-
+#####################
+MODO COMANDO 1 edicion de texto
+#####################
 dd		= borrar linea
 3+dd	= borra 3 lineas
+yy+p	= copia parafo
+u 		= [undo] deshacer cambio
+ctr+R 	= [redo] rehacer el ultimo cambio
+guu		= [lowercase] a minuscula
+gUU 	= [uppercase] a mayuscula
+:num 	= posicionarse en la linea
+gg		= posicionarse al principio del fichero
+G 		= posicionarse al final del fichero
+ga 		= muestra código ASCII, hex y octal
 
 J		= direccion abajo
 K		= direccion arriba
 L		= pasa letra a letra
-
+#####################
+MODO INSERT
+#####################
+ctrl+t  = tab
+ctrl+d  = quita el tab
+ctrl+w  = elimina palabra precedente
 
 /palabrabuscar	= buscador 
 n					= para pasar
