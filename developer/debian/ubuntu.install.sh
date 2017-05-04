@@ -173,3 +173,7 @@ sudo blkid
 
 #install terminal como background
 sudo apt-get install tilda
+#activar utf8 en ubuntu
+locale -a
+sudo locale-gen en_US.UTF-8
+export LANG=en_US.UTF-8

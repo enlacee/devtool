@@ -228,3 +228,4 @@ ps -A
 
 # ver servicios activos
 service --status-all
+
