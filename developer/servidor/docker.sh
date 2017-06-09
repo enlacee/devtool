@@ -18,6 +18,8 @@ docker start my_lamp
 docker stop my_lamp
 docker kill my_lamp
 docker rm my_lamp
+# Eliminar imagen docker
+docker rmi container1 -f
 
 
 # ingresar

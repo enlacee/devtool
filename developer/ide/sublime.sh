@@ -35,6 +35,11 @@ sudo chmod 777 /usr/share/applications/sublime.desktop
 	"update_check": false
 }
 
+# configuracion compatible adaptativo a space y tab
+{
+	"detect_indentation": true,
+	"translate_tabs_to_spaces": true,
+}
 
 ## install plugins
 - emmet

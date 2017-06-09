@@ -229,3 +229,5 @@ ps -A
 # ver servicios activos
 service --status-all
 
+# iniciar prodceso dhcp con la red *antergos*
+sudo dhcpcd enp1s0
