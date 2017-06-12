@@ -12,6 +12,9 @@ sudo apt-get install php5-curl
 sudo apt-get install php-soap
 sudo apt-get install php5.6-xml
 sudo apt-get install curl libcurl3 libcurl3-dev php5-curl
+sudo apt-get install php5-dom
+sudo apt-get install php5-gd
+
 sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/apache2/conf.d/ # for Apache
 ## or : sudo ln -s /etc/php5/mods-available/mcrypt.ini mcrypt.ini
 sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/cli/conf.d/ # for CLI
