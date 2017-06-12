@@ -1,3 +1,37 @@
 ### usar TWIG en wordpress
 
 Theme useful [timber starter-theme](https://github.com/timber/starter-theme)
+
+
+#### 
+
+configurar APACHE2 para que limitar recursos
+
+<IfModule mpm_prefork_module>
+	StartServers		3
+	MinSpareServers		3
+	MaxSpareServers		3
+	ServerLimit			50
+	MaxClients			50
+	MaxRequestsPerChild	1000
+</IfModule>
+
+
+MYSQL CACHE
+tener cuidado si tu web realmente no tiene necesiadad de constantes actualizacione en db
+para su correcto funcionamiento Evaluar eso!:
+To enable the MySQL query cache,
+MYSQL CONFIG FILE
+
+# enable 16 MB cache
+query_cache_size = 16M
+
+#########3
+asegurate que apache no sirva el archivo de configuración
+en .htaccess
+
+<FilesMatch ^wp-config.php$>deny from all</FilesMatch>
+
+### check security
+
+plugin: WP-Security Scan
