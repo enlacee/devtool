@@ -1,14 +1,9 @@
 
-
-#iniciar docker
-sudo docker start lamp
-# acceder al shells
-sudo docker exec -i -t lamp /bin/bash
-
-
 # BASH : iniciar en ubuntu
+
 docker images # lista de imagenes disponibles
-docker ps # muestra lista de container activos
+docker ps # muestra lista de container Activos
+docker ps -a # muestra todos los containers
 
 # buscar imagenes
 docker search ubuntu
@@ -24,16 +19,21 @@ docker rmi container1 -f
 
 # ingresar
 docker attach 2aba126f0859
+# crear un container basico
+# docker -p 80:80 --name [name container] [name image]
 
 # compartir archivo y ejecutar & reiniciar apache
 docker run  -v /home/anb/zdata/sites:/var/www/html:rw -p 80:80 -p 3306:3306 -it --name my_lamp nickistre/ubuntu-lamp /bin/bash
 
 # CREAR UN CONTAINER
 sudo docker run -v /home/anb/sites:/var/www/html:rw  -it --name lamp -p 80:80 -p 3306:3306 nickistre/ubuntu-lamp
-docker start my_lamp
-docker exec -it my_lamp /bin/bash
 
-### eliminar
+#iniciar el container
+docker start lamp
+# acceder al shells
+docker exec -i -t lamp /bin/bash
+
+### eliminar imagen
 sudo docker rmi 5b2d41f89d4b
 
 ### importar container docker

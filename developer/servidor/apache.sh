@@ -117,3 +117,6 @@ ab -n 500 -c 20 http://example.com/
 
 #
 sudo aptitude install siege
+## activar el modulo php
+## fix:error lee el archivo como si fuera texto plano
+sudo apt-get install libapache2-mod-php

@@ -231,3 +231,17 @@ service --status-all
 
 # iniciar prodceso dhcp con la red *antergos*
 sudo dhcpcd enp1s0
+
+
+### 
+# agregar SUBLIME TEXT como binario al sistema principal
+# al instalar por defecto sublime.deb se instala en /opt
+# Ahora solo debemos agregarlo a los binarios 
+
+cd /usr/bin
+ln -s /opt/sublime_text/sublime_text sublime
+#ahora si puedes ejecutar sublime desde el terminal o cualquier lado de ejecucion
+sublime -new-window						# abrir sublime en una nueva ventana
+sublime -U /home/anb/sites/devtool		# abrir sublime con un path
+
+
