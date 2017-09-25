@@ -18,6 +18,7 @@ transmission => client torrent
 recordmydesktop => grabar escritorio
 ffmpeg => convertidor de formato auido.video
 poedit => traduccion de texto
+screenfetch => ver caracteristicas de SO - PC
 # second
 vlc
 alarm clock
