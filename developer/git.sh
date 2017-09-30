@@ -157,3 +157,6 @@ export PS1="\[\033[00m\]\u@\h\[\033[01;33m\] \W \[\033[31m\]\$(parse_git_branch)
 https://github.com/magicmonty/bash-git-prompt
 # archivo sin cambios
 git update-index --assume-unchanged file…
+
+# descargar repositorio sin historia sin .git
+git clone --depth 1 -b master git@github.com:magicmonty/bash-git-prompt.git
