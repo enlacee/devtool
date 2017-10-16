@@ -177,3 +177,12 @@ sudo apt-get install tilda
 locale -a
 sudo locale-gen en_US.UTF-8
 export LANG=en_US.UTF-8
+#-----------------------------------
+#:::::: config thunderbird open browser default
+#-----------------------------------
+Click Edit > then click Preferences >
+select opcion *Advanced*
+at the bottom of that tab Open the *Config Editor*
+to set to [true], search:
+network.protocol-handler.warn-external.http
+network.protocol-handler.warn-external.https
