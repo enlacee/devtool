@@ -23,3 +23,7 @@ $ df -hT /boot
 wget -k -p -nH -N http://browservictim.com
 
 ### config my terminal with *oh-my-zsh*
+
+### renombrar archivos convertir nombre de archivos a minuscula
+	bash
+	for i in *; do mv $i `echo $i | tr [:upper:] [:lower:]`; done
