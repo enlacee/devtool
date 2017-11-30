@@ -5,6 +5,9 @@ docker images # lista de imagenes disponibles
 docker ps # muestra lista de container Activos
 docker ps -a # muestra todos los containers
 
+# elimiar images
+docker rmi (ImageName or ID)
+
 # buscar imagenes
 docker search ubuntu
 
@@ -89,3 +92,42 @@ sudo docker run -t -i dockerfiles/django-uwsgi-nginx /bin/bash
 
 
 python manage.py runserver
+
+#####################
+# docker beginer
+#####################
+# Construir imagen (teniendo tu archivo Dockerfile )
+docker build -t firstcontainerdocker .
+
+# Revisa tu si tu container fue creados (ya tienes la imagen?)
+docker images
+
+# hacer publico el container `-p`
+docker run -p 4000:80 firstcontainerdocker
+
+# ejecutar la app en background (modo separado)
+docker run -d -p 4000:80 firstcontainerdocker
+
+# ver los containers corriendo
+docker container ls
+
+# lista de container creados y ejecutados actualmente
+docker container ls
+
+# detener el contenedor
+docker container stop 336a1130f5de
+
+# crear version del container1
+docker tag firstcontainerdocker enlacee/firstcontainerdocker:v1
+
+# ver los containers y las versions (tag)
+docker images
+
+# docker login
+docker login
+
+# subir tu imagen
+docker push enlacee/firstcontainerdocker:v1
+
+# traer tu imagen y correr (sino lo tienes en local on the machine: docker will pull it from repository)
+docker run -p 4000:80 enlacee/firstcontainerdocker:v1
