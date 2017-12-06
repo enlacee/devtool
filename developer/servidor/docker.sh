@@ -4,6 +4,11 @@
 docker images # lista de imagenes disponibles
 docker ps # muestra lista de container Activos
 docker ps -a # muestra todos los containers
+# eliminar todos los contenedores no activos
+docker container prune
+# eliminar contenedor
+docker rm #hash
+
 
 # elimiar images
 docker rmi (ImageName or ID)
@@ -131,3 +136,43 @@ docker push enlacee/firstcontainerdocker:v1
 
 # traer tu imagen y correr (sino lo tienes en local on the machine: docker will pull it from repository)
 docker run -p 4000:80 enlacee/firstcontainerdocker:v1
+
+
+#####################
+# docker machine default
+#####################
+docker-machine ls
+docker-machine create --driver virtualbox default
+eval "$(docker-machine env default)" # conectarte al shell
+# stop machine
+docker-machine stop default
+docker-machine start default
+# login to machine
+docker-machine ssh default
+# share volumes
+#####################
+docker-machine stop
+vboxmanage sharedfolder add default --name "project_name" --hostpath "<full_project_path>" --automount
+# vboxmanage sharedfolder add default --name "project_name" --hostpath "/home/anb/sites" --automount
+docker-machine start
+# basic apache php
+#####################
+docker run -v /project_name:/var/www/html:rw  -it --name apache-php -p 80:80 nimmis/apache-php5
+#ver path mount from container
+docker inspect -f '{{ .Mounts }}' appserver
+# ver detalle del container (configuracion)
+docker inspect <container-name>
+#####################
+# create machine mi-mysql
+####################
+# docker-machine create miweb # alternative basic
+docker-machine create --driver virtualbox
+docker-machine ls
+docker-machine stop miweb
+vboxmanage sharedfolder add default --name "project_name" --hostpath "/home/anb/sites" --automount
+docker-machine start miweb
+eval "$(docker-machine env miweb)"
+docker run -p 3306:3306 --name mi-mysql -e MYSQL_ROOT_PASSWORD=root -d mysql:5.6
+docker run -v /project_name:/var/www/html:rw -p 3306:3306 --name mi-mysql -e MYSQL_ROOT_PASSWORD=root -d mysql:5.6
+# into mi-mysql
+docker exec -i -t mi-mysql /bin/bash
