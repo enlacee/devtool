@@ -119,3 +119,11 @@ sudo a2enmod actions
 /etc/apache2/mods_available/php5.conf
 
 SetHandler application/x-httpd-php
+
+####
+# php o PDO dañado
+##########
+apt-get --purge remove php5*
+sudo apt-get install php5 php5-sqlite php5-mysql
+sudo apt-get install php-pear php-apc php5-curl
+sudo apt-get autoremove

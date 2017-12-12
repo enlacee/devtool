@@ -165,3 +165,9 @@ FLUSH PRIVILEGES;
 
 # 03: Ping test *consola MYSQL*
 mysql -h 192.168.1.31 -u myuser -p
+
+####
+# mysql log mysql 5.6
+####
+SET GLOBAL general_log = 'ON';
+SET GLOBAL general_log_file = '/var/www/html/error.log';
