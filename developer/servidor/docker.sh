@@ -142,13 +142,14 @@ docker run -p 4000:80 enlacee/firstcontainerdocker:v1
 # docker machine default
 #####################
 docker-machine ls
+sudo apt install virtualbox
 docker-machine create --driver virtualbox default
 eval "$(docker-machine env default)" # conectarte al shell
 # stop machine
 docker-machine stop default
 docker-machine start default
 # login to machine
-docker-machine ssh default
+docker-machine ssh default #(aqui se puede ver la carpeta creada a compartir /project_name )
 # share volumes
 #####################
 docker-machine stop
@@ -171,8 +172,12 @@ docker-machine ls
 docker-machine stop miweb
 vboxmanage sharedfolder add default --name "project_name" --hostpath "/home/anb/sites" --automount
 docker-machine start miweb
-eval "$(docker-machine env miweb)"
+eval "$(docker-machine env miweb)" ## access to machine and create the n container
 docker run -p 3306:3306 --name mi-mysql -e MYSQL_ROOT_PASSWORD=root -d mysql:5.6
 docker run -v /project_name:/var/www/html:rw -p 3306:3306 --name mi-mysql -e MYSQL_ROOT_PASSWORD=root -d mysql:5.6
 # into mi-mysql
 docker exec -i -t mi-mysql /bin/bash
+
+###
+# container php7
+docker run -v /project_name:/app:rw  -it --name apache-php7-webdevops -p 80:80 webdevops/php-apache:ubuntu-16.04

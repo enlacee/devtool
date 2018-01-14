@@ -183,6 +183,14 @@ sudo apt-get update
 sudo apt-get install rarcrack
 # usar comando
 rarcrack --type rar file.rar
+
+## Formatear disco
+#######################
+fdisk
+p => ver las particiones
+d => eliminar la particiones
+n => crear nueva particion
+
 ## MONTAR UN DISCO
 # ver tamaño de disco o espacio
 fdisk -l
