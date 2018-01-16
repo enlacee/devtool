@@ -41,7 +41,11 @@ sudo apt-get install php5-imagick
 sudo apt-get install php7.0-sqlite # driver pdo slite
 sudo apt-get install php7.0-mbstring
 sudo apt-get install php7.0-gd
-sudo apt-get install php7.0-curl
+sudo apt-get install php7.0-curl # apt-get install php5.6-mysql
+sudo apt-get install php7.0-mysql #su
+
+## instalar modo para no mostrar arhivo php como texto
+sudo apt-get install libapache2-mod-php7.0
 
 
 intl
@@ -135,3 +139,12 @@ apt-get --purge remove php5*
 sudo apt-get install php5 php5-sqlite php5-mysql
 sudo apt-get install php-pear php-apc php5-curl
 sudo apt-get autoremove
+
+##############################
+### instalar multiple php
+##############################
+https://lornajane.net/posts/2016/php-7-0-and-5-6-on-ubuntu
+
+sudo a2dismod php5.6
+sudo a2enmod php7.0
+sudo service apache2 restart
