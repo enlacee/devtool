@@ -3,7 +3,7 @@
 Theme useful [timber starter-theme](https://github.com/timber/starter-theme)
 
 
-#### 
+####
 
 configurar APACHE2 para que limitar recursos
 
@@ -41,9 +41,16 @@ plugin: WP-Security Scan
 wp-config.php
 
 	define( 'WP_AUTO_UPDATE_CORE', false );
-	
+
 functions.php
 
 	add_filter( 'auto_update_plugin', '__return_false' );
 	add_filter( 'auto_update_theme', '__return_false' );
 
+
+#### lista de plugin utiles
+
+* [WP CLI](https://wp-cli.org/) ejecutar tareas wordpress por consola
+* [User Role Editor](https://es.wordpress.org/plugins/user-role-editor/) administrador de roles crud
+* [Regenerate Thumbnails](https://pe.wordpress.org/plugins/regenerate-thumbnails/) regenerar images thumbnails and other sizes
+*

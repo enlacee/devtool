@@ -292,3 +292,7 @@ cut -d " " -f 1 lista.txt # d especifica el delimitador
 
 # listar file con texto con patron de busqueda
 egrep "SELECT|JOIN" lista.txt
+
+###
+# ver octal permisos del archivo
+stat -c "%a %n" *
