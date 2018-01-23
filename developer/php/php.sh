@@ -5,7 +5,6 @@
 sudo apt-get install php5-json
 sudo apt-get install php5-sqlite
 sudo apt-get install php5-mysql
-sudo apt-get install php5-sqlite
 sudo apt-get install php-apc = (almacena en cache)
 sudo apt-get install php5-mcrypt
 sudo apt-get install php5-curl
@@ -38,11 +37,7 @@ sudo apt-get install php5-intl
 sudo apt-get install php5-imagick
 
 # PHP 7
-sudo apt-get install php7.0-sqlite # driver pdo slite
-sudo apt-get install php7.0-mbstring
-sudo apt-get install php7.0-gd
-sudo apt-get install php7.0-curl # apt-get install php5.6-mysql
-sudo apt-get install php7.0-mysql #su
+sudo apt-get install php7.0-sqlite php7.0-mbstring php7.0-gd php7.0-curl php7.0-mysql
 
 ## instalar modo para no mostrar arhivo php como texto
 sudo apt-get install libapache2-mod-php7.0
@@ -139,6 +134,9 @@ apt-get --purge remove php5*
 sudo apt-get install php5 php5-sqlite php5-mysql
 sudo apt-get install php-pear php-apc php5-curl
 sudo apt-get autoremove
+
+## uninstall php
+sudo apt-get purge php.*
 
 ##############################
 ### instalar multiple php
