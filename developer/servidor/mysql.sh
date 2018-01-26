@@ -15,6 +15,7 @@ source file.sql
 #-- 02
 mysql -u username -p database_name < file.sql
 mysqldump -u root -p ac_gym > sql.sql
+mysqldump --all-databases > dump.sql
 #options
 -d, --no-data
 # mysql
