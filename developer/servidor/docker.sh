@@ -187,3 +187,17 @@ sudo docker run -v /project_name:/var/www/html:rw  -it --name lamp -p 80:80 -p 3
 ###############################
 docker run -v /project_name:/app:rw  -it --name apache-php7-webdevops -p 80:80 webdevops/php-apache:ubuntu-16.04
 
+
+## container NGINX Y PHP5.6 (ubuntu)
+docker pull justckr/ubuntu-nginx-php:php5.6
+docker run  -it --name ubuntu-nginx-php -p 80:80 justckr/ubuntu-nginx-php:php5.6
+docker start ubuntu-nginx-php
+docker exec -i -t ubuntu-nginx-php /bin/bash
+
+## config
+
+	service nginx restart
+	nginx -V
+	cat /etc/nginx/nginx.conf
+	cd /etc/nginx/sites-enabled
+	cat default.conf  # see directori public = /app/src/public

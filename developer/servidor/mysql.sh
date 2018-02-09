@@ -85,6 +85,10 @@ mysql_config --socket
 ### install mysql
 sudo apt-get install mysql-server
 
+/etc/init.d/mysqld stop
+/etc/init.d/mysqld start
+
+
 
 
 

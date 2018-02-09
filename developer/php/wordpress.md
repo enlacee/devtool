@@ -54,3 +54,25 @@ functions.php
 * [User Role Editor](https://es.wordpress.org/plugins/user-role-editor/) administrador de roles crud
 * [Regenerate Thumbnails](https://pe.wordpress.org/plugins/regenerate-thumbnails/) regenerar images thumbnails and other sizes
 *
+
+
+#### API REST
+
+we need to check URL
+
+	http://local.soccer6.com/api/app/wp-json		# add file .htaccess
+	http://local.soccer6.com/api/app/index.php/wp-json
+
+install plugins
+
+* WP-CLI
+* WP REST API - OAuth 1.0a Server
+
+
+	http://local.soccer6.com/api/app/oauth1/request
+	http://local.soccer6.com/api/app/oauth1/request?oauth_consumer_key=zLffrutDSCxf&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1517592635&oauth_nonce=mLmlom&oauth_version=1.0&oauth_signature=LTMSOj2O5m/LJcAxGAln3ljIzvo=
+
+
+
+
+
