@@ -13,6 +13,7 @@ git config --global user.name "Anibal Copitan"
 git config --global user.email johndoe@example.com
 git config --global color.ui true
 git config --global core.editor vim
+git config --global core.autocrlf true ## only on windows (set .editorconfig to newline like Unix)
 # cambiar nombre y correo por archivo
 vim ~/.gitconfig
 

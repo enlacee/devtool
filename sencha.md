@@ -13,5 +13,5 @@
 
 	sencha web start
 
-
+### create controller
 	sencha generate controller Main

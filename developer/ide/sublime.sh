@@ -32,7 +32,8 @@ sudo chmod 777 /usr/share/applications/sublime.desktop
 	"detect_indentation": false,
 	"tab_size": 4,
 	"draw_white_space": "all",
-	"update_check": false
+	"update_check": false,
+	"default_line_ending": "unix",
 }
 
 # configuracion compatible adaptativo a space y tab
