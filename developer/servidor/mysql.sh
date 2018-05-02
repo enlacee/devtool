@@ -15,6 +15,7 @@ source file.sql
 #-- 02
 mysql -u username -p database_name < file.sql
 mysqldump -u root -p ac_gym > sql.sql
+mysqldump --all-databases > dump.sql
 #options
 -d, --no-data
 # mysql
@@ -83,6 +84,10 @@ ln -s /var/run/mysqld/mysqld.sock /tmp/mysql.sock
 mysql_config --socket
 ### install mysql
 sudo apt-get install mysql-server
+
+/etc/init.d/mysqld stop
+/etc/init.d/mysqld start
+
 
 
 
@@ -165,3 +170,9 @@ FLUSH PRIVILEGES;
 
 # 03: Ping test *consola MYSQL*
 mysql -h 192.168.1.31 -u myuser -p
+
+####
+# mysql log mysql 5.6
+####
+SET GLOBAL general_log = 'ON';
+SET GLOBAL general_log_file = '/var/www/html/error.log';

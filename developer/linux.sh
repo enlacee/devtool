@@ -183,6 +183,14 @@ sudo apt-get update
 sudo apt-get install rarcrack
 # usar comando
 rarcrack --type rar file.rar
+
+## Formatear disco
+#######################
+fdisk
+p => ver las particiones
+d => eliminar la particiones
+n => crear nueva particion
+
 ## MONTAR UN DISCO
 # ver tamaño de disco o espacio
 fdisk -l
@@ -233,15 +241,58 @@ service --status-all
 sudo dhcpcd enp1s0
 
 
-### 
+###
 # agregar SUBLIME TEXT como binario al sistema principal
 # al instalar por defecto sublime.deb se instala en /opt
-# Ahora solo debemos agregarlo a los binarios 
+# Ahora solo debemos agregarlo a los binarios
 
 cd /usr/bin
 ln -s /opt/sublime_text/sublime_text sublime
 #ahora si puedes ejecutar sublime desde el terminal o cualquier lado de ejecucion
 sublime -new-window						# abrir sublime en una nueva ventana
-sublime -U /home/anb/sites/devtool		# abrir sublime con un path
+sublime -U /home/anb/sites/devtool		# abrir sublime con un Ppath
 
+# permisos
+chmod 755 midirectorio # para directorios permiso de ejecucion para todos x
+chmod 644 file.txt # para archivos rw
 
+# lista enumerada
+cat lista.txt
+nl lista.txt
+
+# ver informacion del sitema
+uname -a
+
+## imprimir archivo
+cat lista.txt
+tac lista.txt # reverse text
+
+## imprime lineas de archivos
+head lista.txt
+tail lista.txt
+
+## cuenta las letras y mas
+wc lista.txt
+wc lista.txt -l #cuenta las lineas escritas
+wc lista.txt -c #pedo en bytes
+
+## sort (ordenar lista segun abecedario(a-z))
+sort lista.txt
+
+# retorna string
+unexpand lista.txt # de espacio a tab
+expand lista.txt   # de tab a espacio
+
+# formatear para
+fmt lista.txt # ordena columnas determinadas y otros
+pr lista.txt # prepara para imprimir (distribuye contenido txt)
+
+# sacar texto delimitado por el espacio o N
+cut -d " " -f 1 lista.txt # d especifica el delimitador
+
+# listar file con texto con patron de busqueda
+egrep "SELECT|JOIN" lista.txt
+
+###
+# ver octal permisos del archivo
+stat -c "%a %n" *

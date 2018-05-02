@@ -48,3 +48,6 @@ youtube-dl -t -f 18 --write-thumbnail https://www.youtube.com/watch?v=yz7V_Jh0aV
 sudo ./configure --
 ## eliminar tacho de basura : archivos de garbase
 rm -rf ~/.local/share/Trash/*
+-----------------------------------
+:::::: APP DEVELOPMENT
+-----------------------------------

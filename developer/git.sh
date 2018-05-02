@@ -161,3 +161,9 @@ git update-index --assume-unchanged file…
 
 # descargar repositorio sin historia sin .git
 git clone --depth 1 -b master git@github.com:magicmonty/bash-git-prompt.git
+
+
+
+### ver historial de modificacion linea por line y commit por commit
+
+git log -L 590,622:src/js/core.js

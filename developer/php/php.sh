@@ -5,7 +5,6 @@
 sudo apt-get install php5-json
 sudo apt-get install php5-sqlite
 sudo apt-get install php5-mysql
-sudo apt-get install php5-sqlite
 sudo apt-get install php-apc = (almacena en cache)
 sudo apt-get install php5-mcrypt
 sudo apt-get install php5-curl
@@ -14,6 +13,7 @@ sudo apt-get install php5.6-xml
 sudo apt-get install curl libcurl3 libcurl3-dev php5-curl
 sudo apt-get install php5-dom
 sudo apt-get install php5-gd
+
 
 sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/apache2/conf.d/ # for Apache
 ## or : sudo ln -s /etc/php5/mods-available/mcrypt.ini mcrypt.ini
@@ -35,6 +35,13 @@ sudo apt-get install php5-xsl
 sudo apt-get install php5-intl
 # install for image
 sudo apt-get install php5-imagick
+
+# PHP 7
+sudo apt-get install php7.0-sqlite php7.0-mbstring php7.0-gd php7.0-curl php7.0-mysql php7.0-xml
+
+## instalar modo para no mostrar arhivo php como texto
+sudo apt-get install libapache2-mod-php7.0
+
 
 intl
 -----------------------------------
@@ -119,3 +126,23 @@ sudo a2enmod actions
 /etc/apache2/mods_available/php5.conf
 
 SetHandler application/x-httpd-php
+
+####
+# php o PDO dañado
+##########
+apt-get --purge remove php5*
+sudo apt-get install php5 php5-sqlite php5-mysql
+sudo apt-get install php-pear php-apc php5-curl
+sudo apt-get autoremove
+
+## uninstall php
+sudo apt-get purge php.*
+
+##############################
+### instalar multiple php
+##############################
+https://lornajane.net/posts/2016/php-7-0-and-5-6-on-ubuntu
+
+sudo a2dismod php5.6
+sudo a2enmod php7.0
+sudo service apache2 restart

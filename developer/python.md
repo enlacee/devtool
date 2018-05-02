@@ -58,3 +58,75 @@ sudo -H pip install mkdocs
 
 # Iniciar servidor
 mkdocs serve
+
+
+#### code
+
+type("mi name")
+type(99.9)
+
+conversion
+
+	int(True)
+	int("45")
+	float(True) # 1.0
+
+print long string
+
+	frase = ''' i do not like thee, Doctor fell.
+		The reason why, I CANNOT TELL.
+		but this I Know, and know full well:
+		I do not like thee, Doctor Fell.
+	'''
+
+tamaño del string
+
+	cadena = "my name is pepe"
+	len(cadena) # 5
+
+concatenar con ´join´
+
+	",".join(["pepe", "maria", "jarry", "kelly"])
+
+capitalize (capitalize, tittle, upper, lower, swapcase)
+
+	cadena.capitalize()
+
+replace
+
+	cadena.replace('duck', 'marmoset')
+
+add [] & del & remove
+
+	lista.append("111", "2222", "3333")
+	del lista[0]
+	lista.remove('222')
+
+	lista.pop(1)
+	linsta.index('3333')
+
+update diccionario dict() or {}
+	
+	first = {'a':1, 'b':2}
+	second= {'b', 'playypus'}
+	first.update(second)
+	del first[a]
+
+si el key existe
+
+	'a' in first # True
+
+obtener valor
+
+	first.get('a')
+
+obtener id UNIQUE value de cada objeto
+
+	id(variable)
+
+
+mostrar variables locales y globales
+
+	print(locals())
+	print(globals())
+
