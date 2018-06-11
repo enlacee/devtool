@@ -167,3 +167,8 @@ git clone --depth 1 -b master git@github.com:magicmonty/bash-git-prompt.git
 ### ver historial de modificacion linea por line y commit por commit
 
 git log -L 590,622:src/js/core.js
+
+
+### crear releases y tags
+
+git tag -a v1.0.0 -m "Version 1 - listo para produccion"
