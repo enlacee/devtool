@@ -36,11 +36,13 @@ sudo apt-get install php5-intl
 # install for image
 sudo apt-get install php5-imagick
 
-# PHP 7
+# PHP 7 y PHP 5
 sudo apt-get install php7.0-sqlite php7.0-mbstring php7.0-gd php7.0-curl php7.0-mysql php7.0-xml
 
 ## instalar modo para no mostrar arhivo php como texto
+## y no  mostrar invalid command php_value
 sudo apt-get install libapache2-mod-php7.0
+sudo apt-get install libapache2-mod-php5
 
 
 intl

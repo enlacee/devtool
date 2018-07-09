@@ -16,3 +16,15 @@ Delete domain: ``
 
 Query domain:
 	Domain: local.cyzone.com
+
+
+### two step
+remove all cache
+
+	chrome://settings/clearBrowserData
+
+check cache images and files (clear data)
+
+	chrome://net-internals/#hsts
+
+on botton page is QUERY: localhost 

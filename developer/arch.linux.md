@@ -26,3 +26,15 @@
 ### install gem
 set PATH ruby
 	PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+
+
+### instalar  e desisntalar plasma KDE
+
+Instalar
+	sudo pacman -S plasma
+
+Desistalar
+	sudo pacman -Rcns plasma
+
+
+
