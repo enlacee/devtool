@@ -13,6 +13,7 @@ git config --global user.name "Anibal Copitan"
 git config --global user.email johndoe@example.com
 git config --global color.ui true
 git config --global core.editor vim
+git config --global core.autocrlf true ## only on windows (set .editorconfig to newline like Unix)
 # cambiar nombre y correo por archivo
 vim ~/.gitconfig
 
@@ -167,3 +168,7 @@ git clone --depth 1 -b master git@github.com:magicmonty/bash-git-prompt.git
 
 git log -L 590,622:src/js/core.js
 git log --follow file.js # ver los commit del archivo
+
+### crear releases y tags
+
+git tag -a v1.0.0 -m "Version 1 - listo para produccion"
