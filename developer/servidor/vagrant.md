@@ -1,0 +1,3 @@
+# Vagrant
+
+https://puphpet.com

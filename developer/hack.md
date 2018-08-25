@@ -50,3 +50,16 @@ mala configuracion, contraseña
 * Acunetix web
 * Nessus *ver host, puertos, UNIX*
 * OpenVas *igual a nessus*
+
+
+### HACK WIFI
+configurar en windows para ver mac adrress o phisical address
+en CMD
+
+	ipconfig /all
+
+	PC=0A-00-27-00-00-14
+	FIRE=6C-56-97-B1-48-2D
+	IPHONE-ERROR=A4-E9-75-39-04-C7
+
+	
