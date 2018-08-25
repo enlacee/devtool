@@ -64,7 +64,7 @@ GRANT ALL PRIVILEGES ON * . * TO 'admin'@'localhost';
 DROP DATABASE redmine_dev;
 # reiniar mysql
 sudo /etc/init.d/mysql restart
-# otros mysql
+# otros mysql reiniciar mysql
 service mysqld status
 service mysqld stop
 service mysqld start

@@ -31,3 +31,8 @@ Actulizar o cambiar el nombre para personalizar tu generador
 
 	# Comando para generar tu proyecto x
 	yo generator
+
+
+Eliminar generadores
+
+	npm uninstall -g generator-xxx
