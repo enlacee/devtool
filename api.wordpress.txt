@@ -1,0 +1,17 @@
+1: post man basic POSTMAN, metodo GET auth1 'client key' y 'client secret'
+
+
+
+
+2:url authorize en browser (autorizar)
+
+http://local.soccer6api.com/wp-login.php?action=oauth1_authorize&oauth_consumer_key=qXRhjgfb4nkn&oauth_token=L6VlmUgFZywgWHqBcmAviFlO
+
+3: verificar xxx = codigo autorizado
+
+http://local.soccer6api.com/oauth1/access?oauth_verifier=xxx
+
+
+4: USAR GET todos los servicios pero justar auth
+	
+	http://local.soccer6api.com/index.php/wp-json/wp/v2/users
