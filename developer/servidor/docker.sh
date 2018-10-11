@@ -92,9 +92,6 @@ sudo docker run -t -i dockerfiles/django-uwsgi-nginx /bin/bash
 
 	cd /home/docker/code/app
 
-*
-
-
 
 python manage.py runserver
 
@@ -136,7 +133,6 @@ docker push enlacee/firstcontainerdocker:v1
 
 # traer tu imagen y correr (sino lo tienes en local on the machine: docker will pull it from repository)
 docker run -p 4000:80 enlacee/firstcontainerdocker:v1
-
 
 #####################
 # docker machine default
@@ -187,7 +183,6 @@ sudo docker run -v /project_name:/var/www/html:rw  -it --name lamp -p 80:80 -p 3
 ###############################
 docker run -v /project_name:/app:rw  -it --name apache-php7-webdevops -p 80:80 webdevops/php-apache:ubuntu-16.04
 
-
 ## container NGINX Y PHP5.6 (ubuntu)
 docker pull justckr/ubuntu-nginx-php:php5.6
 docker run  -it --name ubuntu-nginx-php -p 80:80 justckr/ubuntu-nginx-php:php5.6
@@ -195,9 +190,32 @@ docker start ubuntu-nginx-php
 docker exec -i -t ubuntu-nginx-php /bin/bash
 
 ## config
+service nginx restart
+nginx -V
+cat /etc/nginx/nginx.conf
+cd /etc/nginx/sites-enabled
+cat default.conf  # see directori public = /app/src/public
 
-	service nginx restart
-	nginx -V
-	cat /etc/nginx/nginx.conf
-	cd /etc/nginx/sites-enabled
-	cat default.conf  # see directori public = /app/src/public
+### Asociar contenedores usar el parametro  --link
+docker run --name servidor_wp -p 80:80 --link servidor_mysql:mysql -d wordpress
+### apache php 7
+docker run -d --name apache-php7 nimmis/alpine-apache-php7
+
+## ejecutar script apache php y mysql vinculado
+docker run -d --name apache-php7 -v /home/anb/MyData/sites:/var/www/html -p 80:80 --link servidor_mysql:mysql nimmis/apache-php7
+docker exec -ti apache-php7 /bin/bash
+
+## ejecutar mysql
+docker exec -i -t servidor_mysql /bin/bash
+
+## descargar adminer
+wget -O db.php https://github.com/vrana/adminer/releases/download/v4.6.3/adminer-4.6.3-en.php
+
+## servidor wordpress (servidor mysql & servidor apache+PHP7.2)
+docker run -d --name mysql2 -e MYSQL_ROOT_PASSWORD=123456 mysql
+docker run --name web1 -p 80:80 -d -v /home/anb/MyData/sites:/var/www/html --link mysql2:mysql wordpress 
+docker inspect -f "{{ .HostConfig.Links }}" web1
+docker exec web1 /bin/bash
+
+# para reiniciar la fuente del container
+docker restart servidor_mysql
