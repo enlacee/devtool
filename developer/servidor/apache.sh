@@ -4,6 +4,8 @@
 AddDefaultCharset utf-8
 # config .htaccess
 php_value date.timezone 'Europe/London'
+php_value date.timezone 'America/lima'
+
 # ver buscar "User"  :: nombre de usuario apache
 /etc/apache2/apache2.conf
 /etc/apache2/envvars

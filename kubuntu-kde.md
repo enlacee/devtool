@@ -46,7 +46,7 @@ rm -rf ~/.local/share/Trash/*
 ####################################
 ## config kde
 ####################################
-## ver detalle sys 
+## ver detalle sys
 infocenter
 ## workspace
 workspace > virtual desktop
@@ -55,3 +55,9 @@ workspace > virtual desktop
 ####################################
 xrandr --output
 xrandr --output LVDS-1 --auto
+
+
+###
+# programas a instalar
+###
+sudo apt-get install kcolorchooser
