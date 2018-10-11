@@ -90,7 +90,7 @@ sudo ln -s ../../mods-available/xdebug.ini 20-xdebug.ini #/etc/php5/mods-availab
 php --version # http://php.net/manual/en/install.pecl.php-config.php
 php-config --version # execute only command assisted
 
-# configurar date.timezone
+# configurar date.timezone on /etc/php/7.0/ (cli and apache)
 date.timezone = America/Lima
 
 ## debug : tracking : profile
@@ -148,3 +148,6 @@ https://lornajane.net/posts/2016/php-7-0-and-5-6-on-ubuntu
 sudo a2dismod php5.6
 sudo a2enmod php7.0
 sudo service apache2 restart
+
+### print timezone
+echo date_default_timezone_get();

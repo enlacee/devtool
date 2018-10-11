@@ -215,7 +215,23 @@ wget -O db.php https://github.com/vrana/adminer/releases/download/v4.6.3/adminer
 docker run -d --name mysql2 -e MYSQL_ROOT_PASSWORD=123456 mysql
 docker run --name web1 -p 80:80 -d -v /home/anb/MyData/sites:/var/www/html --link mysql2:mysql wordpress 
 docker inspect -f "{{ .HostConfig.Links }}" web1
-docker exec web1 /bin/bash
+docker exec -ti web1 /bin/bash
+#error en el container
+docker logs web1
 
 # para reiniciar la fuente del container
 docker restart servidor_mysql
+
+
+#AÑADIR tu usuario de linux al grupo www-data
+sudo chgrp -R www-data /var/www
+sudo chgrp -R anb /var/www
+#permitir accesso a
+sudo chgrp -R developer /var/www 
+
+#Añadir tu usuario de linux al grupo www-data
+sudo adduser developer
+sudo usermod -a -G www-data developer
+
+sudo chmod -R g+w /var/www
+sudo find /var/www -type f -exec chmod ug+rw {} \;
