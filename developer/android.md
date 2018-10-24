@@ -22,3 +22,11 @@ adb shell am start -n com.example.android.sunshine.app/com.example.android.sunsh
 * [Aprender android curos en español](http://www.sgoliver.net/blog/curso-de-programacion-android/indice-de-contenidos/)
 
 * [Hermosa Programacion](http://www.hermosaprogramacion.com/)
+
+
+### Android Studio
+keytool on google *keytool export and save certificate sha*
+
+for debug mode
+	keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+

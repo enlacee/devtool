@@ -219,6 +219,8 @@ docker exec -ti web1 /bin/bash
 #error en el container
 docker logs web1
 
+docker run --name web2 -p 82:80 -d -v /home/anb/MyData/sites/docker/web2/app:/var/www/html --link mysql2:mysql wordpress
+
 # para reiniciar la fuente del container
 docker restart servidor_mysql
 
