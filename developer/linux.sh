@@ -83,7 +83,9 @@ chmod -R 777 carpeta # recursivo
 744
 # permisos para carpetas
 755
-
+## Asignar permisos correctos a carpetas 755 y ficheros 644 de forma masiva
+find . -type d -exec chmod 755 {} \;
+find . -type f -exec chmod 644 {} \;
 
 
 # ver usuarios y eliminarlos
@@ -296,3 +298,8 @@ egrep "SELECT|JOIN" lista.txt
 ###
 # ver octal permisos del archivo
 stat -c "%a %n" *
+
+#### AGREGAR UN USUARIO q existe A UN GRUPO
+# ejemplo: añade el usuario sergio al grupo sololinux2
+usermod -G sololinux2 sergio
+usermod -G anb www-data # agrega el usuario www-data al grupo anb
