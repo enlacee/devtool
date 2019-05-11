@@ -61,3 +61,29 @@ xrandr --output LVDS-1 --auto
 # programas a instalar
 ###
 sudo apt-get install kcolorchooser
+
+
+## ver archivos compartidos de windows
+	
+	Smb4K
+
+## compartir archivo kubuntu metodo samba
+	
+referencia [compartir archivo ubuntu samba](https://www.muylinux.com/2016/09/23/carpeta-ubuntu-16-04-samba/)
+Agregar el directorio a compartir en el archivo de configuración: /etc/samba/smb.conf
+En la ultima linea agregar
+
+	sudo vim /etc/samba/smb.conf
+
+	[compartido4amano]
+	path = /home/anb/zData/compartido4amano
+	read only = no
+	guest ok = yes
+	browseable = yes
+	create mask = 0777
+
+Nota: en caso no funcionar dar todos los permisos a la carpeta *compartido4amano*
+
+	sudo chmod -R 777 compartido4amano
+
+
