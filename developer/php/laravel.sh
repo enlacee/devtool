@@ -19,6 +19,12 @@
 	# elimina despues crear  y ejecuta los seed (crear usuarios)
 	php artisan migrate:fresh --seed
 
+## generar tablas y regenerar tablas
+	
+	php artisan migrate:reset
+	php artisan migrate
+
+
 
 ##
 	# crear tabla alumnos

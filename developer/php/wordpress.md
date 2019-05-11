@@ -47,6 +47,11 @@ functions.php
 	add_filter( 'auto_update_plugin', '__return_false' );
 	add_filter( 'auto_update_theme', '__return_false' );
 
+### subir archivos al ftp directo 
+configurar config.php
+
+	define('FS_METHOD','direct');
+
 
 #### lista de plugin utiles
 
