@@ -52,3 +52,12 @@ To access your network share use your username (<user_name>) and password theoug
 #### obs check name workgroun for all computer
 	
 	workgroup:	WORKGROUP
+
+
+### desintalar samba e reintalar
+sudo apt-get remove --purge samba-common
+sudo apt-get remove --purge samba
+sudo apt-get install samba
+
+#### eliminar usuario de samba
+smbpasswd -x john

@@ -8,6 +8,17 @@ the terminal program just gives it a way to interact with the graphical environm
 # ver el peso de determinado disco o espacio
 $ df -hT /boot
 
+# listar discos duros
+lsblk
+fdisk -l
+# montar disco duro
+mkdir /media/temp
+mount /dev/sdb1 /media/temp/
+# enlazar en HOME
+ln -s /media/temp /home/usuario/carpeta_destino
+# dar permiso al segundo disco duro con el usuario (anb)
+sudo chown -R $USER:$USER <Mount Point>
+
 # comandos que frecuentemente usa
  history | awk '{print $2}' | sort | uniq -c | sort -rn | head
  # limpiar el historial
