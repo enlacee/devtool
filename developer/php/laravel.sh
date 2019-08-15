@@ -57,3 +57,6 @@
 
 ## crear modelo,factory, migration, controller
 	php artisan make:model Product --all
+
+## Crear modelo y controlador con RESOURCE crud
+	php artisan make:model Book -mc --resource
