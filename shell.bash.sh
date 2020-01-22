@@ -38,3 +38,7 @@ wget -k -p -nH -N http://browservictim.com
 ### renombrar archivos convertir nombre de archivos a minuscula
 	bash
 	for i in *; do mv $i `echo $i | tr [:upper:] [:lower:]`; done
+
+# print date comand line
+# imprimir fecha y hora linea el terminal
+date "+%Y%m%d%H%M%S"

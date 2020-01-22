@@ -16,6 +16,8 @@ source file.sql
 mysql -u username -p database_name < file.sql
 mysqldump -u root -p ac_gym > sql.sql
 mysqldump --all-databases > dump.sql
+
+mysqldump -u root -p database_name > mysqldump_$(date "+%Y-%m-%d-%H:%M:%S").sql
 #options
 -d, --no-data
 # mysql

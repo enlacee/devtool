@@ -146,3 +146,13 @@ define('WP_DEBUG', true);
 define('WP_DEBUG_DISPLAY', true);
 define('WP_DEBUG_LOG', true);
 
+
+### script
+Pagina siguiente y anterior PHP
+
+	$next_post_link_url = get_permalink( get_adjacent_post(false,'',false)->ID );
+	$prev_post_link_url = get_permalink( get_adjacent_post(false,'',true)->ID );
+
+### agregar variable a URL
+
+	$currentURL = add_query_arg( 'i', $key + 1, get_permalink() );

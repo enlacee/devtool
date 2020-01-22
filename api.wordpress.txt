@@ -13,5 +13,9 @@ http://local.soccer6api.com/oauth1/access?oauth_verifier=xxx
 
 
 4: USAR GET todos los servicios pero justar auth
-	
+
 	http://local.soccer6api.com/index.php/wp-json/wp/v2/users
+
+## API
+
+	/wp-json/wp/v2/posts?_fields=author,id,excerpt,title,link

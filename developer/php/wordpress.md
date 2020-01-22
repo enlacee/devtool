@@ -60,6 +60,15 @@ configurar config.php
 * [Regenerate Thumbnails](https://pe.wordpress.org/plugins/regenerate-thumbnails/) regenerar images thumbnails and other sizes
 *
 
+#### Update url config wordpress
+
+	define( 'WP_HOME', 'http://localhost:8888' );
+	define( 'WP_SITEURL', 'http://localhost:8888' );
+
+by sql
+
+	UPDATE `wp_options` SET `option_value` = 'http://localhost:8888' WHERE `option_id` = '1';
+	UPDATE `wp_options` SET `option_value` = 'http://localhost:8888' WHERE `option_id` = '2';
 
 #### API REST
 
