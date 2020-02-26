@@ -303,3 +303,8 @@ stat -c "%a %n" *
 # ejemplo: añade el usuario sergio al grupo sololinux2
 usermod -G sololinux2 sergio
 usermod -G anb www-data # agrega el usuario www-data al grupo anb
+
+
+## ver detalle tecnico de CPU
+lshw -short
+lscpu

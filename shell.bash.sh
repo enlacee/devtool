@@ -42,3 +42,8 @@ wget -k -p -nH -N http://browservictim.com
 # print date comand line
 # imprimir fecha y hora linea el terminal
 date "+%Y%m%d%H%M%S"
+date "+%Y-%m-%d %H:%M:%S"
+
+
+# consumir API REST PYTHON
+curl -s -H "Accept: application/vnd.loja.v1+json" http://localhost:8080/album/1 | python -mjson.tool

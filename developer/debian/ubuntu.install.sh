@@ -2,7 +2,7 @@
 #:::::: Install basic
 #-----------------------------------
 sudo apt-get install ubuntu-restricted-extras
-sudo apt-get install flashplugin-installer 
+sudo apt-get install flashplugin-installer
 sudo apt-get install preload ## mejora el rendimeinto
 # in terminal
 sudo apt-get install nautilus-open-terminal
@@ -187,3 +187,14 @@ at the bottom of that tab Open the *Config Editor*
 to set to [true], search:
 network.protocol-handler.warn-external.http
 network.protocol-handler.warn-external.https
+
+
+## error apt-get update UBUNTU
+
+sudo rm -r /var/lib/apt/lists/*
+sudo apt-get clean && sudo apt-get update
+
+# Repeat action
+
+sudo rm -rf /var/lib/apt/lists/*
+sudo apt update

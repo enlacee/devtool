@@ -151,3 +151,15 @@ sudo service apache2 restart
 
 ### print timezone
 echo date_default_timezone_get();
+
+
+## cambiar php version
+optional
+	sudo apt-get install python-software-properties
+	sudo add-apt-repository ppa:ondrej/php
+
+	sudo update-alternatives --set php /usr/bin/php7.1
+	sudo update-alternatives --set php /usr/bin/php7.2
+
+	a2enmod php7.2
+	systemctl restart apache2
