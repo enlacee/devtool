@@ -49,3 +49,8 @@ ref: [Add Sass Bootstrap 4](https://github.com/angular/angular-cli/wiki/stories-
 	<component-name>
 		<ng-content><ng-content>
 	</component-name>
+
+### agregar service worker (proxy internet)
+	
+	npm install @angular/pwa --save
+	ng add @angular/pwa

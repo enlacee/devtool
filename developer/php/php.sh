@@ -163,3 +163,15 @@ optional
 
 	a2enmod php7.2
 	systemctl restart apache2
+
+## Install PHP from source
+
+	https://www.php.net/downloads.php
+
+
+	./configure
+
+
+## ver configuracion de php
+
+php -i > phpsetting.txt

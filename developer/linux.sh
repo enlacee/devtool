@@ -308,3 +308,9 @@ usermod -G anb www-data # agrega el usuario www-data al grupo anb
 ## ver detalle tecnico de CPU
 lshw -short
 lscpu
+
+## instalar para ver detalle tecnico GUI
+sudo apt-get install hardinfo
+
+## ver detalle tecnico de la memoria RAM
+sudo dmidecode --type memory | less

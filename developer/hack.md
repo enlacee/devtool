@@ -62,4 +62,12 @@ en CMD
 	FIRE=6C-56-97-B1-48-2D
 	IPHONE-ERROR=A4-E9-75-39-04-C7
 
-	
+### HACK BY WIRESHARK
+URL instalar y configurar en ubuntu = https://lospi.net/software/wireshark/networks/ubuntu/2015/02/11/configuring-wireshark-on-ubuntu-14.html
+
+	sudo apt-get install libcap2-bin wireshark
+	sudo wireshark &
+	sudo dpkg-reconfigure wireshark-common
+	sudo chgrp YOUR_USER_NAME /usr/bin/dumpcap
+	sudo chmod 750 /usr/bin/dumpcap
+	sudo setcap cap_net_raw,cap_net_admin+eip /usr/bin/dumpcap
