@@ -58,6 +58,13 @@ nginx_image : nombre de la imagen
 docker build -t nginx_image .
 ```
 
+# project docker with fiel Dockerfile
+mkdir docker-project
+cd docker-project
+touch Dockerfile
+docker build -t pythonapp .
+
+
 
 ###################
 ## DJANGO
@@ -99,6 +106,8 @@ python manage.py runserver
 # docker beginer
 #####################
 # Construir imagen (teniendo tu archivo Dockerfile )
+export DOCKER_BUILDKIT=1
+docker build - < Dockerfile
 docker build -t firstcontainerdocker .
 
 # Revisa tu si tu container fue creados (ya tienes la imagen?)
@@ -237,3 +246,36 @@ sudo usermod -a -G www-data developer
 
 sudo chmod -R g+w /var/www
 sudo find /var/www -type f -exec chmod ug+rw {} \;
+
+## docker permiso denegado
+# Docker permission denied
+
+sudo usermod -a -G docker $USER
+
+
+# levantar un servidor apache en container docker
+docker run -d -p 82:80 httpd
+
+## docker composer para usar multiples container
+docker-compose -f docker-compose.yml -f production.yml up -d
+
+# se compone de 3 procesos
+1. Dockerfile
+2. docker-compose.yml
+3. RUN docker-compose up
+
+
+#docker expert
+
+1. docker comand terminal normal
+2. docker-compose : manejar multiples contenedores controlados por archivos
+3. docker-maquine : maneja multiples hosts
+
+# start with docker-compose
+cd docker-anibal
+docker-compose up -d #from your project directory.
+docker-compose up  #modo independiente
+docker ps -al
+docker exec -it 55f176687302 bash
+
+

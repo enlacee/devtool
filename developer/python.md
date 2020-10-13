@@ -130,3 +130,12 @@ mostrar variables locales y globales
 	print(locals())
 	print(globals())
 
+
+
+### instalar versiones de python BEST DOCUMENTATION
+
+	[Best documentation pyenv] (https://realpython.com/intro-to-pyenv/)
+
+	$ pyenv virtualenv 3.6.8 project2-tmp
+	$ pyenv local project2-tmp
+

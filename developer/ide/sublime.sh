@@ -39,7 +39,7 @@ sudo chmod 777 /usr/share/applications/sublime.desktop
 # configuracion compatible adaptativo a space y tab
 {
 	"detect_indentation": true,
-	"translate_tabs_to_spaces": true,
+	"draw_white_space": "all"
 }
 
 ## install plugins

@@ -52,3 +52,5 @@ fuente : [mozilla addons](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/
 On linux set path where is google-chrome: (execute this command) ´/usr/bin/google-chrome´
 
 	whereis google-chrome
+	which python
+

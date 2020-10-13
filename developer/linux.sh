@@ -50,8 +50,9 @@ scp -r /home/acopitan/www/dbChamilo/ acopitan@toc:/home/acopitan/back
 
 scp acopitan@toc:/home/acopitan/caledu*.gz .
 scp -rv acopitan@toc:/home/acopitan/www/chamiloutp .
+# copiar de servidor a local
+scp user@1.2.3.4:/ruta/servidor/remoto/archivo.tgz archivo-en-local.tgz
 
-mysqldump -u root -p --all-database > dump.sql
 ls -sh
 # order time and reverse
 ls -lt

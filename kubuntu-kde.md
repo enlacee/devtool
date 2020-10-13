@@ -40,7 +40,7 @@ ack-grep "console.log"
 sudo apt-get install lubuntu-restricted-extras
 sudo apt-get install exuberant-ctags
 
-## limpiar papelera
+## limpiar papelera : clean trash
 rm -rf ~/.local/share/Trash/*
 
 ####################################
@@ -85,5 +85,9 @@ En la ultima linea agregar
 Nota: en caso no funcionar dar todos los permisos a la carpeta *compartido4amano*
 
 	sudo chmod -R 777 compartido4amano
+
+## abrir manejador de archivos de cualquier distribucion
+
+	xdg-open .
 
 
