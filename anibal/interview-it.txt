@@ -1,0 +1,17 @@
+1. What was the first programming language that you learned?
+
+	My first programming language learned was javascript.
+	I asked myselft how the website worked. Then I learned php, java, python, bash
+
+	Mi primer leguaje de progracion fue javascript lo aprende revisando las paginas web 
+	preguntandome como se hace las paginas webs
+	Bueno de ahi vino php, java, python, bash (linux)
+	
+2. What do you enjoy about programming?
+
+
+	I enjoy the most is solving problems with the current technologies.
+	And It's nice to know how well it works
+
+	Lo que mas disfruto es resolver problemas con las actuales tecnologias.
+	y saber lo bien que funciona

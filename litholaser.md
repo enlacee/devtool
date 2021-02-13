@@ -12,7 +12,7 @@ sudo apt-get install python-virtualenv
 # activar virtualenv
 . venv/bin/activate
 # instalar dependencias
-pip freeze
+pip freeze > requirements.txt
 pip install -r requirements.txt
 	
 	
