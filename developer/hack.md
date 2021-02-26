@@ -9,7 +9,7 @@ sudo apt-get install nmap
 ### NMAP
 ```bash
 # muestra host con MAC Address
-sudo nmap -sP 192.168.1.0/24 
+nmap -sP 192.168.1.0/24 
 nmap -sn 192.168.1.0/24
 ```
 
