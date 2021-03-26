@@ -31,3 +31,8 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body!= body
+
+
+### dar permisos npm
+
+sudo chown -R $USER /usr/local/lib/node_modules

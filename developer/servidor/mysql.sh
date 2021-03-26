@@ -1,9 +1,17 @@
-# error socket mysql and config
-# @url : https://www.node35.com/how-to-fix-mysql-plugin-auth_socket-is-not-loaded/
+instalar mysql en ubuntu: 
+	
+	https://www.sqlshack.com/how-to-install-mysql-on-ubuntu-18-04/
+	https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+
+sudo apt install mysql-server
+mysql --version
+systemctl status mysql.service 
+sudo systemctl start mysql
+
+sudo mysql_secure_installation
 
 
-mysqldump -u root -p --all-database > dump.sql
-mysqldump -u root -p database_name > database_name.sql
-
-# conect to server remote
-mysql -u root -p -h 44.55.66.77
+## crear usuarios mysql
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+FLUSH PRIVILEGES;
