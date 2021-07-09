@@ -34,3 +34,41 @@ html
 # install node v4
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get install -y nodejs
+
+
+###
+# SERVERLESS
+###
+# Create project with serverless
+serverless create -t aws-nodejs -p aws-nodejs
+
+## create project with template aws provider
+serverless create --template aws-nodejs --name curso-sls-hola-mundo
+
+### aws
+serverless config credential --provider aws --key xxx1 --secret xxx2
+
+
+### invocar functiones LAMBDA
+## Invocar la function hello (lambda) que esta en el stage dev file=serverless.yml
+sls invoke -f hello -s dev
+## en LOCAL
+sls invoke local -f hello -s dev
+
+
+### despleygar en AWS
+sls deploy
+## subir solo una function
+sls deploy function -f helloUser ## handler.js module.exports.helloUser = ()=>{};
+
+###
+### trabajar OFFLINE LAMBDA Y APIGAYWAY
+###
+npm install serverless-offline --save-dev
+### 1. add into file: serverless.yml
+plugins:
+  - serverless-offline
+### 2. execute comand to enable service
+serverless offline
+sls offline
+sls offline --help

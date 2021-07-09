@@ -11,6 +11,8 @@ sudo apt-get install nmap
 # muestra host con MAC Address
 nmap -sP 192.168.1.0/24 
 nmap -sn 192.168.1.0/24
+# ver puertos abiertos
+nmap 192.168.1.25
 ```
 
 

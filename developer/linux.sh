@@ -304,6 +304,7 @@ stat -c "%a %n" *
 # ejemplo: añade el usuario sergio al grupo sololinux2
 usermod -G sololinux2 sergio
 usermod -G anb www-data # agrega el usuario www-data al grupo anb
+usermod -aG www-data anb # (WORK) agrega el usuario anb al grupo www-data y mantiene su membresia en otros grupos
 
 
 ## ver detalle tecnico de CPU
@@ -315,3 +316,9 @@ sudo apt-get install hardinfo
 
 ## ver detalle tecnico de la memoria RAM
 sudo dmidecode --type memory | less
+
+## escanear documentos por terminal
+scanimage -d 'pixma:04A9177A_FBF3F5' --format tiff > rawr.tiff
+scanimage -d 'pixma:04A9177A_FBF3F5' --format=tiff | convert tiff:- scan.jpg
+
+scanimage --progress  --format tiff --mode Color --resolution 300 | convert - -resize 50% -quality 75 scan.jpg
