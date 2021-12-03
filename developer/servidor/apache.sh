@@ -123,11 +123,16 @@ sudo aptitude install siege
 ## fix:error lee el archivo como si fuera texto plano
 sudo apt-get install libapache2-mod-php
 
-
-
+#
+### IT WORK!
+#
 ### How do I give www-data user to a folder in my home folder?
 # First, add yourself into the group www-data
 usermod -a -G www-data (your username)
 #Then:
 chgrp www-data /home/myuser/folderA
-chmod g+rwxs /home/myuser/folderA
+chmod g+rwxs /home/myuser/folderA # adds s attribute which will keep new files 
+# and directories within cake having the same group permissions.
+
+# First, add yourself into the group www-data
+sudo usermod -a -G www-data anibal

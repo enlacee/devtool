@@ -278,4 +278,80 @@ docker-compose up  #modo independiente
 docker ps -al
 docker exec -it 55f176687302 bash
 
+# login with group docker to use
+newgrp docker
 
+
+
+###
+# Docker step to step
+###
+# Generamos una imagen con el archivo
+DockerFile
+
+# execute una imagen
+docker run <ImageName>
+# comand usefull
+docker pull ubuntu
+docker images | head
+# container
+docker ps 
+docker start <id-container>
+# ver logs del container
+docker logs -f <id-container> 
+# acceder al bash del container encendido
+docker exec -it <id-container> sh
+# correr por background (in De-attachemd)
+docker run -d nginx
+#
+# Create app real-life
+#
+# File: DockerFile
+# despues de crear el archivo
+# Construir el contenedor (crea la imagen)
+cd docker-directory
+docker build .
+# creado el contenedor (con etiqueta)
+docker run getting-started
+# creando el contenedor pero con acceso 
+# y disponible al puerto
+docker run -p 3000:3000 getting-started
+
+###
+# 02. Docker realLife
+###
+# creando 2 contenedores y 1 red para que se puedan ver en la red.
+# creando red
+docker network create <todo-app>
+# create container
+docker run -d \
+--network todo-app --network-alias mysql \
+-v todo-mysql-data:/var/lib/mysql \
+-e MYSQL_ROOT_PASSWORD=secret \
+-e MYSQL_DATABASE=todos \
+mysql:5.7
+# acceder ejecutar comando de modo it interactivo (ejecutamos el comando mysql-p dentro del contenedor)
+docker exec -it <container-ID-b6c5e32aaf5a> mysql -p
+
+# crear container tool (para usar dentro de la red)
+docker run -it --network todo-app nicolaka/netshoot
+# util (ver la ip de mysql en la red)
+dig mysql
+## 
+docker run -dp 3000:3000 \
+--network todo-app \
+-e MYSQL_HOST=mysql \
+-e MYSQL_USER=root \
+-e MYSQL_PASSWORD=secret \
+getting-started:v2
+
+
+
+###
+cd 01-docker-ejemplo
+docker-compose up -d
+
+## reiniciar red
+docker-compose down
+## activar todos los container
+docker-compose up -d

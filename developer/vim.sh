@@ -43,18 +43,22 @@ u = retrocede a estado anterior
 % = busca inicio y fin
 #
 CTRL+G = muestra en que linea estas.
+# archivo de configuracion VIM
 # configuracion basica de > vim ~/.vimrc
 syntax on
 set number
 set expandtab
 set ts=4
 set autoident
+
 # configuracion solo tab
 syntax on
 set autoindent
 set noexpandtab
 set tabstop=4
 set shiftwidth=4
+
+:set list # show all characters (final line, tab, space)
 #HOTKEY
 ^ = SHIFT+ '`' (costado de la tecla enter +)
 $ = SHIFT+4 (numeral)
