@@ -157,3 +157,10 @@ CTRL + D # movimeinto pagina DOWN
 H : inicio de la pantalla
 M : medio de la pantalla
 L : final 
+##
+# eliminar comentarios dentro del archivo 
+#
+g/^#/d
+# :g/ 	es el comando global
+# #		busca las líneas que comiencen 
+# /d 	es el comando que se ejecutará, que en este caso es eliminar la línea

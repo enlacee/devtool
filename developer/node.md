@@ -35,4 +35,6 @@ html
 
 ### dar permisos npm
 
+[npm fix missing write access](https://flaviocopes.com/npm-fix-missing-write-access-error/)
+
 sudo chown -R $USER /usr/local/lib/node_modules

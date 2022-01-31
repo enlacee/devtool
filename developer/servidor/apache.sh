@@ -49,6 +49,23 @@ a2dismod pagespeed #desactivar
     </Directory>
 </VirtualHost>
 
+ ##############################################
+ ## crear virtual host alterntive 000-default.conf
+  ##############################################
+<VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html/4abyte/minder/docker-wordpress-minder/www
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+        <Directory /var/www/html/4abyte/minder/docker-wordpress-minder/www>
+        DirectoryIndex index.php
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+        </Directory>
+</VirtualHost>
+
 
 
 ########################

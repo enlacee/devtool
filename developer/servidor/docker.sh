@@ -281,8 +281,6 @@ docker exec -it 55f176687302 bash
 # login with group docker to use
 newgrp docker
 
-
-
 ###
 # Docker step to step
 ###
@@ -355,3 +353,27 @@ docker-compose up -d
 docker-compose down
 ## activar todos los container
 docker-compose up -d
+=======
+
+##
+# DOCKER COMPOSE
+# resource = https://github.com/56kcloud/traefik-training/
+##
+docker-compose up -d
+docker-compose logs
+# stop services
+docker-compose stop
+
+## 02
+# file = docker-compose.file.yml
+docker-compose -f docker-compose.file.yml up -d
+docker-compose -f docker-compose.file.yml stop
+
+## 03
+docker-compose -f docker-compose.cli.yml up -d
+docker-compose -f docker-compose.cli.yml logs
+docker-compose -f docker-compose.cli.yml stop
+# Change the container name
+docker rename charming_herschel honeygain1
+# update the restart option default to contaner selected
+docker update --restart on-failure:3 honeygain1 #Example Always restart only stop if fail by three times
