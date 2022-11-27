@@ -321,4 +321,18 @@ sudo dmidecode --type memory | less
 scanimage -d 'pixma:04A9177A_FBF3F5' --format tiff > rawr.tiff
 scanimage -d 'pixma:04A9177A_FBF3F5' --format=tiff | convert tiff:- scan.jpg
 
-scanimage --progress  --format tiff --mode Color --resolution 300 | convert - -resize 50% -quality 85 scan.jpg
+scanimage --progress  --format tiff --mode Color --resolution 300 | convert - -resize 50% -quality 95 scan.jpg
+
+## dominio
+domainname -h
+# For to know the hostname
+domainname -A
+
+## Trucos LINUX
+
+### `httrack`
+Software useful for downloader website, example:
+
+``` bash
+httrack enlacee.github.io/canopus/ enlacee.github.io/canopus/ +*.com/canopus*.jpg
+```

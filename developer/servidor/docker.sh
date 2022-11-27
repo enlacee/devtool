@@ -32,6 +32,8 @@ docker attach 2aba126f0859
 
 # compartir archivo y ejecutar & reiniciar apache
 docker run  -v /home/anb/zdata/sites:/var/www/html:rw -p 80:80 -p 3306:3306 -it --name my_lamp nickistre/ubuntu-lamp /bin/bash
+# web: service (directorio = web)
+docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html php:7.2-apache
 
 # CREAR UN CONTAINER
 sudo docker run -v /home/anb/sites:/var/www/html:rw  -it --name lamp -p 80:80 -p 3306:3306 nickistre/ubuntu-lamp
@@ -377,3 +379,16 @@ docker-compose -f docker-compose.cli.yml stop
 docker rename charming_herschel honeygain1
 # update the restart option default to contaner selected
 docker update --restart on-failure:3 honeygain1 #Example Always restart only stop if fail by three times
+#####################
+# portainer on raspberry
+####################
+docker volume create portainer_data
+#list volume docker
+docker volume ls
+
+## step 1
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer \
+--restart=always \
+-v /var/run/docker.sock:/var/run/docker.sock \
+-v portainer_data:/home/pi/Projects/docker-projects/docker-portainer/data \
+portainer/portainer-ce:2.9.3

@@ -139,3 +139,6 @@ mostrar variables locales y globales
 	$ pyenv virtualenv 3.6.8 project2-tmp
 	$ pyenv local project2-tmp
 
+### crear requirements
+
+pip3 freeze > requirements.txt  

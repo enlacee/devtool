@@ -37,3 +37,21 @@ network={
 # 02 create access ssh (by install defaul all port are closed)
 # test comand: nmap <192.168.1.27>
 touc ssh
+
+
+
+# install vpn easy on raspberry
+# INSTALLL EASY AND FAST VPN
+
+[install vpn easy](https://www.experte.com/vpn/raspberry-pi)
+
+curl -L https://install.pivpn.io | bash
+
+# basi comand
+	pivpn clients
+	pivpn --help
+# add user open-vpn
+# create users
+pivpn ovpn add
+# directory keys openvpn
+/home/pi/ovpns
