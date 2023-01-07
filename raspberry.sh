@@ -55,3 +55,6 @@ curl -L https://install.pivpn.io | bash
 pivpn ovpn add
 # directory keys openvpn
 /home/pi/ovpns
+
+### USEFULL COMMAND
+ping  ping raspberrypi.local # (default install raspberry)
