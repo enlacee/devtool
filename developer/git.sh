@@ -173,3 +173,70 @@ git log --follow file.js # ver los commit del archivo
 ### crear releases y tags
 
 git tag -a v1.0.0 -m "Version 1 - listo para produccion"
+
+
+### config multiple accounts
+
+## 1: Create SSH keys for all accounts
+
+	ssh-keygen -t rsa -C "anibal@xyz.com" -f "github-anibalDevTotal"
+
+## 2: Add SSH keys
+
+	ssh-add ~/.ssh/github-anibalDevTotal
+
+
+### OK [Configurar multiples cuentas github]
+
+1. Creando Cuenta 1 Github
+
+por defecto crear tu ssh para tu primera cuenta principal
+
+	ssh-keygen
+
+Ahi se crea el archivo: `id_rsa` y `id_rsa.pub`
+
+2. Creando Cuenta 2 Github:
+
+	ssh-keygen -t rsa -C "anibal@xyz.com" -f "github-anibalDevTotal"
+
+3. Agregar las claves SSH a tu agente SSH:
+
+	eval "$(ssh-agent -s)"
+
+Agregalas:
+
+	ssh-add ~/.ssh/id_rsa
+	ssh-add ~/.ssh/github-anibalDevTotal
+
+4. Asociar las claves SSH con las cuentas de GitHub.com:
+
+	cat id_rsa.pub
+	cat github-anibalDevTotal.pub
+
+En GitHub, Settings -> SSH and GPG keys -> New SSH key
+Copia y pega el contenido.
+
+5. Configurar el archivo `~/.ssh/config`:
+Example:
+
+```bash
+# [Principal] github@pprios.com 
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+
+# [Work] anibal.copitan@apuestatotal.com 
+Host github.com-anibalDevTotal
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/github-anibalDevTotal
+```
+
+6. Usando el ALIAS:
+URL `ssh` del repo:  `git clone git@github.com:anibalDevTotal/backend-mvt.git`
+Ahora usandolo con el alias: (asi identifica correctamente la llave privada)
+
+	git clone git@github.com-anibalDevTotal:anibalDevTotal/backend-mvt.git
+

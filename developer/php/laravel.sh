@@ -60,3 +60,54 @@
 
 ## Crear modelo y controlador con RESOURCE crud
 	php artisan make:model Book -mc --resource
+
+
+
+## Docs
+	
+	https://laravel.com/docs/10.x/filesystem
+
+## autoload and artisan command usefuul
+
+php artisan clear-compiled
+php artisan cache:clear
+php artisan config:clear
+php artisan optimize
+
+
+## error
+
+1. No application encryption key has been specified.
+
+php artisan key:generate
+artisan config:cache # alternative if showed the error
+
+
+2. test
+    php artisan cache:clear
+    php artisan test 
+    php artisan test --env=testing
+
+
+3. debug sql laravel model
+
+\DB::enableQueryLog(); // Enable query log
+# SQL CODE
+dd(\DB::getQueryLog()); // Show results of log
+
+# debug laravel PHP CODE
+Log::info('Data result');
+Log::info($data);
+dump($data);
+
+# print sql
+$sql = $transactions->toSql();
+echo $sql;
+
+# BASH crear service *provider*
+php artisan make:provider CvUploaderServiceProvider
+
+
+
+    // Disable the model timestamps
+    // public $timestamps = false;

@@ -25,6 +25,13 @@ usermod -g retirados pedro
 # añadir usuario a un nuevo grupo
 sudo adduser anb btsync
 
+### agreagar usuario con home directory (automatic secuence)
+sudo adduser username
+
+### if yo can to set admin persmision like sudo
+sudo usermod -aG sudo username
+
+
 # agregar usuario como sudo
 adduser demo
 gpasswd -a demo sudo

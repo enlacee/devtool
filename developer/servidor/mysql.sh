@@ -15,3 +15,9 @@ sudo mysql_secure_installation
 CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
 FLUSH PRIVILEGES;
+
+
+## acces to database
+mysql -u USERNAME -pPASSWORD -h HOSTNAMEORIP DATABASENAME 
+# DUMP
+mysqldump -h 192.168.1.27 -u USERNAME -p DATABASENAME > dump-2023-12-29.sql

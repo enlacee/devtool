@@ -8,6 +8,14 @@ docker ps -a # muestra todos los containers
 docker container prune
 # eliminar contenedor
 docker rm #hash
+# eliminar todos los container sin exception 
+#stop
+docker stop $(docker ps -a -q)
+#remove
+docker rm $(docker ps -a -q)
+## remove images colgadas o  'Dangling images'
+docker rmi $(docker images -f "dangling=true" -q)
+
 
 
 # elimiar images
@@ -392,3 +400,24 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer \
 -v /var/run/docker.sock:/var/run/docker.sock \
 -v portainer_data:/home/pi/Projects/docker-projects/docker-portainer/data \
 portainer/portainer-ce:2.9.3
+
+###############################################
+### PASOS PARA CREAR EL CONTENEDOR DINAMICO ###
+###############################################
+# docker build -t anibalcopitan.com .
+# docker run -it --rm -p 3000:3000 -v "$PWD"/spa-nuxtv2:/usr/app:rw anibalcopitan.com sh -c 'yarn install & yarn dev'
+
+## Explain command line docker run
+# * `-it`             => Iteractive container
+# * `--rm`            => autoremove container to close iteractive docker console
+# * `-p 3000:3000`    => used and open container port
+# * `-v "$PWD"/spa-nuxtv2:/usr/app:rw`    => indicate the volume (persistent data)
+# * `anibalcopitan.com`                   => is the image named
+# * `sh -c 'yarn install & yarn dev'`     => way to execute the bash command
+
+
+
+### docker help - laravel
+## Docs
+
+https://medium.com/@randy.hamzah.h/dockerize-your-laravel-project-repository-513b244c19d9

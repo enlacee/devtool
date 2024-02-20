@@ -18,3 +18,10 @@ install raspberry
 
 	sudo service mysterium-node start
  	sudo service mysterium-node status
+
+3. INSTALL PHP
+
+	sudo apt install -y php7.3-common php7.3-cli php7.3-fpm libapache2-mod-php7.3
+	sudo systemctl restart php7.3-fpm
+
+`php7.3-fpm` usefull for php variables into apache config file
